@@ -1,38 +1,97 @@
-
 header {
-    flex-wrap: wrap;
-    background-color: aqua;
+    font-family: 'Montserrat', sans-serif;
 
-    .header__titulo {
-        padding-top: 50px;
-        background-color: bisque;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 120px 3fr 3fr;
+    grid-template-rows: 120px;
+    grid-template-areas:
+        "header__logo header__titulo header__nav";
+    flex-wrap: wrap;
+
+    .header__logo {
+        grid-area: header__logo;
+        width: 120px;
+        background-color: white;
     }
 
-    img {
-        width: 120px;
-        background-color: aquamarine;
+    .header__titulo {
+        padding-left: 30px;
+        background-color: white;
+        grid-area: header__titulo;
+        height: 100%;
+        text-align: left;
+        padding-top: 30px;
+
+        .secretaria {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .olimpiadas {
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
 
     .header__nav {
-        background-color: orange;
-        border-radius: 10px;
-        text-decoration: none;
-        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 700;
+        grid-area: header__nav;
 
         .header__menu {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-
             .header__menu-item {
-                padding: 10px;
+                .header__menu-link {
+                    color: $LetraAzul;
+                    transition: 100ms;
 
-                .header__menu-link{
-                    text-decoration: none;
-                    color: black;
+                    &:hover {
+                        color: white;
+                        display: inline-block;
+                        padding: 10px 20px;
+                        background-color: $FondoAzul;
+                        border: none;
+                        border-radius: 50px;
+                    }
+                }
+
+                .header__menu-subitem{
+                    color: $LetraAzul;
+                    cursor: pointer;
+                    padding-left: 10px;
+                    position: relative;
+                }
+
+                .header__menu-subitem::after{
+                    content: "";
+                    position:absolute;
+                    left: 0;
+                    bottom:  0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $LetraAzul;
+
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 300ms ease-in;
+                }
+
+                .header__menu-subitem:hover::after{
+                    transform: scaleX(1);
+                    transform-origin: left;
                 }
             }
         }
     }
 }
+
+
+/*.header__menu-subitem {
+    color: $LetraAzul;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}*/

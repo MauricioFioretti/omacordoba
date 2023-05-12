@@ -4,41 +4,85 @@
   box-sizing: border-box; }
 
 header {
-  flex-wrap: wrap;
-  background-color: aqua; }
-  header .header__titulo {
-    padding-top: 50px;
-    background-color: bisque; }
-  header img {
+  font-family: 'Montserrat', sans-serif;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 120px 3fr 3fr;
+  grid-template-rows: 120px;
+  grid-template-areas: "header__logo header__titulo header__nav";
+  flex-wrap: wrap; }
+  header .header__logo {
+    grid-area: header__logo;
     width: 120px;
-    background-color: aquamarine; }
+    background-color: white; }
+  header .header__titulo {
+    padding-left: 30px;
+    background-color: white;
+    grid-area: header__titulo;
+    height: 100%;
+    text-align: left;
+    padding-top: 30px; }
+    header .header__titulo .secretaria {
+      font-size: 30px;
+      font-weight: 900; }
+    header .header__titulo .olimpiadas {
+      font-size: 20px;
+      font-weight: 700; }
   header .header__nav {
-    background-color: orange;
-    border-radius: 10px;
-    text-decoration: none;
-    justify-content: space-between; }
-    header .header__nav .header__menu {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      padding: 20px; }
-      header .header__nav .header__menu .header__menu-item {
-        padding: 10px; }
-        header .header__nav .header__menu .header__menu-item .header__menu-link {
-          text-decoration: none;
-          color: black; }
+    font-size: 15px;
+    font-weight: 700;
+    grid-area: header__nav; }
+    header .header__nav .header__menu .header__menu-item .header__menu-link {
+      color: #0096DA;
+      transition: 100ms; }
+      header .header__nav .header__menu .header__menu-item .header__menu-link:hover {
+        color: white;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #006794;
+        border: none;
+        border-radius: 50px; }
+    header .header__nav .header__menu .header__menu-item .header__menu-subitem {
+      color: #0096DA;
+      cursor: pointer;
+      padding-left: 10px;
+      position: relative; }
+    header .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #0096DA;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 300ms ease-in; }
+    header .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
+      transform: scaleX(1);
+      transform-origin: left; }
 
+/*.header__menu-subitem {
+    color: $LetraAzul;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}*/
 footer {
   background-color: #0170B9;
   padding: 20px;
   color: #fff;
   text-align: center; }
 
-main section article h2 {
-  padding: 15px; }
-
-main section article p {
-  margin-left: 15px; }
+main {
+  padding-top: 100px; }
+  main section article h2 {
+    padding: 15px; }
+  main section article p {
+    margin-left: 15px; }
 
 section img {
   width: 200px; }

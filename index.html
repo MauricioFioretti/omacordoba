@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olimpiada Matematica Argentina</title>
     <link rel="shortcut icon" href="./img/logoOMAfondoBlanco.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>        
-        <h1 class="header__titulo">Olimpiada Matemática Argentina Secretaría Regional Centro</h1>
 
-        <img src="./img/logoOMAtransparente.svg" alt="logoOMA">
 
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./index.html">Inicio</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/secretariascordoba.html">Secretarias en Córdoba</a</li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/competencias.html">Competencias</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/apuntes.html">Apuntes</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="https://www.oma.org.ar/calendar.html" target="_blank">Calendario</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/queesoma.html">¿Qué es OMA?</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/libros.html">Libros</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/lenitas.html">Leñitas</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/festivales.html">Festivales</a></li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="./pages/enqueparticipo.html">¿En qué puedo participar?</a></li>
-            </ul>
+    <header>
+
+        <div class="container img header__logo">
+            <a class="navbar-brand" href="#">
+                <img class="header__logo" src="../img/logoOMAtransparente.svg" alt="logoOMA">
+            </a>
+        </div>
+
+        <h1 class="header__titulo navbar-brand ">
+            <p class="secretaria">SECRETARÍA REGIONAL CENTRO</p>
+            <p class="olimpiadas">Olimpiada Matemática Argentina </p>
+        </h1>
+
+        <nav class="navbar navbar-expand-lg bg-body-tprimary header__nav">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav header__menu">
+
+                        <li class="nav-item header__menu-item rounded-pill">
+                            <a class="nav-link header__menu-link" href="./index.html">INICIO</a>
+                        </li>
+
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                MATERIAL
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/libros.html">Libros</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/apuntes.html">Apuntes para prepararse</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/lenitas.html">Leñitas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                COMPETENCIAS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/competencias.html">Competencias</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/enqueparticipo.html">¿En qué puedo
+                                        participar?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://www.oma.org.ar/calendar.html">Calendario 2023</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SOBRE OMA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/queesoma.html">¿Qué es OMA?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/secretariascordoba.html">Secretarias en
+                                        Córdoba</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="https://www.oma.org.ar/">OMA Argentina</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" href="./pages/secretariascordoba.html">
+                                CONTACTO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -45,9 +103,13 @@
         <section>
             <article>
                 <h2>FESTIVAL DE PROBLEMAS ÑANDÚ 2022</h2>
-                <p>Se llevará a cabo el día viernes 29 de julio de 9 a 16 hs en la Universidad Provincial de Córdoba, Ciudad de las Artes-Av. Pablo Ricchieri 1955 – Córdoba</p>
+                <p>Se llevará a cabo el día viernes 29 de julio de 9 a 16 hs en la Universidad Provincial de Córdoba,
+                    Ciudad de las Artes-Av. Pablo Ricchieri 1955 – Córdoba</p>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16192.259234056635!2d-64.18583742470342!3d-31.44157922813058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2eb13913375%3A0xcbf8b54cee76f324!2sAv.%20Pablo%20Ricchieri%201955%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1681996955022!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16192.259234056635!2d-64.18583742470342!3d-31.44157922813058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2eb13913375%3A0xcbf8b54cee76f324!2sAv.%20Pablo%20Ricchieri%201955%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1681996955022!5m2!1ses-419!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
     </main>
@@ -58,5 +120,11 @@
         <p><b>📱 (0351) 4215695</b></p>
         <p><b>omacordoba2019@gmail.com</b></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
 </body>
+
 </html>
