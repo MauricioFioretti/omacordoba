@@ -1,10 +1,10 @@
 header {
+    grid-area: header;
     font-family: 'Montserrat', sans-serif;
 
-    height: 120px;
     display: grid;
-    grid-template-columns: 120px 3fr 3fr;
-    grid-template-rows: 120px;
+    grid-template-columns: auto 3fr 3fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "header__logo header__titulo header__nav";
     flex-wrap: wrap;
@@ -38,6 +38,7 @@ header {
         font-size: 15px;
         font-weight: 700;
         grid-area: header__nav;
+        background-color: white;
 
         .header__menu {
             .header__menu-item {
@@ -55,18 +56,18 @@ header {
                     }
                 }
 
-                .header__menu-subitem{
+                .header__menu-subitem {
                     color: $LetraAzul;
                     cursor: pointer;
                     padding-left: 10px;
                     position: relative;
                 }
 
-                .header__menu-subitem::after{
+                .header__menu-subitem::after {
                     content: "";
-                    position:absolute;
+                    position: absolute;
                     left: 0;
-                    bottom:  0;
+                    bottom: 0;
                     width: 100%;
                     height: 2px;
                     background-color: $LetraAzul;
@@ -76,7 +77,7 @@ header {
                     transition: transform 300ms ease-in;
                 }
 
-                .header__menu-subitem:hover::after{
+                .header__menu-subitem:hover::after {
                     transform: scaleX(1);
                     transform-origin: left;
                 }
@@ -86,12 +87,26 @@ header {
 }
 
 
-/*.header__menu-subitem {
-    color: $LetraAzul;
-    font-weight: 500;
 
-    &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas con un ancho máximo de 768px */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para pantallas con un ancho mínimo de 768px y un ancho máximo de 1024px */
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "header__logo header__titulo"
+            "header__nav header__nav";
+
+        .header__titulo {
+            padding-right: 150px;
+            text-align: center;
+        }
     }
-}*/
+}

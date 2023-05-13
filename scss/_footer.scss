@@ -1,6 +1,13 @@
 footer {
-    background-color: #0170B9;
-    padding: 20px;
+    width: 100vw;
+    background-color: $FondoAzul;
+    padding: 10px;
     color: #fff;
     text-align: center;
+    line-height: 1;
+    grid-area: footer;
+
+    b{
+        width: 100vw;
+    }
 }

@@ -1,14 +1,21 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background-color: aqua;
+  grid-template-rows: 120px 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+
 header {
+  grid-area: header;
   font-family: 'Montserrat', sans-serif;
-  height: 120px;
   display: grid;
-  grid-template-columns: 120px 3fr 3fr;
-  grid-template-rows: 120px;
+  grid-template-columns: auto 3fr 3fr;
+  grid-template-rows: auto;
   grid-template-areas: "header__logo header__titulo header__nav";
   flex-wrap: wrap; }
   header .header__logo {
@@ -31,7 +38,8 @@ header {
   header .header__nav {
     font-size: 15px;
     font-weight: 700;
-    grid-area: header__nav; }
+    grid-area: header__nav;
+    background-color: white; }
     header .header__nav .header__menu .header__menu-item .header__menu-link {
       color: #0096DA;
       transition: 100ms; }
@@ -62,30 +70,38 @@ header {
       transform: scaleX(1);
       transform-origin: left; }
 
-/*.header__menu-subitem {
-    color: $LetraAzul;
-    font-weight: 500;
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas con un ancho máximo de 768px */ }
 
-    &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-    }
-}*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para pantallas con un ancho mínimo de 768px y un ancho máximo de 1024px */ }
+
+@media screen and (max-width: 1023px) {
+  header {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "header__logo header__titulo" "header__nav header__nav"; }
+    header .header__titulo {
+      padding-right: 150px;
+      text-align: center; } }
+
 footer {
-  background-color: #0170B9;
-  padding: 20px;
+  width: 100vw;
+  background-color: #006794;
+  padding: 10px;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  line-height: 1;
+  grid-area: footer; }
+  footer b {
+    width: 100vw; }
 
 main {
-  padding-top: 100px; }
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  grid-area: main; }
   main section article h2 {
     padding: 15px; }
   main section article p {
     margin-left: 15px; }
-
-section img {
-  width: 200px; }
-
-h4 {
-  padding: 10px; }
