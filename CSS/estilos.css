@@ -4,7 +4,9 @@
   box-sizing: border-box; }
 
 body {
-  grid-template-rows: 120px 1fr auto;
+  min-height: 100vh;
+  background-color: aqua;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer"; }
 
@@ -14,19 +16,18 @@ header {
   display: grid;
   grid-template-columns: auto 3fr 3fr;
   grid-template-rows: auto;
-  grid-template-areas: "header__logo header__titulo header__nav";
-  flex-wrap: wrap; }
+  grid-template-areas: "header__logo header__titulo header__nav"; }
   header .header__logo {
     grid-area: header__logo;
-    width: 120px;
+    width: 7.5rem;
     background-color: white; }
   header .header__titulo {
-    padding-left: 30px;
+    padding-left: 2rem;
     background-color: white;
     grid-area: header__titulo;
     height: 100%;
     text-align: left;
-    padding-top: 30px; }
+    padding-top: 2rem; }
     header .header__titulo .secretaria {
       font-size: 30px;
       font-weight: 900; }
@@ -68,47 +69,48 @@ header {
       transform: scaleX(1);
       transform-origin: left; }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   header {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "header__logo header__titulo" "header__nav header__nav"; }
     header .header__titulo {
-      padding-right: 150px;
       text-align: center; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header {
-    padding-top: 30px;
+    padding-top: 2rem;
     grid-template-columns: 1fr 140px;
     grid-template-areas: "header__nav header__logo "; }
     header .header__titulo {
       display: none; }
     header .header__logo {
-      margin-right: 30px; }
+      padding-right: 2rem; }
     header .header__nav {
-      padding-left: 30px; }
+      padding-left: 2rem; }
       header .header__nav .navbar-toggler-icon {
-        width: 50px;
-        height: 50px; } }
+        width: 3rem;
+        height: 3rem; } }
 
 footer {
-  width: 100vw;
+  width: 100%;
+  flex-shrink: 0;
+  width: 100%;
   background-color: #006794;
   padding: 10px;
   color: #fff;
   text-align: center;
   line-height: 1;
   grid-area: footer; }
-  footer b {
-    width: 100vw; }
 
 main {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   grid-area: main; }
-  main section article h2 {
-    padding: 15px; }
-  main section article p {
-    margin-left: 15px; }
+  main section {
+    background-color: black; }
+    main section article h2 {
+      padding: 1rem; }
+    main section article p {
+      padding-left: 1rem; }

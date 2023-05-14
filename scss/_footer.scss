@@ -1,5 +1,7 @@
 footer {
-    width: 100vw;
+    width: 100%;
+    flex-shrink: 0;
+    width: 100%;
     background-color: $FondoAzul;
     padding: 10px;
     color: #fff;
@@ -7,7 +9,4 @@ footer {
     line-height: 1;
     grid-area: footer;
 
-    b{
-        width: 100vw;
-    }
 }

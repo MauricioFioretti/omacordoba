@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
-    grid-template-rows: 120px 1fr auto;
+body {
+    min-height: 100vh;
+    background-color: aqua;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
 
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
 }

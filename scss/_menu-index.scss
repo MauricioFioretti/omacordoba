@@ -1,16 +1,17 @@
 main{
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
     section{
+        background-color: black;
         article{
             h2{
-                padding: 15px;
+                padding: 1rem;
             }
 
             p{
-                margin-left: 15px;
+                padding-left: 1rem;
             }
         }
     }
