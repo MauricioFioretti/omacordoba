@@ -17,15 +17,12 @@ header {
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header__logo header__titulo header__nav";
-  justify-content: space-between; }
+  grid-template-areas: "header__logo header__titulo header__nav"; }
   header .header__logo {
-    margin-top: 0.5rem;
     grid-area: header__logo;
+    margin-top: 0.5rem;
     width: 7.5rem;
-    background-color: white;
-    text-align: center; }
+    background-color: white; }
   header .header__titulo {
     padding-left: 2rem;
     background-color: white;
@@ -85,16 +82,20 @@ header {
 @media screen and (max-width: 767px) {
   header {
     padding-top: 2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header__nav header__logo "; }
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "header__nav header__logo"; }
     header .header__titulo {
       display: none; }
     header .header__logo {
-      padding-right: 2rem;
-      width: 9.5rem;
+      grid-area: header__logo;
+      text-align: right;
+      width: 120px;
       margin-top: 0;
-      background-color: black; }
+      /*padding-right: 2rem; Esto me lo achica porque me lo empuja para la izquierda al logo, y como esta el limite de la caja, se achica el logo*/
+      /*width: 7.5rem;
+            text-align:right ; el ancho hace que no quede a la derecha como quiero y el text aling no hace nada*/ }
     header .header__nav {
+      grid-area: header__nav;
       font-size: 1.3rem;
       margin-left: 2rem; }
       header .header__nav .navbar-toggler-icon {
@@ -106,7 +107,7 @@ header {
         padding-top: 2rem; } }
 
 footer {
-  width: 100%;
+  /*width: 100%;*/
   background-color: #006794;
   padding-top: 10px;
   padding-bottom: 10px;

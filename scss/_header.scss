@@ -1,21 +1,16 @@
 header {
     grid-area: header;
     font-family: 'Montserrat', sans-serif;
-
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
-    grid-template-rows: auto;
     grid-template-areas:
         "header__logo header__titulo header__nav";
 
-    justify-content: space-between;
-
     .header__logo {
-        margin-top: 0.5rem;
         grid-area: header__logo;
+        margin-top: 0.5rem;
         width: 7.5rem;
         background-color: white;
-        text-align: center;
     }
 
     .header__titulo {
@@ -108,22 +103,29 @@ header {
 
     header {
         padding-top: 2rem;
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns: 1fr auto;
         grid-template-areas:
-            "header__nav header__logo ";
+            "header__nav header__logo";
 
         .header__titulo {
             display: none;
         }
 
         .header__logo {
-            padding-right: 2rem;
-            width: 9.5rem;
+            grid-area: header__logo;
+            text-align: right;
+            width: 120px;
             margin-top: 0;
-            background-color: black;
+
+            /*padding-right: 2rem; Esto me lo achica porque me lo empuja para la izquierda al logo, y como esta el limite de la caja, se achica el logo*/
+            /*width: 7.5rem;
+            text-align:right ; el ancho hace que no quede a la derecha como quiero y el text aling no hace nada*/
         }
 
         .header__nav {
+            grid-area: header__nav;
+
             font-size: 1.3rem;
             margin-left: 2rem;
 
@@ -131,14 +133,15 @@ header {
                 width: 3rem;
                 height: 3rem;
             }
-    
+
             .header__menu {
-                .header__menu-item {   
+                .header__menu-item {
                     .header__menu-subitem {
                         font-size: 1.4rem;
                     }
                 }
-                .header__menu-item:first-child{
+
+                .header__menu-item:first-child {
                     padding-top: 2rem;
                 }
             }
