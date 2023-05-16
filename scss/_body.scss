@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-
+    grid-template-columns: 1fr;
 
     grid-template-areas:
         "header"
         "main"
         "footer";
+}
+
+html{
+    width: 100%;
 }

@@ -3,7 +3,7 @@ header {
     font-family: 'Montserrat', sans-serif;
 
     display: grid;
-    grid-template-columns: auto 3fr 3fr;
+    grid-template-columns: 1fr 3fr 3fr;
     grid-template-rows: auto;
     grid-template-areas:
         "header__logo header__titulo header__nav";
@@ -11,9 +11,11 @@ header {
     justify-content: space-between;
 
     .header__logo {
+        margin-top: 0.5rem;
         grid-area: header__logo;
         width: 7.5rem;
         background-color: white;
+        text-align: center;
     }
 
     .header__titulo {
@@ -26,12 +28,12 @@ header {
 
         .secretaria {
             font-size: 2rem;
-            font-weight: 900;
+            font-weight: 600;
         }
 
         .olimpiadas {
             font-size: 1.5rem;
-            font-weight: 700;
+            font-weight: 500;
         }
     }
 
@@ -106,7 +108,7 @@ header {
 
     header {
         padding-top: 2rem;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "header__nav header__logo ";
 
@@ -117,11 +119,13 @@ header {
         .header__logo {
             padding-right: 2rem;
             width: 9.5rem;
+            margin-top: 0;
+            background-color: black;
         }
 
         .header__nav {
             font-size: 1.3rem;
-            padding-left: 2rem;
+            margin-left: 2rem;
 
             .navbar-toggler-icon {
                 width: 3rem;
