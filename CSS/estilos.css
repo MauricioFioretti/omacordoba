@@ -136,8 +136,7 @@ footer {
     text-align: center;
     align-items: center; }
     .main__competencias .main__section-competencia img {
-      width: 20rem;
-      margin-right: 20px; }
+      width: 20rem; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
       flex-direction: column; }
@@ -177,3 +176,17 @@ footer {
       max-width: 80vw; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
       width: 70vw; } }
+
+@media screen and (max-width: 540px) {
+  .main__competencias .main__section-competencia {
+    flex-direction: column; }
+    .main__competencias .main__section-competencia img {
+      width: 50vw; }
+    .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+      align-items: center; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
+        max-width: 90vw; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
+        max-width: 80vw; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
+        width: 70vw; } }

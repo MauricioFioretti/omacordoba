@@ -11,7 +11,6 @@
 
         img {
             width: 20rem;
-            margin-right: 20px;
         }
 
         .main__section_titulo-descripcion {
@@ -70,6 +69,33 @@
 @media screen and (max-width: 540px) {
     .main__competencias {
         .main__section-competencia {
+            .main__section_titulo-descripcion{
+                align-items: center;
+
+                h2{
+                    max-width: 90vw;
+                }
+                p{
+                    max-width: 80vw;
+                }
+
+                .btn{
+                    width: 70vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main__competencias {
+        .main__section-competencia {
+            flex-direction: column;
+
+            img{
+                width: 50vw;
+            }
+
             .main__section_titulo-descripcion{
                 align-items: center;
 
