@@ -1,17 +1,15 @@
-main{
+.main__index{
     padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
+    
     section{
-        background-color: black;
         article{
-            h2{
-                padding: 1rem;
-            }
+            padding: 2rem;
 
-            p{
-                padding-left: 1rem;
+            iframe{
+                width: 100%;
             }
         }
     }

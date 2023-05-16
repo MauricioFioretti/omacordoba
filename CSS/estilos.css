@@ -5,9 +5,7 @@
 
 body {
   min-height: 100vh;
-  background-color: aqua;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer"; }
 
 header {
@@ -16,7 +14,8 @@ header {
   display: grid;
   grid-template-columns: auto 3fr 3fr;
   grid-template-rows: auto;
-  grid-template-areas: "header__logo header__titulo header__nav"; }
+  grid-template-areas: "header__logo header__titulo header__nav";
+  justify-content: space-between; }
   header .header__logo {
     grid-area: header__logo;
     width: 7.5rem;
@@ -29,10 +28,10 @@ header {
     text-align: left;
     padding-top: 2rem; }
     header .header__titulo .secretaria {
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: 900; }
     header .header__titulo .olimpiadas {
-      font-size: 20px;
+      font-size: 1.5rem;
       font-weight: 700; }
   header .header__nav {
     font-size: 15px;
@@ -69,48 +68,102 @@ header {
       transform: scaleX(1);
       transform-origin: left; }
 
-@media screen and (min-width: 576px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1263px) {
   header {
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "header__logo header__titulo" "header__nav header__nav"; }
     header .header__titulo {
       text-align: center; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   header {
     padding-top: 2rem;
-    grid-template-columns: 1fr 140px;
+    grid-template-columns: 1fr auto;
     grid-template-areas: "header__nav header__logo "; }
     header .header__titulo {
       display: none; }
     header .header__logo {
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      width: 9.5rem; }
     header .header__nav {
+      font-size: 1.3rem;
       padding-left: 2rem; }
       header .header__nav .navbar-toggler-icon {
         width: 3rem;
-        height: 3rem; } }
+        height: 3rem; }
+      header .header__nav .header__menu .header__menu-item .header__menu-subitem {
+        font-size: 1.4rem; }
+      header .header__nav .header__menu .header__menu-item:first-child {
+        padding-top: 2rem; } }
 
 footer {
-  width: 100%;
-  flex-shrink: 0;
-  width: 100%;
   background-color: #006794;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
   text-align: center;
   line-height: 1;
   grid-area: footer; }
 
-main {
+.main__index {
   padding-top: 2rem;
   padding-bottom: 3rem;
   text-align: center;
   grid-area: main; }
-  main section {
-    background-color: black; }
-    main section article h2 {
-      padding: 1rem; }
-    main section article p {
-      padding-left: 1rem; }
+  .main__index section article {
+    padding: 2rem; }
+    .main__index section article iframe {
+      width: 100%; }
+
+.main__competencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main__competencias .main__section-competencia {
+    margin-top: 7rem;
+    display: flex;
+    text-align: center;
+    align-items: center; }
+    .main__competencias .main__section-competencia img {
+      width: 20rem;
+      margin-right: 20px; }
+    .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+      display: flex;
+      flex-direction: column; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
+        width: 30rem; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
+        width: 30rem; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
+        display: block;
+        margin-top: 10px; }
+        .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
+          text-decoration: none;
+          color: white; }
+  .main__competencias .main__section-competencia:first-child {
+    margin-top: 2rem; }
+  .main__competencias .main__section-competencia:last-child {
+    margin-bottom: 3rem; }
+
+@media screen and (min-width: 992px) and (max-width: 1263px) {
+  .main__competencias {
+    margin-left: -12rem; } }
+
+@media screen and (min-width: 870px) and (max-width: 991px) {
+  .main__competencias {
+    margin-left: -5rem; } }
+
+@media screen and (max-width: 869px) {
+  .main__competencias .main__section-competencia {
+    flex-direction: column; } }
+
+@media screen and (max-width: 540px) {
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+    align-items: center; }
+    .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
+      max-width: 90vw; }
+    .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
+      max-width: 80vw; }
+    .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
+      width: 70vw; } }

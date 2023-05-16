@@ -8,6 +8,8 @@ header {
     grid-template-areas:
         "header__logo header__titulo header__nav";
 
+    justify-content: space-between;
+
     .header__logo {
         grid-area: header__logo;
         width: 7.5rem;
@@ -23,12 +25,12 @@ header {
         padding-top: 2rem;
 
         .secretaria {
-            font-size: 30px;
+            font-size: 2rem;
             font-weight: 900;
         }
 
         .olimpiadas {
-            font-size: 20px;
+            font-size: 1.5rem;
             font-weight: 700;
         }
     }
@@ -86,9 +88,9 @@ header {
 }
 
 
-@media screen and (min-width: 576px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1263px) {
     header {
-        grid-template-columns: auto 1fr 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
             "header__logo header__titulo"
@@ -100,12 +102,11 @@ header {
     }
 }
 
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
 
     header {
         padding-top: 2rem;
-        grid-template-columns: 1fr 140px;
+        grid-template-columns: 1fr auto;
         grid-template-areas:
             "header__nav header__logo ";
 
@@ -115,14 +116,27 @@ header {
 
         .header__logo {
             padding-right: 2rem;
+            width: 9.5rem;
         }
 
         .header__nav {
+            font-size: 1.3rem;
             padding-left: 2rem;
 
             .navbar-toggler-icon {
                 width: 3rem;
                 height: 3rem;
+            }
+    
+            .header__menu {
+                .header__menu-item {   
+                    .header__menu-subitem {
+                        font-size: 1.4rem;
+                    }
+                }
+                .header__menu-item:first-child{
+                    padding-top: 2rem;
+                }
             }
         }
     }
