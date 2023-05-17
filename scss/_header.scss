@@ -103,7 +103,6 @@ header {
 
     header {
         padding-top: 2rem;
-
         grid-template-columns: 1fr auto;
         grid-template-areas:
             "header__nav header__logo";
@@ -113,19 +112,11 @@ header {
         }
 
         .header__logo {
-            grid-area: header__logo;
-            text-align: right;
             width: 120px;
             margin-top: 0;
-
-            /*padding-right: 2rem; Esto me lo achica porque me lo empuja para la izquierda al logo, y como esta el limite de la caja, se achica el logo*/
-            /*width: 7.5rem;
-            text-align:right ; el ancho hace que no quede a la derecha como quiero y el text aling no hace nada*/
         }
 
         .header__nav {
-            grid-area: header__nav;
-
             font-size: 1.3rem;
             margin-left: 2rem;
 
@@ -139,10 +130,6 @@ header {
                     .header__menu-subitem {
                         font-size: 1.4rem;
                     }
-                }
-
-                .header__menu-item:first-child {
-                    padding-top: 2rem;
                 }
             }
         }

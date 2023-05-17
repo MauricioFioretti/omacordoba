@@ -87,24 +87,16 @@ header {
     header .header__titulo {
       display: none; }
     header .header__logo {
-      grid-area: header__logo;
-      text-align: right;
       width: 120px;
-      margin-top: 0;
-      /*padding-right: 2rem; Esto me lo achica porque me lo empuja para la izquierda al logo, y como esta el limite de la caja, se achica el logo*/
-      /*width: 7.5rem;
-            text-align:right ; el ancho hace que no quede a la derecha como quiero y el text aling no hace nada*/ }
+      margin-top: 0; }
     header .header__nav {
-      grid-area: header__nav;
       font-size: 1.3rem;
       margin-left: 2rem; }
       header .header__nav .navbar-toggler-icon {
         width: 3rem;
         height: 3rem; }
       header .header__nav .header__menu .header__menu-item .header__menu-subitem {
-        font-size: 1.4rem; }
-      header .header__nav .header__menu .header__menu-item:first-child {
-        padding-top: 2rem; } }
+        font-size: 1.4rem; } }
 
 footer {
   /*width: 100%;*/
@@ -124,7 +116,57 @@ footer {
   .main__index section article {
     padding: 2rem; }
     .main__index section article iframe {
-      width: 100%; }
+      height: 30vw;
+      width: 50vw; }
+  .main__index .main__iconos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 2fr 2fr;
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri"; }
+    .main__index .main__iconos a img {
+      width: 200px; }
+    .main__index .main__iconos .main__iconos-titulo {
+      grid-area: main__iconos-titulo; }
+    .main__index .main__iconos .main__iconos-logomateclubes {
+      grid-area: main__iconos-logomateclubes; }
+    .main__index .main__iconos .main__iconos-logonandu {
+      grid-area: main__iconos-logonandu; }
+    .main__index .main__iconos .main__iconos-logolym {
+      grid-area: main__iconos-logolym; }
+    .main__index .main__iconos .main__iconos-logotorngeoeimag {
+      grid-area: main__iconos-logotorngeoeimag; }
+    .main__index .main__iconos .main__iconos-logointernacionales {
+      grid-area: main__iconos-logointernacionales; }
+    .main__index .main__iconos .main__iconos-logoolimmayo {
+      grid-area: main__iconos-logoolimmayo; }
+    .main__index .main__iconos .main__iconos-logocanguro {
+      grid-area: main__iconos-logocanguro; }
+    .main__index .main__iconos .main__iconos-logoolimpri {
+      grid-area: main__iconos-logoolimpri; }
+
+@media screen and (max-width: 800px) {
+  .main__index .main__iconos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri"; }
+    .main__index .main__iconos a img {
+      width: 130px; } }
+
+@media screen and (max-width: 550px) {
+  .main__index .main__iconos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(4, 1fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri"; }
+    .main__index .main__iconos a img {
+      width: 170px; } }
+
+@media screen and (max-width: 349px) {
+  .main__index .main__iconos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(4, 2fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri"; }
+    .main__index .main__iconos a img {
+      width: 145px; } }
 
 .main__competencias {
   display: flex;
@@ -190,3 +232,12 @@ footer {
         max-width: 80vw; }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         width: 70vw; } }
+
+.main__queesoma {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+  .main__queesoma section {
+    padding: 10px;
+    border: 3px solid gray; }

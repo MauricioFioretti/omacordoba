@@ -1,16 +1,143 @@
-.main__index{
+.main__index {
     padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
-    
-    section{
-        article{
+
+    section {
+        article {
             padding: 2rem;
 
-            iframe{
-                width: 100%;
+            iframe {
+                height: 30vw;
+                width: 50vw;
             }
+        }
+    }
+
+    .main__iconos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 2fr 2fr;
+        grid-template-areas:
+            "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
+
+            "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
+
+            "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+
+        a {
+            img {
+                width: 200px;
+            }
+        }
+
+        .main__iconos-titulo {
+            grid-area: main__iconos-titulo;
+        }
+
+        .main__iconos-logomateclubes {
+            grid-area: main__iconos-logomateclubes;
+        }
+
+        .main__iconos-logonandu {
+            grid-area: main__iconos-logonandu;
+        }
+
+        .main__iconos-logolym {
+            grid-area: main__iconos-logolym;
+        }
+
+        .main__iconos-logotorngeoeimag {
+            grid-area: main__iconos-logotorngeoeimag;
+        }
+
+        .main__iconos-logointernacionales {
+            grid-area: main__iconos-logointernacionales;
+        }
+
+        .main__iconos-logoolimmayo {
+            grid-area: main__iconos-logoolimmayo;
+        }
+
+        .main__iconos-logocanguro {
+            grid-area: main__iconos-logocanguro;
+        }
+
+        .main__iconos-logoolimpri {
+            grid-area: main__iconos-logoolimpri;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .main__index {
+        .main__iconos {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto repeat(2, 1fr);
+            grid-template-areas:
+                "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
+
+                "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
+
+                "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+
+                a {
+                    img {
+                        width: 130px;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main__index {
+        .main__iconos {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto repeat(4, 1fr);
+            grid-template-areas:
+                "main__iconos-titulo main__iconos-titulo"
+
+                "main__iconos-logomateclubes main__iconos-logonandu"
+
+                "main__iconos-logolym main__iconos-logotorngeoeimag"
+
+                "main__iconos-logointernacionales main__iconos-logoolimmayo"
+
+                "main__iconos-logocanguro main__iconos-logoolimpri";
+
+                a {
+                    img {
+                        width: 170px;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 349px) {
+    .main__index {
+        .main__iconos {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto repeat(4, 2fr);
+            grid-template-areas:
+                "main__iconos-titulo main__iconos-titulo"
+
+                "main__iconos-logomateclubes main__iconos-logonandu"
+
+                "main__iconos-logolym main__iconos-logotorngeoeimag"
+
+                "main__iconos-logointernacionales main__iconos-logoolimmayo"
+
+                "main__iconos-logocanguro main__iconos-logoolimpri";
+
+                a {
+                    img {
+                        width: 145px;
+                    }
+                }
         }
     }
 }
