@@ -1,11 +1,90 @@
-.main__queesoma{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+.main__queesoma {
+    display: flex;
+    flex-direction: column;
+    color: white;
 
-    section{
-        padding: 10px;
-        border: 3px solid gray;
+    section {
+        display: flex;
+        padding: 2rem;
+        align-items: center;
+
+        h4{
+            font-size: 1.5rem;
+        }
+
+        .section-especial {
+            display: flex;
+            flex-direction: column;
+            width: 33vw;
+            align-items: center;
+
+            .btn {
+                width: auto;
+            }
+        }
+
+        h2 {
+            width: 35vw;
+            text-align: center;
+        }
+
+        .parrafos {
+            width: 65vw;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+        }
+    }
+
+    @for $i from 1 through 3 {
+        .section-#{$i} {
+            background-color: map-get($bgColors, $i);
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1263px) {
+    .main__queesoma {
+    
+        section {
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__queesoma {
+
+        section {
+            display: flex;
+            flex-direction: column;
+
+            .section-especial {
+                width: 100vw;
+            }
+    
+            h2 {
+                width: 100vw;
+                padding: 0 2rem;
+            }
+
+            h4{
+                padding-top: 1rem;
+            }
+    
+            .parrafos {
+                width: 100vw;
+                padding: 1rem 2rem 0 2rem;
+                text-align: center;
+            }
+        }
     }
 }

@@ -387,10 +387,55 @@ footer {
         width: 70vw; } }
 
 .main__queesoma {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+  display: flex;
+  flex-direction: column;
+  color: white; }
   .main__queesoma section {
-    padding: 10px;
-    border: 3px solid gray; }
+    display: flex;
+    padding: 2rem;
+    align-items: center; }
+    .main__queesoma section h4 {
+      font-size: 1.5rem; }
+    .main__queesoma section .section-especial {
+      display: flex;
+      flex-direction: column;
+      width: 33vw;
+      align-items: center; }
+      .main__queesoma section .section-especial .btn {
+        width: auto; }
+    .main__queesoma section h2 {
+      width: 35vw;
+      text-align: center; }
+    .main__queesoma section .parrafos {
+      width: 65vw;
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
+  .main__queesoma .section-1 {
+    background-color: #0096DA; }
+  .main__queesoma .section-2 {
+    background-color: #006794; }
+  .main__queesoma .section-3 {
+    background-color: #012A3D; }
+
+@media screen and (min-width: 767px) and (max-width: 1263px) {
+  .main__queesoma section h2 {
+    font-size: 1.5rem; }
+  .main__queesoma section h4 {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 767px) {
+  .main__queesoma section {
+    display: flex;
+    flex-direction: column; }
+    .main__queesoma section .section-especial {
+      width: 100vw; }
+    .main__queesoma section h2 {
+      width: 100vw;
+      padding: 0 2rem; }
+    .main__queesoma section h4 {
+      padding-top: 1rem; }
+    .main__queesoma section .parrafos {
+      width: 100vw;
+      padding: 1rem 2rem 0 2rem;
+      text-align: center; } }

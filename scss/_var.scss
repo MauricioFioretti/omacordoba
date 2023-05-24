@@ -1,5 +1,17 @@
-$LetraAzul:#0096DA;
+$LetraAzul: #0096DA;
 
-$FondoAzul:#006794;
+$FondoAzul: #006794;
 
 $GradienteFooter: linear-gradient(90deg, #012a3d, #016794, #0096db, #3f87a6);
+
+$bgCol1: #0096DA;
+
+$bgCol2: #006794;
+
+$bgCol3: #012A3D;
+
+$bgColors: (
+    1: $bgCol1,
+    2: $bgCol2,
+    3: $bgCol3
+);
