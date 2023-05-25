@@ -454,3 +454,17 @@ footer {
       width: 100vw;
       padding: 1rem 2rem 0 2rem;
       text-align: center; } }
+
+.main__secretariascordoba {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .main__secretariascordoba section {
+    width: auto; }
+    .main__secretariascordoba section .accordion-button {
+      width: 50vw; }
+    .main__secretariascordoba section .accordion-item {
+      width: auto; }
+      .main__secretariascordoba section .accordion-item .accordion-collapse .accordion-body p {
+        width: 45vw; }
