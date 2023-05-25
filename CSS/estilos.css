@@ -386,6 +386,21 @@ footer {
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         width: 70vw; } }
 
+.main__enqueparticipo section {
+  text-align: center;
+  padding: 0 3rem; }
+
+.main__enqueparticipo img {
+  max-width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .main__enqueparticipo section {
+    text-align: center;
+    padding: 0 3rem;
+    font-size: 0.7rem; }
+  .main__enqueparticipo img {
+    max-width: auto; } }
+
 .main__queesoma {
   display: flex;
   flex-direction: column;

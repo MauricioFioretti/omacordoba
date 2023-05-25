@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 
 <body>
@@ -104,12 +106,48 @@
         </nav>
     </header>
 
-    <main>
-        <p><b>¿Tenés dudas en qué actividades de las olimpiadas podes participar? Te compartimos un cuadro donde podés
-                revisar según tu año de escolaridad, a que nivel pertenecés en cada una.</b></p>
 
-        <img src="../img/EnQueParticipar.png" alt="Cuadro De Participación">
+
+
+
+
+
+
+    <main class="main__enqueparticipo">
+        <section>
+            <p><b>¿Tenés dudas en qué actividades de las olimpiadas podes participar? Te compartimos un cuadro donde
+                    podés
+                    revisar según tu año de escolaridad, a que nivel pertenecés en cada una.</b></p>
+        </section>
+
+
+
+
+        <section>
+            <a href="../img/EnQueParticipar.png" data-glightbox="closeButton: true" class="glightbox">
+                <img src="../img/EnQueParticipar.png" alt="image" />
+            </a>
+        </section>
+
+
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <section class="footer__izq">
@@ -121,7 +159,7 @@
         <section class="footer__der">
 
             <p class="espacio"></p>
-            
+
             <div class="datosContacto">
                 <p><b>María del Carmen Spina Gómez</b></p>
                 <p><b>Secretaria regional Adjunta a la dirección de la Olimpíada</b></p>
@@ -129,14 +167,14 @@
             </div>
 
             <p class="espacio2"></p>
-            
+
             <p class="correo"><b>Correo electrónico: omacordoba2019@gmail.com</b></p>
 
             <p class="espacio2"></p>
 
             <div class="iconos">
                 <img src="../img/logoFacebook.svg" alt="logoFacebook">
-    
+
                 <img src="../img/logoInstagram.svg" alt="logoInstagram">
             </div>
 
@@ -149,6 +187,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({ closeButton: true });
+    </script>
 
 </body>
 
