@@ -465,3 +465,10 @@ footer {
     margin: 5rem 0;
     width: 70vw;
     height: 86vh; }
+
+@media screen and (max-width: 767px) {
+  .main__secretariascordoba .accordion {
+    width: 80vw; }
+  .main__secretariascordoba section article iframe {
+    width: 80vw;
+    height: 70vh; } }
