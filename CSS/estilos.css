@@ -459,6 +459,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.accordion {
-  width: 50vw; }
+  .main__secretariascordoba .accordion {
+    width: 50vw; }
+  .main__secretariascordoba section article iframe {
+    margin: 5rem 0;
+    width: 70vw;
+    height: 86vh; }
