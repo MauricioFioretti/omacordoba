@@ -1,10 +1,25 @@
 .main__index {
-    padding-top: 2rem;
+
     padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
 
+    .herojojo {
+        position: relative;
+        background-color: black;
+        opacity: 1;
+        .hero {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            background-color: black;
+            opacity: 1;
+        }
+    }
+
     section {
+
+
         article {
             padding: 2rem;
 
@@ -83,11 +98,11 @@
 
                 "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
 
-                a {
-                    img {
-                        width: 130px;
-                    }
+            a {
+                img {
+                    width: 130px;
                 }
+            }
         }
     }
 }
@@ -108,11 +123,11 @@
 
                 "main__iconos-logocanguro main__iconos-logoolimpri";
 
-                a {
-                    img {
-                        width: 170px;
-                    }
+            a {
+                img {
+                    width: 170px;
                 }
+            }
         }
     }
 }
@@ -133,11 +148,11 @@
 
                 "main__iconos-logocanguro main__iconos-logoolimpri";
 
-                a {
-                    img {
-                        width: 145px;
-                    }
+            a {
+                img {
+                    width: 145px;
                 }
+            }
         }
     }
 }
