@@ -1,34 +1,42 @@
+/* Estilos del main competencias */
 .main__competencias {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    /* Estilos de cada sección de competencia */
     .main__section-competencia {
         margin-top: 7rem;
         display: flex;
         text-align: center;
         align-items: center;
 
+        /* Estilos de las imagenes en la sección de competencia */
         img {
             width: 20rem;
         }
 
+        /* Estilos del título y la descripción de cada una de las competencias */
         .main__section_titulo-descripcion {
             display: flex;
             flex-direction: column;
 
+            /* Estilos del título de cada una de las competencias */
             h2 {
                 width: 30rem;
             }
 
+            /* Estilos de la descripción de cada una de las competencias */
             p {
                 width: 30rem;
             }
 
+            /* Estilos de los botones en la sección de competencia */
             .btn {
                 display: block;
                 margin-top: 10px;
 
+                /* Estilos del enlace dentro del botón */
                 a {
                     text-decoration: none;
                     color: white;
@@ -37,6 +45,7 @@
         }
     }
 
+    /* Ajustes de margen para la primera y última sección de competencia */
     .main__section-competencia:first-child {
         margin-top: 2rem;
     }
@@ -46,6 +55,7 @@
     }
 }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 992px) and (max-width: 1263px) {
     .main__competencias {
         margin-left: -12rem;
@@ -58,54 +68,41 @@
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 869px) {
     .main__competencias {
+        /* Ajustes en la dirección de flexión para las secciones de competencia */
         .main__section-competencia {
             flex-direction: column;
         }
     }
 }
 
-@media screen and (max-width: 540px) {
-    .main__competencias {
-        .main__section-competencia {
-            .main__section_titulo-descripcion{
-                align-items: center;
-
-                h2{
-                    max-width: 90vw;
-                }
-                p{
-                    max-width: 80vw;
-                }
-
-                .btn{
-                    width: 70vw;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 540px) {
     .main__competencias {
         .main__section-competencia {
-            flex-direction: column;
 
+            /* Ajustes en el tamaño de la imagen para pantallas pequeñas */
             img{
                 width: 50vw;
             }
 
+            /* Ajustes en la alineación de los elementos en la sección de competencia */
             .main__section_titulo-descripcion{
                 align-items: center;
 
+                /* Ajustes en el ancho máximo del título para pantallas pequeñas */
                 h2{
                     max-width: 90vw;
                 }
+
+                /* Ajustes en el ancho máximo de la descripción para pantallas pequeñas */
                 p{
                     max-width: 80vw;
                 }
 
+                /* Ajustes en el ancho del botón para pantallas pequeñas */
                 .btn{
                     width: 70vw;
                 }

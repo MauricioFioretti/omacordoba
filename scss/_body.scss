@@ -1,21 +1,22 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos del cuerpo de la página */
 body{
     overflow-x: hidden; 
     min-height: 100vh;
+
+    /* Definición de grid */
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
 
+    /* Definición de las áreas del grid */
     grid-template-areas:
         "header"
         "main"
         "footer";
-}
-
-html{
-    width: 100%;
 }

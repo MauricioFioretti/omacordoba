@@ -1,33 +1,40 @@
+/* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
     display: flex;
     flex-direction: column;
     color: white;
 
+    /* Estilos de las secciones internas */
     section {
         display: flex;
         padding: 2rem;
         align-items: center;
 
-        h4{
+        /* Estilos del título h2 */
+        h2 {
+            width: 35vw;
+            text-align: center;
+        }
+
+        /* Estilos del subtítulo h3 */
+        h3{
             font-size: 1.5rem;
         }
 
+        /* Estilos de la última sección */
         .section-especial {
             display: flex;
             flex-direction: column;
             width: 33vw;
             align-items: center;
 
+            /* Estilos del botón */
             .btn {
                 width: auto;
             }
         }
 
-        h2 {
-            width: 35vw;
-            text-align: center;
-        }
-
+        /* Estilos de los párrafos */
         .parrafos {
             width: 65vw;
             display: flex;
@@ -37,6 +44,7 @@
         }
     }
 
+    /* Bucle for para asignar colores de fondo a las secciones internas */
     @for $i from 1 through 3 {
         .section-#{$i} {
             background-color: map-get($bgColors, $i);
@@ -44,22 +52,26 @@
     }
 }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
     .main__queesoma {
     
         section {
 
+            /* Ajustes en el tamaño del título h2 para pantallas medianas */
             h2 {
                 font-size: 1.5rem;
             }
 
-            h4{
+            /* Ajustes en el tamaño del subtítulo h3 para pantallas medianas */
+            h3{
                 font-size: 1.2rem;
             }
         }
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas (max-width: 767px) */
 @media screen and (max-width: 767px) {
     .main__queesoma {
 
@@ -67,16 +79,19 @@
             display: flex;
             flex-direction: column;
 
+            /* Ajustes en la última sección para pantallas pequeñas */
             .section-especial {
                 width: 100vw;
             }
-    
+            
+            /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
             h2 {
                 width: 100vw;
                 padding: 0 2rem;
             }
 
-            h4{
+            /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */
+            h3{
                 padding-top: 1rem;
             }
     

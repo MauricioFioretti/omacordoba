@@ -1,24 +1,33 @@
+@charset "UTF-8";
+/* Definición de variables de color */
+/* Gradiente para el fondo del footer */
+/* Mapa de colores */
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* Estilos del cuerpo de la página */
 body {
   overflow-x: hidden;
   min-height: 100vh;
+  /* Definición de grid */
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
+  /* Definición de las áreas del grid */
   grid-template-areas: "header" "main" "footer"; }
 
-html {
-  width: 100%; }
-
+/* Estilos del encabezado */
 header {
   grid-area: header;
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-areas: "header__logo header__titulo header__nav"; }
+  grid-template-areas: "header__logo header__titulo header__nav";
+  /* Estilos del logo en el encabezado */
+  /* Estilos del título en el encabezado */
+  /* Estilos del nav en el encabezado */ }
   header .header__logo {
     grid-area: header__logo;
     margin-top: 0.5rem;
@@ -30,7 +39,9 @@ header {
     grid-area: header__titulo;
     height: 100%;
     text-align: left;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    /* Estilos de la clase "secretaria" dentro del título */
+    /* Estilos de la clase "olimpiadas" dentro del título */ }
     header .header__titulo .secretaria {
       font-size: 2rem;
       font-weight: 600; }
@@ -41,51 +52,63 @@ header {
     font-size: 15px;
     font-weight: 700;
     grid-area: header__nav;
-    background-color: white; }
-    header .header__nav .header__menu .header__menu-item .header__menu-link {
-      color: #0096DA;
-      transition: 100ms; }
-      header .header__nav .header__menu .header__menu-item .header__menu-link:hover {
-        color: white;
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #006794;
-        border: none;
-        border-radius: 50px; }
-    header .header__nav .header__menu .header__menu-item .header__menu-subitem {
-      color: #0096DA;
-      cursor: pointer;
-      padding-left: 10px;
-      position: relative;
-      background-color: white; }
-    header .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #0096DA;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 300ms ease-in; }
-    header .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
-      transform: scaleX(1);
-      transform-origin: left; }
+    background-color: white;
+    /* Estilos del menú en el nav */ }
+    header .header__nav .header__menu {
+      /* Estilos de los elementos del menú en el nav */ }
+      header .header__nav .header__menu .header__menu-item {
+        /* Estilos de los enlaces del menú en el nav */
+        /* Estilos de los subelementos del menú en el nav */
+        /* Estilos del efecto de resaltado en los subelementos del menú */ }
+        header .header__nav .header__menu .header__menu-item .header__menu-link {
+          color: #0096DA;
+          transition: 100ms; }
+          header .header__nav .header__menu .header__menu-item .header__menu-link:hover {
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006794;
+            border: none;
+            border-radius: 50px; }
+        header .header__nav .header__menu .header__menu-item .header__menu-subitem {
+          color: #0096DA;
+          cursor: pointer;
+          padding-left: 10px;
+          position: relative;
+          background-color: white; }
+        header .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #0096DA;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 300ms ease-in; }
+        header .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
+          transform: scaleX(1);
+          transform-origin: left; }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
   header {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "header__logo header__titulo" "header__nav header__nav"; }
+    grid-template-areas: "header__logo header__titulo" "header__nav header__nav";
+    /* Alineación centrada del título en pantallas medianas */ }
     header .header__titulo {
       text-align: center; } }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   header {
     padding-top: 2rem;
     grid-template-columns: 1fr auto;
-    grid-template-areas: "header__nav header__logo"; }
+    grid-template-areas: "header__nav header__logo";
+    /* Ocultar título en pantallas pequeñas */
+    /* Ajustes en el tamaño del logo en pantallas pequeñas */ }
     header .header__titulo {
       display: none; }
     header .header__logo {
@@ -93,13 +116,17 @@ header {
       margin-top: 0; }
     header .header__nav {
       font-size: 1.3rem;
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      /* Estilos del nav en pantallas pequeñas */ }
       header .header__nav .navbar-toggler-icon {
         width: 3rem;
         height: 3rem; }
-      header .header__nav .header__menu .header__menu-item .header__menu-subitem {
-        font-size: 1.4rem; } }
+      header .header__nav .header__menu .header__menu-item {
+        /* Estilos de los subelementos del menú en el nav en pantallas pequeñas */ }
+        header .header__nav .header__menu .header__menu-item .header__menu-subitem {
+          font-size: 1.4rem; } }
 
+/* Estilos del pie de página */
 footer {
   display: grid;
   grid-template-columns: 1fr auto 1.3fr;
@@ -110,13 +137,17 @@ footer {
   font-size: 1.3rem;
   line-height: 0.8;
   font-weight: 300;
-  background: linear-gradient(90deg, #012a3d, #016794, #0096db, #3f87a6); }
+  background: linear-gradient(90deg, #012a3d, #016794, #0096db, #3f87a6);
+  /* Estilos del contenido izquierdo del pie de página */
+  /* Estilos de la línea vertical del pie de página */
+  /* Estilos del contenido derecho del pie de página */ }
   footer .footer__izq {
     grid-area: izq-footer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding-left: 5%; }
+    padding-left: 5%;
+    /* Estilos del logo izquierdo del pie de página */ }
     footer .footer__izq .footer__logo-izq {
       width: 45%; }
   footer .footer__line {
@@ -132,7 +163,14 @@ footer {
     position: relative;
     grid-template-rows: 1fr auto 0.1fr auto 0.1fr auto 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "espacio espacio espacio" "datosContacto datosContacto datosContacto" "espacio2 espacio2 espacio2" "correo correo correo" "espacio2 espacio2 espacio2" "iconos iconos iconos" "espacio3 espacio3 logo"; }
+    grid-template-areas: "espacio espacio espacio" "datosContacto datosContacto datosContacto" "espacio2 espacio2 espacio2" "correo correo correo" "espacio2 espacio2 espacio2" "iconos iconos iconos" "espacio3 espacio3 logo";
+    /* Espacio vacío */
+    /* Datos de contacto */
+    /* Espacio vacío 2 */
+    /* Correo de contacto */
+    /* Iconos de redes sociales */
+    /* Espacio vacío 3 */
+    /* Logo del pie de página */ }
     footer .footer__der .espacio {
       grid-area: datosContacto;
       height: 30vh; }
@@ -158,12 +196,15 @@ footer {
       footer .footer__der .logo img {
         width: 25rem; }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
   footer {
     grid-template-columns: 1fr;
     grid-template-areas: "der-footer";
     font-size: 1rem;
-    font-weight: 400; }
+    font-weight: 400;
+    /* Ocultar contenido izquierdo en pantallas medianas */
+    /* Ocultar línea vertical en pantallas medianas */ }
     footer .footer__izq {
       display: none; }
     footer .footer__line {
@@ -171,12 +212,15 @@ footer {
     footer .footer__der .logo img {
       width: 20rem; } }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   footer {
     grid-template-columns: 1fr;
     grid-template-areas: "der-footer";
     font-size: 1rem;
-    font-weight: 400; }
+    font-weight: 400;
+    /* Ocultar contenido izquierdo en pantallas medianas */
+    /* Ocultar línea vertical en pantallas pequeñas */ }
     footer .footer__izq {
       display: none; }
     footer .footer__line {
@@ -184,8 +228,16 @@ footer {
     footer .footer__der {
       text-align: center;
       margin: 0;
+      /* Definición del sistema de grillas internas en pantallas pequeñas */
       grid-template-rows: 1fr auto 0.1fr auto 0.1fr auto;
-      grid-template-areas: "espacio espacio espacio" "datosContacto datosContacto datosContacto" "espacio2 espacio2 espacio2" "correo correo correo" "espacio2 espacio2 espacio2" "iconos iconos iconos"; }
+      grid-template-areas: "espacio espacio espacio" "datosContacto datosContacto datosContacto" "espacio2 espacio2 espacio2" "correo correo correo" "espacio2 espacio2 espacio2" "iconos iconos iconos";
+      /* Espacio vacío */
+      /* Datos de contacto */
+      /* Espacio vacío 2 */
+      /* Correo de contacto */
+      /* Iconos de redes sociales */
+      /* Ocultar espacio vacío 3 en pantallas pequeñas */
+      /* Ocultar logo en pantallas pequeñas */ }
       footer .footer__der .espacio {
         grid-area: datosContacto;
         height: 30vh; }
@@ -208,85 +260,41 @@ footer {
       footer .footer__der .logo {
         display: none; } }
 
-/*.footer__der {
-        color: #fff;
-        grid-area: der-footer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        position: relative;
-
-        .text-group {
-            margin-left: 20px;
-        }
-
-        .separator {
-            margin-top: 20px;
-        }
-
-        .icon-group {
-            align-items: center;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-
-        .footer__logo-der {
-            position: relative;
-            bottom: 0;
-            right: 0;
-            img{
-                width: 20%;
-            }
-            
-        }*/
-/*.footer__logo-der {
-            background-color: black;
-            display: flex;
-
-
-            align-items: flex-end;
-            justify-content: flex-start;
-            bottom: 0;
-            right: 0;
-
-            img {
-                width: 100%;
-                bottom: 0;
-                right: 0;
-            }
-        }*/
-/*display: grid;
-
-        .footer__logo-der {
-            align-self: end;
-            justify-self: end;
-            width: 50%;
-        }*/
+/* Estilos de la página principal */
 .main__index {
   padding-bottom: 3rem;
   text-align: center;
-  grid-area: main; }
+  grid-area: main;
+  /* Estilos de la sección del hero */
+  /* Estilos de las secciones internas */
+  /* Estilos de la sección de iconos */ }
   .main__index .herojojo {
     position: relative;
     background-color: black;
-    opacity: 1; }
+    opacity: 1;
+    /* Estilos de la imagen del hero */ }
     .main__index .herojojo .hero {
       width: 100vw;
       height: 100vh;
       object-fit: cover;
       background-color: black;
       opacity: 1; }
-  .main__index section article {
-    padding: 2rem; }
-    .main__index section article iframe {
-      height: 30vw;
-      width: 50vw; }
+  .main__index section {
+    /* Estilos de los artículos */ }
+    .main__index section article {
+      padding: 2rem;
+      /* Estilos del iframe */ }
+      .main__index section article iframe {
+        height: 30vw;
+        width: 50vw; }
   .main__index .main__iconos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 2fr 2fr;
-    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri"; }
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+    /* Estilos de los enlaces */
+    /* Estilos del título de los iconos */
+    /* Definición de las áres de los iconos */ }
     .main__index .main__iconos a img {
       width: 200px; }
     .main__index .main__iconos .main__iconos-titulo {
@@ -308,51 +316,72 @@ footer {
     .main__index .main__iconos .main__iconos-logoolimpri {
       grid-area: main__iconos-logoolimpri; }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 800px) {
-  .main__index .main__iconos {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto repeat(2, 1fr);
-    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri"; }
-    .main__index .main__iconos a img {
-      width: 130px; } }
+  .main__index {
+    /* Ajustes en la disposición de los iconos para pantallas pequeñas */ }
+    .main__index .main__iconos {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto repeat(2, 1fr);
+      grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+      /* Ajustes en el ancho de las imágenes de los iconos para pantallas pequeñas */ }
+      .main__index .main__iconos a img {
+        width: 130px; } }
 
+/* Estilos responsivos para pantallas más pequeñas */
 @media screen and (max-width: 550px) {
-  .main__index .main__iconos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(4, 1fr);
-    grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri"; }
-    .main__index .main__iconos a img {
-      width: 170px; } }
+  .main__index {
+    /* Ajustes en la disposición de los iconos para pantallas más pequeñas */ }
+    .main__index .main__iconos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto repeat(4, 1fr);
+      grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri";
+      /* Ajustes en el ancho de las imágenes de los iconos para pantallas más pequeñas */ }
+      .main__index .main__iconos a img {
+        width: 170px; } }
 
+/* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
-  .main__index .main__iconos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(4, 2fr);
-    grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri"; }
-    .main__index .main__iconos a img {
-      width: 145px; } }
+  .main__index {
+    /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */ }
+    .main__index .main__iconos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto repeat(4, 2fr);
+      grid-template-areas: "main__iconos-titulo main__iconos-titulo"  "main__iconos-logomateclubes main__iconos-logonandu"  "main__iconos-logolym main__iconos-logotorngeoeimag"  "main__iconos-logointernacionales main__iconos-logoolimmayo"  "main__iconos-logocanguro main__iconos-logoolimpri";
+      /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */ }
+      .main__index .main__iconos a img {
+        width: 145px; } }
 
+/* Estilos del main competencias */
 .main__competencias {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* Estilos de cada sección de competencia */
+  /* Ajustes de margen para la primera y última sección de competencia */ }
   .main__competencias .main__section-competencia {
     margin-top: 7rem;
     display: flex;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    /* Estilos de las imagenes en la sección de competencia */
+    /* Estilos del título y la descripción de cada una de las competencias */ }
     .main__competencias .main__section-competencia img {
       width: 20rem; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      /* Estilos del título de cada una de las competencias */
+      /* Estilos de la descripción de cada una de las competencias */
+      /* Estilos de los botones en la sección de competencia */ }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
         width: 30rem; }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
         width: 30rem; }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         display: block;
-        margin-top: 10px; }
+        margin-top: 10px;
+        /* Estilos del enlace dentro del botón */ }
         .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
           text-decoration: none;
           color: white; }
@@ -361,6 +390,7 @@ footer {
   .main__competencias .main__section-competencia:last-child {
     margin-bottom: 3rem; }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 992px) and (max-width: 1263px) {
   .main__competencias {
     margin-left: -12rem; } }
@@ -369,27 +399,24 @@ footer {
   .main__competencias {
     margin-left: -5rem; } }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 869px) {
-  .main__competencias .main__section-competencia {
-    flex-direction: column; } }
-
-@media screen and (max-width: 540px) {
-  .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-    align-items: center; }
-    .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
-      max-width: 90vw; }
-    .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
-      max-width: 80vw; }
-    .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
-      width: 70vw; } }
+  .main__competencias {
+    /* Ajustes en la dirección de flexión para las secciones de competencia */ }
+    .main__competencias .main__section-competencia {
+      flex-direction: column; } }
 
 @media screen and (max-width: 540px) {
   .main__competencias .main__section-competencia {
-    flex-direction: column; }
+    /* Ajustes en el tamaño de la imagen para pantallas pequeñas */
+    /* Ajustes en la alineación de los elementos en la sección de competencia */ }
     .main__competencias .main__section-competencia img {
       width: 50vw; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-      align-items: center; }
+      align-items: center;
+      /* Ajustes en el ancho máximo del título para pantallas pequeñas */
+      /* Ajustes en el ancho máximo de la descripción para pantallas pequeñas */
+      /* Ajustes en el ancho del botón para pantallas pequeñas */ }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
         max-width: 90vw; }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
@@ -397,41 +424,56 @@ footer {
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         width: 70vw; } }
 
-.main__enqueparticipo section {
-  text-align: center;
-  padding: 0 3rem; }
-
-.main__enqueparticipo img {
-  max-width: 100%; }
-
-@media screen and (max-width: 767px) {
+/* Estilos del main "En qué participo" */
+.main__enqueparticipo {
+  /* Estilos de las secciones internas */
+  /* Estilos de las imágenes */ }
   .main__enqueparticipo section {
     text-align: center;
-    padding: 0 3rem;
-    font-size: 0.7rem; }
+    padding: 0 3rem; }
   .main__enqueparticipo img {
-    max-width: auto; } }
+    max-width: 100%; }
 
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .main__enqueparticipo {
+    /* Ajustes en las secciones internas para pantallas pequeñas */
+    /* Ajustes en el ancho máximo de las imágenes para pantallas pequeñas */ }
+    .main__enqueparticipo section {
+      text-align: center;
+      padding: 0 3rem;
+      font-size: 0.7rem; }
+    .main__enqueparticipo img {
+      max-width: auto; } }
+
+/* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
   display: flex;
   flex-direction: column;
-  color: white; }
+  color: white;
+  /* Estilos de las secciones internas */
+  /* Bucle for para asignar colores de fondo a las secciones internas */ }
   .main__queesoma section {
     display: flex;
     padding: 2rem;
-    align-items: center; }
-    .main__queesoma section h4 {
+    align-items: center;
+    /* Estilos del título h2 */
+    /* Estilos del subtítulo h3 */
+    /* Estilos de la última sección */
+    /* Estilos de los párrafos */ }
+    .main__queesoma section h2 {
+      width: 35vw;
+      text-align: center; }
+    .main__queesoma section h3 {
       font-size: 1.5rem; }
     .main__queesoma section .section-especial {
       display: flex;
       flex-direction: column;
       width: 33vw;
-      align-items: center; }
+      align-items: center;
+      /* Estilos del botón */ }
       .main__queesoma section .section-especial .btn {
         width: auto; }
-    .main__queesoma section h2 {
-      width: 35vw;
-      text-align: center; }
     .main__queesoma section .parrafos {
       width: 65vw;
       display: flex;
@@ -444,32 +486,42 @@ footer {
   .main__queesoma .section-3 {
     background-color: #012A3D; }
 
+/* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
-  .main__queesoma section h2 {
-    font-size: 1.5rem; }
-  .main__queesoma section h4 {
-    font-size: 1.2rem; } }
+  .main__queesoma section {
+    /* Ajustes en el tamaño del título h2 para pantallas medianas */
+    /* Ajustes en el tamaño del subtítulo h3 para pantallas medianas */ }
+    .main__queesoma section h2 {
+      font-size: 1.5rem; }
+    .main__queesoma section h3 {
+      font-size: 1.2rem; } }
 
+/* Estilos responsivos para pantallas pequeñas (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .main__queesoma section {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    /* Ajustes en la última sección para pantallas pequeñas */
+    /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
+    /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */ }
     .main__queesoma section .section-especial {
       width: 100vw; }
     .main__queesoma section h2 {
       width: 100vw;
       padding: 0 2rem; }
-    .main__queesoma section h4 {
+    .main__queesoma section h3 {
       padding-top: 1rem; }
     .main__queesoma section .parrafos {
       width: 100vw;
       padding: 1rem 2rem 0 2rem;
       text-align: center; } }
 
+/* Estilos de la página "Secretarias Córdoba" */
 .main__secretariascordoba {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* Estilos del acordeón */ }
   .main__secretariascordoba .accordion {
     width: 50vw; }
   .main__secretariascordoba section article iframe {
@@ -477,9 +529,12 @@ footer {
     width: 70vw;
     height: 86vh; }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
-  .main__secretariascordoba .accordion {
-    width: 80vw; }
-  .main__secretariascordoba section article iframe {
-    width: 80vw;
-    height: 70vh; } }
+  .main__secretariascordoba {
+    /* Ajustes en el ancho del acordeón para pantallas pequeñas */ }
+    .main__secretariascordoba .accordion {
+      width: 80vw; }
+    .main__secretariascordoba section article iframe {
+      width: 80vw;
+      height: 70vh; } }

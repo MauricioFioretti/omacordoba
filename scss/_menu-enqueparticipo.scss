@@ -1,22 +1,30 @@
+/* Estilos del main "En qué participo" */
 .main__enqueparticipo{
+
+    /* Estilos de las secciones internas */
     section{
         text-align: center;
         padding: 0 3rem;
     }
 
+    /* Estilos de las imágenes */
     img{
         max-width: 100%;
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
     .main__enqueparticipo{
+
+        /* Ajustes en las secciones internas para pantallas pequeñas */
         section{
             text-align: center;
             padding: 0 3rem;
             font-size: 0.7rem;
         }
-    
+        
+        /* Ajustes en el ancho máximo de las imágenes para pantallas pequeñas */
         img{
             max-width: auto;
         }
