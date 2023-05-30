@@ -446,6 +446,29 @@ footer {
     .main__enqueparticipo img {
       max-width: auto; } }
 
+.main__lenitas .main__hero img {
+  width: 100vw; }
+
+.main__lenitas .main__textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main__lenitas .main__textos h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0; }
+  .main__lenitas .main__textos h2 {
+    width: 80vw;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5rem 3.5rem; }
+    .main__lenitas .main__textos h2 .enfasis-lenita {
+      color: #90278F; }
+  .main__lenitas .main__textos p {
+    text-align: center;
+    width: 80vw;
+    font-size: 0.9rem; }
+
 /* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
   display: flex;

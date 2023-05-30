@@ -1,0 +1,34 @@
+.main__lenitas{
+    .main__hero{
+        img{
+            width: 100vw;
+        }
+    }
+
+    .main__textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        h2{
+            .enfasis-lenita{
+                color: $LetraLenitas;
+            }
+            width: 80vw;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 5rem 3.5rem;
+        }
+
+        p{
+            text-align: center;
+            width: 80vw;
+            font-size: 0.9rem;
+        }
+    }
+}
