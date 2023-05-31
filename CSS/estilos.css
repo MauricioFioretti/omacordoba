@@ -468,6 +468,50 @@ footer {
     text-align: center;
     width: 80vw;
     font-size: 0.9rem; }
+  .main__lenitas .main__textos .ultimo {
+    color: #c0145c;
+    font-weight: 500; }
+
+.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .main__lenitas .lista-lenitas h2, .main__lenitas .main__lista-lenitas-2021 h2, .main__lenitas .main__lista-lenitas-2022 h2, .main__lenitas .main__lista-lenitas-2023 h2 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    width: 80vw;
+    align-self: center;
+    text-align: left; }
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    list-style-type: none; }
+    .main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a {
+      text-decoration: none;
+      color: black; }
+      .main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+        font-weight: 900; }
+
+.main__lenitas .main__lista-lenitas-2021 h2 {
+  color: #D43377; }
+
+.main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+  color: #EB79A9; }
+
+.main__lenitas .main__lista-lenitas-2022 h2 {
+  color: #5590ff; }
+
+.main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
+  color: #729ae9; }
+
+.main__lenitas .main__lista-lenitas-2023 {
+  margin-bottom: 10rem; }
+  .main__lenitas .main__lista-lenitas-2023 h2 {
+    color: #ffa352; }
+  .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+    color: #e7a66e; }
 
 /* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {

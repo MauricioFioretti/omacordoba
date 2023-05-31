@@ -1,34 +1,138 @@
-.main__lenitas{
-    .main__hero{
-        img{
+.main__lenitas {
+    .main__hero {
+        img {
             width: 100vw;
         }
     }
 
-    .main__textos{
+    .main__textos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 1.5rem;
             padding: 2rem 0;
         }
 
-        h2{
-            .enfasis-lenita{
+        h2 {
+            .enfasis-lenita {
                 color: $LetraLenitas;
             }
+
             width: 80vw;
             font-size: 1.5rem;
             text-align: center;
             padding: 5rem 3.5rem;
         }
 
-        p{
+        p {
             text-align: center;
             width: 80vw;
             font-size: 0.9rem;
+        }
+
+        .ultimo{
+            color: #c0145c;
+            font-weight: 500;
+        }
+
+    }
+
+    .lista-lenitas{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h2 {
+            margin-bottom: 1rem;
+            font-weight: 900;
+            width: 80vw;
+            align-self: center;
+            text-align: left; 
+        }
+
+        div {
+            ol {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+
+                list-style-type: none;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    li {
+                        .color-numero {
+                            font-weight: 900;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .main__lista-lenitas-2021{
+        @extend .lista-lenitas;
+
+        h2{
+            color: $LetraYear1;
+        }
+
+        div{
+            ol{
+                a{
+                    li{
+                        .color-numero{
+                            color: $LetraNumero1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main__lista-lenitas-2022{
+        @extend .lista-lenitas;
+
+        h2{
+            color: $LetraYear2;
+        }
+
+        div{
+            ol{
+                a{
+                    li{
+                        .color-numero{
+                            color: $LetraNumero2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main__lista-lenitas-2023{
+        @extend .lista-lenitas;
+        margin-bottom: 10rem;
+
+        h2{
+            color: $LetraYear3;
+        }
+
+        div{
+            ol{
+                a{
+                    li{
+                        .color-numero{
+                            color: $LetraNumero3;
+                        }
+                    }
+                }
+            }
         }
     }
 }
