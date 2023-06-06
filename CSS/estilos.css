@@ -328,6 +328,19 @@ footer {
       .main__index .main__iconos a img {
         width: 145px; } }
 
+.main__apuntes .parrafos {
+  padding-top: 3rem;
+  text-align: center; }
+  .main__apuntes .parrafos h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  .main__apuntes .parrafos p {
+    padding: 0 3rem; }
+  .main__apuntes .parrafos .especial {
+    color: red; }
+    .main__apuntes .parrafos .especial span {
+      font-weight: 700; }
+
 /* Estilos del main competencias */
 .main__competencias {
   display: flex;

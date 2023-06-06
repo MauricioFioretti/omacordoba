@@ -1,0 +1,21 @@
+.main__apuntes{ 
+    .parrafos{
+        padding-top: 3rem;
+        text-align: center;
+        h1{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        p{
+            padding: 0 3rem;
+        }
+
+        .especial{
+            color: red;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
