@@ -226,7 +226,7 @@ footer {
       /* Ocultar logo en pantallas pequeñas */ }
       footer .footer__der .datosContacto {
         line-height: 1.6; }
-      footer .footer__der .correo-oma {
+      footer .footer__der .correo {
         line-height: 1.2;
         padding: 4rem 0;
         overflow: hidden;
@@ -428,33 +428,30 @@ footer {
 .main__lenitas .main__textos {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5rem 3.5rem; }
   .main__lenitas .main__textos h1 {
     text-align: center;
     font-size: 1.5rem;
     padding: 2rem 0; }
-  .main__lenitas .main__textos h2 {
-    width: 80vw;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5rem 3.5rem; }
-    .main__lenitas .main__textos h2 .enfasis-lenita {
-      color: #90278F; }
+  .main__lenitas .main__textos h2 .enfasis-lenita {
+    color: #90278F;
+    text-align: center; }
   .main__lenitas .main__textos p {
     text-align: center;
-    width: 80vw;
     font-size: 0.9rem; }
   .main__lenitas .main__textos .ultimo {
     color: #c0145c;
     font-weight: 500; }
 
 .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin: 6rem 0;
   display: flex;
   flex-direction: column;
   text-align: center; }
-  .main__lenitas .lista-lenitas h2, .main__lenitas .main__lista-lenitas-2021 h2, .main__lenitas .main__lista-lenitas-2022 h2, .main__lenitas .main__lista-lenitas-2023 h2 {
+  .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
     margin-bottom: 1rem;
     font-weight: 900;
     width: 80vw;
@@ -462,7 +459,11 @@ footer {
     text-align: left; }
   .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(3, minmax(18rem, 1fr));
+    justify-items: start;
+    gap: 10px;
+    text-align: center;
+    margin: 0 10vw;
     list-style-type: none; }
     .main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a {
       text-decoration: none;
@@ -470,13 +471,13 @@ footer {
       .main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
         font-weight: 900; }
 
-.main__lenitas .main__lista-lenitas-2021 h2 {
+.main__lenitas .main__lista-lenitas-2021 .color-year {
   color: #D43377; }
 
 .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
   color: #EB79A9; }
 
-.main__lenitas .main__lista-lenitas-2022 h2 {
+.main__lenitas .main__lista-lenitas-2022 .color-year {
   color: #5590ff; }
 
 .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
@@ -484,10 +485,41 @@ footer {
 
 .main__lenitas .main__lista-lenitas-2023 {
   margin-bottom: 10rem; }
-  .main__lenitas .main__lista-lenitas-2023 h2 {
+  .main__lenitas .main__lista-lenitas-2023 .color-year {
     color: #ffa352; }
   .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
     color: #e7a66e; }
+
+@media (max-width: 900px) {
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+    grid-template-columns: repeat(2, minmax(18rem, 1fr)); } }
+
+@media (max-width: 568px) {
+  .main__lenitas .main__textos {
+    font-size: 1rem;
+    padding: 0; }
+    .main__lenitas .main__textos h1 {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      padding-top: 3rem; }
+    .main__lenitas .main__textos h2 {
+      padding: 1rem; }
+    .main__lenitas .main__textos p {
+      padding: 1rem 1.5rem; }
+    .main__lenitas .main__textos .ultimo {
+      padding-bottom: 0; }
+  .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
+    margin: 2rem 0; }
+    .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
+      text-align: center;
+      padding-bottom: 1rem; }
+    .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
 
 /* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
