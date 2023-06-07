@@ -328,18 +328,29 @@ footer {
       .main__index .main__iconos a img {
         width: 145px; } }
 
-.main__apuntes .parrafos {
-  padding-top: 3rem;
+.main__apuntes {
   text-align: center; }
-  .main__apuntes .parrafos h1 {
-    font-size: 2rem;
-    padding-bottom: 1rem; }
-  .main__apuntes .parrafos p {
-    padding: 0 3rem; }
-  .main__apuntes .parrafos .especial {
-    color: red; }
-    .main__apuntes .parrafos .especial span {
-      font-weight: 700; }
+  .main__apuntes .parrafos {
+    padding-top: 3rem;
+    text-align: center; }
+    .main__apuntes .parrafos h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem; }
+    .main__apuntes .parrafos p {
+      padding: 0 3rem; }
+    .main__apuntes .parrafos .especial {
+      color: red; }
+      .main__apuntes .parrafos .especial span {
+        font-weight: 700; }
+  .main__apuntes section h2 {
+    padding: 2rem 0; }
+  .main__apuntes section .conteinter-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .main__apuntes section .card {
+    width: 18rem;
+    margin: 0.5rem; }
 
 /* Estilos del main competencias */
 .main__competencias {

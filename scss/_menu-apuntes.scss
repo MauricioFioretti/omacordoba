@@ -1,21 +1,42 @@
-.main__apuntes{ 
-    .parrafos{
+.main__apuntes {
+    .parrafos {
         padding-top: 3rem;
         text-align: center;
-        h1{
+
+        h1 {
             font-size: 2rem;
             padding-bottom: 1rem;
         }
 
-        p{
+        p {
             padding: 0 3rem;
         }
 
-        .especial{
+        .especial {
             color: red;
-            span{
+
+            span {
                 font-weight: 700;
             }
+        }
+    }
+
+    text-align: center;
+
+    section {
+        h2 {
+            padding: 2rem 0;
+        }
+
+        .conteinter-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 18rem;
+            margin: 0.5rem;
         }
     }
 }
