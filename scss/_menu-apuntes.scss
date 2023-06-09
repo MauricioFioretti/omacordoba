@@ -27,16 +27,18 @@
         h2 {
             padding: 2rem 0;
         }
-
-        .conteinter-cards {
+        
+        .container-cards {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
+            .card {
+                width: 18rem;
+                margin: 0.5rem;
+            }
         }
 
-        .card {
-            width: 18rem;
-            margin: 0.5rem;
-        }
+        
     }
 }

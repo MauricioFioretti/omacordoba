@@ -1,0 +1,38 @@
+.main__libros {
+    .compra__libros {
+        padding-top: 3rem;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            padding: 0 3rem;
+        }        
+
+        a {
+            padding: auto;
+        }
+    }
+
+    text-align: center;
+
+    section {
+        h2 {
+            padding: 2rem 0;
+        }
+
+        .container-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .card {
+                width: 20rem;
+                margin: 0.5rem;
+            }
+        }
+    }
+}

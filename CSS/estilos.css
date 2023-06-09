@@ -344,13 +344,13 @@ footer {
         font-weight: 700; }
   .main__apuntes section h2 {
     padding: 2rem 0; }
-  .main__apuntes section .conteinter-cards {
+  .main__apuntes section .container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-  .main__apuntes section .card {
-    width: 18rem;
-    margin: 0.5rem; }
+    .main__apuntes section .container-cards .card {
+      width: 18rem;
+      margin: 0.5rem; }
 
 /* Estilos del main competencias */
 .main__competencias {
@@ -544,6 +544,28 @@ footer {
       display: flex;
       flex-direction: column;
       text-align: center; } }
+
+.main__libros {
+  text-align: center; }
+  .main__libros .compra__libros {
+    padding-top: 3rem;
+    text-align: center; }
+    .main__libros .compra__libros h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem; }
+    .main__libros .compra__libros p {
+      padding: 0 3rem; }
+    .main__libros .compra__libros a {
+      padding: auto; }
+  .main__libros section h2 {
+    padding: 2rem 0; }
+  .main__libros section .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main__libros section .container-cards .card {
+      width: 20rem;
+      margin: 0.5rem; }
 
 /* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
