@@ -19,7 +19,7 @@ body {
   grid-template-areas: "header" "main" "footer"; }
 
 /* Estilos del encabezado */
-header {
+.header__desktop, .header__mobile {
   grid-area: header;
   font-family: 'Montserrat', sans-serif;
   display: grid;
@@ -28,12 +28,12 @@ header {
   /* Estilos del logo en el encabezado */
   /* Estilos del título en el encabezado */
   /* Estilos del nav en el encabezado */ }
-  header .header__logo {
+  .header__desktop .header__logo, .header__mobile .header__logo {
     grid-area: header__logo;
     margin-top: 0.5rem;
     width: 7.5rem;
     background-color: white; }
-  header .header__titulo {
+  .header__desktop .header__titulo, .header__mobile .header__titulo {
     padding-left: 2rem;
     background-color: white;
     grid-area: header__titulo;
@@ -42,41 +42,41 @@ header {
     padding-top: 2rem;
     /* Estilos de la clase "secretaria" dentro del título */
     /* Estilos de la clase "olimpiadas" dentro del título */ }
-    header .header__titulo .secretaria {
+    .header__desktop .header__titulo .secretaria, .header__mobile .header__titulo .secretaria {
       font-size: 2rem;
       font-weight: 600; }
-    header .header__titulo .olimpiadas {
+    .header__desktop .header__titulo .olimpiadas, .header__mobile .header__titulo .olimpiadas {
       font-size: 1.5rem;
       font-weight: 500; }
-  header .header__nav {
+  .header__desktop .header__nav, .header__mobile .header__nav {
     font-size: 15px;
     font-weight: 700;
     grid-area: header__nav;
     background-color: white;
     /* Estilos del menú en el nav */ }
-    header .header__nav .header__menu {
+    .header__desktop .header__nav .header__menu, .header__mobile .header__nav .header__menu {
       /* Estilos de los elementos del menú en el nav */ }
-      header .header__nav .header__menu .header__menu-item {
+      .header__desktop .header__nav .header__menu .header__menu-item, .header__mobile .header__nav .header__menu .header__menu-item {
         /* Estilos de los enlaces del menú en el nav */
         /* Estilos de los subelementos del menú en el nav */
         /* Estilos del efecto de resaltado en los subelementos del menú */ }
-        header .header__nav .header__menu .header__menu-item .header__menu-link {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link {
           color: #0096DA;
           transition: 100ms; }
-          header .header__nav .header__menu .header__menu-item .header__menu-link:hover {
+          .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link:hover, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link:hover {
             color: white;
             display: inline-block;
             padding: 10px 20px;
             background-color: #006794;
             border: none;
             border-radius: 50px; }
-        header .header__nav .header__menu .header__menu-item .header__menu-subitem {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
           color: #0096DA;
           cursor: pointer;
           padding-left: 10px;
           position: relative;
           background-color: white; }
-        header .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem::after, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
           content: "";
           position: absolute;
           left: 0;
@@ -87,44 +87,52 @@ header {
           transform: scaleX(0);
           transform-origin: right;
           transition: transform 300ms ease-in; }
-        header .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
           transform: scaleX(1);
           transform-origin: left; }
 
+.header__mobile {
+  display: none; }
+
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
-  header {
+  .header__mobile {
+    display: none; }
+  .header__desktop, .header__mobile {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "header__logo header__titulo" "header__nav header__nav";
     /* Alineación centrada del título en pantallas medianas */ }
-    header .header__titulo {
+    .header__desktop .header__titulo, .header__mobile .header__titulo {
       text-align: center; } }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
-  header {
+  .header__desktop {
+    display: none; }
+  .header__mobile {
+    display: grid;
     padding-top: 2rem;
     grid-template-columns: 1fr auto;
     grid-template-areas: "header__nav header__logo";
     /* Ocultar título en pantallas pequeñas */
     /* Ajustes en el tamaño del logo en pantallas pequeñas */ }
-    header .header__titulo {
+    .header__mobile .header__titulo {
       display: none; }
-    header .header__logo {
+    .header__mobile .header__logo {
       width: 120px;
       margin-top: 0; }
-    header .header__nav {
-      font-size: 1.3rem;
+    .header__mobile .header__nav {
+      font-size: 1rem;
       margin-left: 2rem;
       /* Estilos del nav en pantallas pequeñas */ }
-      header .header__nav .navbar-toggler-icon {
-        width: 3rem;
-        height: 3rem; }
-      header .header__nav .header__menu .header__menu-item {
+      .header__mobile .header__nav .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem; }
+      .header__mobile .header__nav .header__menu .header__menu-item {
         /* Estilos de los subelementos del menú en el nav en pantallas pequeñas */ }
-        header .header__nav .header__menu .header__menu-item .header__menu-subitem {
-          font-size: 1.4rem; } }
+        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
+          font-size: 1rem; } }
 
 /* Estilos del pie de página */
 footer {

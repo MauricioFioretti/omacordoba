@@ -1,5 +1,5 @@
 /* Estilos del encabezado */
-header {
+.header__desktop, .header__mobile{
     grid-area: header;
     font-family: 'Montserrat', sans-serif;
     display: grid;
@@ -46,8 +46,10 @@ header {
 
         /* Estilos del menú en el nav */
         .header__menu {
+
             /* Estilos de los elementos del menú en el nav */
             .header__menu-item {
+
                 /* Estilos de los enlaces del menú en el nav */
                 .header__menu-link {
                     color: $LetraAzul;
@@ -96,9 +98,17 @@ header {
     }
 }
 
+.header__mobile{
+    display: none;
+}
+
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
-    header {
+    .header__mobile{
+        display: none;
+    }
+
+    .header__desktop, .header__mobile {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
@@ -114,7 +124,13 @@ header {
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
-    header {
+
+    .header__desktop{
+        display: none;
+    }
+
+    .header__mobile {
+        display: grid;
         padding-top: 2rem;
         grid-template-columns: 1fr auto;
         grid-template-areas:
@@ -132,20 +148,21 @@ header {
         }
 
         .header__nav {
-            font-size: 1.3rem;
+            font-size: 1rem;
             margin-left: 2rem;
 
             /* Estilos del nav en pantallas pequeñas */
             .navbar-toggler-icon {
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
             }
 
             .header__menu {
                 .header__menu-item {
+
                     /* Estilos de los subelementos del menú en el nav en pantallas pequeñas */
                     .header__menu-subitem {
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                     }
                 }
             }
