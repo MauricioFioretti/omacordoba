@@ -144,7 +144,7 @@ footer {
   grid-template-areas: "izq-footer linea der-footer";
   grid-area: footer;
   height: auto;
-  width: 100vw;
+  width: 99%;
   color: white;
   font-size: 1.4rem;
   line-height: 0.8;
@@ -223,7 +223,7 @@ footer {
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   footer {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400; }
     footer .footer__der {
       display: flex;
