@@ -1,6 +1,8 @@
+/* Estilos del main contactos */
 .main__contactos {
     color: #fff;
 
+    /* Estilos del contenedor de todo el form incluido el título */
     .container {
         color: #fff;
         max-width: 1170px;
@@ -8,16 +10,18 @@
         margin-right: auto;
         padding: 1.5em;
 
-
-        .logo {
+        /* Estilos del título */
+        .titulo {
             text-align: center;
             font-size: 3em;
             color: black;
         }
 
+        /* Estilos del contenedor del form */
         .contact-wrapper {
             box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 
+            /* Estilos parte izquierda del formulario */
             .contact-form {
                 background: #222222;
 
@@ -68,7 +72,7 @@
                 }
             }
 
-            /* CONTACT INFO */
+            /* Estilos parte izquierda del formulario */
             .contact-info {
                 background: #000;
 
@@ -93,13 +97,7 @@
     }
 }
 
-// max = hasta
-
-// min = a partir 
-
-
-
-/* LARGE SIZE */
+/* Estilos responsivos para pantallas medianas */
 @media(min-width: 992px) {
 
     .main__contactos {
@@ -120,7 +118,7 @@
     }
 }
 
-/* LARGE SIZE */
+/* Estilos responsivos para pantallas pequeñas */
 @media(max-width: 568px) {
 
     .main__contactos {

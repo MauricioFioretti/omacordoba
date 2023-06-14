@@ -1,4 +1,4 @@
-/* Estilos del encabezado */
+/* Estilos del encabezado para desktop y tablet */
 .header__desktop, .header__mobile{
     grid-area: header;
     font-family: 'Montserrat', sans-serif;
@@ -123,12 +123,14 @@
 }
 
 /* Estilos responsivos para pantallas pequeñas */
+/* Estilos del encabezado para Mobile */
 @media screen and (max-width: 767px) {
 
     .header__desktop{
         display: none;
     }
 
+    /* Estilos del encabezado para Mobile */
     .header__mobile {
         display: grid;
         padding-top: 2rem;

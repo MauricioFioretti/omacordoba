@@ -18,7 +18,7 @@ body {
   /* Definición de las áreas del grid */
   grid-template-areas: "header" "main" "footer"; }
 
-/* Estilos del encabezado */
+/* Estilos del encabezado para desktop y tablet */
 .header__desktop, .header__mobile {
   grid-area: header;
   font-family: 'Montserrat', sans-serif;
@@ -107,9 +107,11 @@ body {
       text-align: center; } }
 
 /* Estilos responsivos para pantallas pequeñas */
+/* Estilos del encabezado para Mobile */
 @media screen and (max-width: 767px) {
   .header__desktop {
     display: none; }
+  /* Estilos del encabezado para Mobile */
   .header__mobile {
     display: grid;
     padding-top: 2rem;
@@ -336,7 +338,9 @@ footer {
       .main__index .main__iconos a img {
         width: 145px; } }
 
+/* Estilos del main apuntes */
 .main__apuntes {
+  /* Estilos para los párrafos */
   text-align: center; }
   .main__apuntes .parrafos {
     padding-top: 3rem;
@@ -350,15 +354,17 @@ footer {
       color: red; }
       .main__apuntes .parrafos .especial span {
         font-weight: 700; }
-  .main__apuntes section h2 {
-    padding: 2rem 0; }
-  .main__apuntes section .container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .main__apuntes section .container-cards .card {
-      width: 18rem;
-      margin: 0.5rem; }
+  .main__apuntes section {
+    /* Estilos para las cards de cada apunte */ }
+    .main__apuntes section h2 {
+      padding: 2rem 0; }
+    .main__apuntes section .container-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .main__apuntes section .container-cards .card {
+        width: 18rem;
+        margin: 0.5rem; }
 
 /* Estilos del main competencias */
 .main__competencias {
@@ -454,78 +460,81 @@ footer {
     .main__enqueparticipo img {
       max-width: auto; } }
 
-.main__lenitas .main__hero img {
-  width: 100vw; }
-
-.main__lenitas .main__textos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 5rem 3.5rem; }
-  .main__lenitas .main__textos h1 {
-    text-align: center;
+/* Estilos del main leñitas */
+.main__lenitas {
+  /* Estilos img principal */
+  /* Estilos de los párrafos */
+  /* Estilos generales de cada lista de leñitas de cada año */
+  /* Estilos leñitas del 2021 */
+  /* Estilos leñitas del 2022 */
+  /* Estilos leñitas del 2023 */ }
+  .main__lenitas .main__hero img {
+    width: 100vw; }
+  .main__lenitas .main__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.5rem;
-    padding: 2rem 0; }
-  .main__lenitas .main__textos h2 .enfasis-lenita {
-    color: #90278F;
+    text-align: center;
+    padding: 5rem 3.5rem; }
+    .main__lenitas .main__textos h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 2rem 0; }
+    .main__lenitas .main__textos h2 .enfasis-lenita {
+      color: #90278F;
+      text-align: center; }
+    .main__lenitas .main__textos p {
+      text-align: center;
+      font-size: 0.9rem; }
+    .main__lenitas .main__textos .ultimo {
+      color: #c0145c;
+      font-weight: 500; }
+  .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
     text-align: center; }
-  .main__lenitas .main__textos p {
-    text-align: center;
-    font-size: 0.9rem; }
-  .main__lenitas .main__textos .ultimo {
-    color: #c0145c;
-    font-weight: 500; }
+    .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
+      margin-bottom: 1rem;
+      font-weight: 900;
+      width: 80vw;
+      align-self: center;
+      text-align: left; }
+    .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(18rem, 1fr));
+      justify-items: start;
+      gap: 10px;
+      text-align: center;
+      margin: 0 10vw;
+      list-style-type: none; }
+      .main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a {
+        text-decoration: none;
+        color: black; }
+        .main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+          font-weight: 900; }
+  .main__lenitas .main__lista-lenitas-2021 .color-year {
+    color: #D43377; }
+  .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+    color: #EB79A9; }
+  .main__lenitas .main__lista-lenitas-2022 .color-year {
+    color: #5590ff; }
+  .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
+    color: #729ae9; }
+  .main__lenitas .main__lista-lenitas-2023 {
+    margin-bottom: 10rem; }
+    .main__lenitas .main__lista-lenitas-2023 .color-year {
+      color: #ffa352; }
+    .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+      color: #e7a66e; }
 
-.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
-  margin: 6rem 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-  .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
-    margin-bottom: 1rem;
-    font-weight: 900;
-    width: 80vw;
-    align-self: center;
-    text-align: left; }
-  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(18rem, 1fr));
-    justify-items: start;
-    gap: 10px;
-    text-align: center;
-    margin: 0 10vw;
-    list-style-type: none; }
-    .main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a {
-      text-decoration: none;
-      color: black; }
-      .main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
-        font-weight: 900; }
-
-.main__lenitas .main__lista-lenitas-2021 .color-year {
-  color: #D43377; }
-
-.main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
-  color: #EB79A9; }
-
-.main__lenitas .main__lista-lenitas-2022 .color-year {
-  color: #5590ff; }
-
-.main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
-  color: #729ae9; }
-
-.main__lenitas .main__lista-lenitas-2023 {
-  margin-bottom: 10rem; }
-  .main__lenitas .main__lista-lenitas-2023 .color-year {
-    color: #ffa352; }
-  .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
-    color: #e7a66e; }
-
+/* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
   .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
     grid-template-columns: repeat(2, minmax(18rem, 1fr)); } }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 568px) {
   .main__lenitas .main__textos {
     font-size: 1rem;
@@ -553,8 +562,11 @@ footer {
       flex-direction: column;
       text-align: center; } }
 
+/* Estilos del main competencias */
 .main__libros {
-  text-align: center; }
+  /* Estilos de los párrafos */
+  text-align: center;
+  /* Estilos de cada sección */ }
   .main__libros .compra__libros {
     padding-top: 3rem;
     text-align: center; }
@@ -565,15 +577,17 @@ footer {
       padding: 0 3rem; }
     .main__libros .compra__libros a {
       padding: auto; }
-  .main__libros section h2 {
-    padding: 2rem 0; }
-  .main__libros section .container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .main__libros section .container-cards .card {
-      width: 20rem;
-      margin: 0.5rem; }
+  .main__libros section {
+    /* Estilos de todas las cards con portadas de libros */ }
+    .main__libros section h2 {
+      padding: 2rem 0; }
+    .main__libros section .container-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .main__libros section .container-cards .card {
+        width: 20rem;
+        margin: 0.5rem; }
 
 /* Estilos de la página "¿Qué es OMA?" */
 .main__queesoma {
@@ -668,21 +682,26 @@ footer {
       width: 80vw;
       height: 70vh; } }
 
+/* Estilos del main contactos */
 .main__contactos {
-  color: #fff; }
+  color: #fff;
+  /* Estilos del contenedor de todo el form incluido el título */ }
   .main__contactos .container {
     color: #fff;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em; }
-    .main__contactos .container .logo {
+    padding: 1.5em;
+    /* Estilos del título */
+    /* Estilos del contenedor del form */ }
+    .main__contactos .container .titulo {
       text-align: center;
       font-size: 3em;
       color: black; }
     .main__contactos .container .contact-wrapper {
       box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-      /* CONTACT INFO */ }
+      /* Estilos parte izquierda del formulario */
+      /* Estilos parte izquierda del formulario */ }
       .main__contactos .container .contact-wrapper .contact-form {
         background: #222222; }
         .main__contactos .container .contact-wrapper .contact-form form {
@@ -729,7 +748,7 @@ footer {
     .main__contactos .container .contact-wrapper > * {
       padding: 1em; }
 
-/* LARGE SIZE */
+/* Estilos responsivos para pantallas medianas */
 @media (min-width: 992px) {
   .main__contactos .container .contact-wrapper {
     display: grid;
@@ -739,7 +758,7 @@ footer {
     .main__contactos .container .contact-wrapper .contact-info p {
       text-align: left; } }
 
-/* LARGE SIZE */
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 568px) {
   .main__contactos .container .contact-wrapper .contact-form form {
     display: flex;

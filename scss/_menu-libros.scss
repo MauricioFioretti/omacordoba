@@ -1,4 +1,7 @@
+/* Estilos del main competencias */
 .main__libros {
+
+    /* Estilos de los párrafos */
     .compra__libros {
         padding-top: 3rem;
         text-align: center;
@@ -19,11 +22,13 @@
 
     text-align: center;
 
+    /* Estilos de cada sección */
     section {
         h2 {
             padding: 2rem 0;
         }
-
+        
+        /* Estilos de todas las cards con portadas de libros */
         .container-cards {
             display: flex;
             flex-wrap: wrap;

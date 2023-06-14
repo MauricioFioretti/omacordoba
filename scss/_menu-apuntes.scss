@@ -1,4 +1,7 @@
+/* Estilos del main apuntes */
 .main__apuntes {
+
+    /* Estilos para los párrafos */
     .parrafos {
         padding-top: 3rem;
         text-align: center;
@@ -28,6 +31,7 @@
             padding: 2rem 0;
         }
         
+        /* Estilos para las cards de cada apunte */
         .container-cards {
             display: flex;
             flex-wrap: wrap;
@@ -38,7 +42,5 @@
                 margin: 0.5rem;
             }
         }
-
-        
     }
 }

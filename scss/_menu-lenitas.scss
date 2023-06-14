@@ -1,10 +1,14 @@
+/* Estilos del main leñitas */
 .main__lenitas {
+
+    /* Estilos img principal */
     .main__hero {
         img {
             width: 100vw;
         }
     }
 
+    /* Estilos de los párrafos */
     .main__textos {
         display: flex;
         flex-direction: column;
@@ -38,6 +42,7 @@
 
     }
 
+    /* Estilos generales de cada lista de leñitas de cada año */
     .lista-lenitas {
         margin: 6rem 0;
         display: flex;
@@ -79,6 +84,7 @@
         }
     }
 
+    /* Estilos leñitas del 2021 */
     .main__lista-lenitas-2021 {
         @extend .lista-lenitas;
 
@@ -100,6 +106,7 @@
         }
     }
 
+    /* Estilos leñitas del 2022 */
     .main__lista-lenitas-2022 {
         @extend .lista-lenitas;
 
@@ -120,6 +127,7 @@
         }
     }
 
+    /* Estilos leñitas del 2023 */
     .main__lista-lenitas-2023 {
         @extend .lista-lenitas;
         margin-bottom: 10rem;
@@ -142,6 +150,7 @@
     }
 }
 
+/* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
     .main__lenitas {
         .lista-lenitas {
@@ -154,6 +163,7 @@
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 568px) {
     .main__lenitas {
         .main__textos {
