@@ -1,10 +1,11 @@
 /* Estilos del main "En qué participo" */
-.main__enqueparticipo{
-
+.main__enqueparticipo{ 
+    grid-area: main;
+    
     /* Estilos de las secciones internas */
     section{
         text-align: center;
-        padding: 0 3rem;
+        padding: 1rem 3rem;
     }
 
     /* Estilos de las imágenes */

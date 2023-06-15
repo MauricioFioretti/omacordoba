@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     color: white;
+    grid-area: main;
 
     /* Estilos de las secciones internas */
     section {
@@ -12,12 +13,12 @@
 
         /* Estilos del título h2 */
         h2 {
-            width: 35vw;
+            width: 35%;
             text-align: center;
         }
 
         /* Estilos del subtítulo h3 */
-        h3{
+        h3 {
             font-size: 1.5rem;
         }
 
@@ -25,8 +26,12 @@
         .section-especial {
             display: flex;
             flex-direction: column;
-            width: 33vw;
+            width: 35%;
             align-items: center;
+
+            h2 {
+                width: auto;
+            }
 
             /* Estilos del botón */
             .btn {
@@ -36,7 +41,7 @@
 
         /* Estilos de los párrafos */
         .parrafos {
-            width: 65vw;
+            width: 65%;
             display: flex;
             flex-direction: column;
             padding: 10px;
@@ -55,7 +60,7 @@
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
     .main__queesoma {
-    
+
         section {
 
             /* Ajustes en el tamaño del título h2 para pantallas medianas */
@@ -64,7 +69,7 @@
             }
 
             /* Ajustes en el tamaño del subtítulo h3 para pantallas medianas */
-            h3{
+            h3 {
                 font-size: 1.2rem;
             }
         }
@@ -78,26 +83,40 @@
         section {
             display: flex;
             flex-direction: column;
+            width: 100%;
+            padding: 0;
 
             /* Ajustes en la última sección para pantallas pequeñas */
             .section-especial {
-                width: 100vw;
+                width: 100%;
+
+                h2 {
+                    padding-bottom: 0;
+
+                }
+
+                /* Estilos del botón */
+                .btn {
+                    margin-bottom: 1rem;
+                }
             }
-            
+
             /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
             h2 {
-                width: 100vw;
-                padding: 0 2rem;
+                width: 90%;
+                padding: 1rem 0;
+
             }
 
             /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */
-            h3{
+            h3 {
                 padding-top: 1rem;
+                font-size: 1.3rem;
             }
-    
+
             .parrafos {
-                width: 100vw;
-                padding: 1rem 2rem 0 2rem;
+                padding: 0;
+                width: 80%;
                 text-align: center;
             }
         }

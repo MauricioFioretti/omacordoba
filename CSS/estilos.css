@@ -18,21 +18,28 @@ body {
   grid-template-areas: "header" "main" "footer"; }
 
 /* Estilos del encabezado para desktop y tablet */
-.header__desktop, .header__mobile {
+.header__desktop,
+.header__mobile {
   grid-area: header;
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
   grid-template-areas: "header__logo header__titulo header__nav";
-  /* Estilos del logo en el encabezado */
   /* Estilos del título en el encabezado */
   /* Estilos del nav en el encabezado */ }
-  .header__desktop .header__logo, .header__mobile .header__logo {
-    grid-area: header__logo;
-    margin-top: 0.5rem;
-    width: 7.5rem;
-    background-color: white; }
-  .header__desktop .header__titulo, .header__mobile .header__titulo {
+  .header__desktop .header__caja-logo,
+  .header__mobile .header__caja-logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* Estilos del logo en el encabezado */ }
+    .header__desktop .header__caja-logo .header__logo,
+    .header__mobile .header__caja-logo .header__logo {
+      grid-area: header__logo;
+      width: 7.5rem;
+      background-color: white; }
+  .header__desktop .header__titulo,
+  .header__mobile .header__titulo {
     padding-left: 2rem;
     background-color: white;
     grid-area: header__titulo;
@@ -41,41 +48,50 @@ body {
     padding-top: 2rem;
     /* Estilos de la clase "secretaria" dentro del título */
     /* Estilos de la clase "olimpiadas" dentro del título */ }
-    .header__desktop .header__titulo .secretaria, .header__mobile .header__titulo .secretaria {
+    .header__desktop .header__titulo .secretaria,
+    .header__mobile .header__titulo .secretaria {
       font-size: 2rem;
       font-weight: 600; }
-    .header__desktop .header__titulo .olimpiadas, .header__mobile .header__titulo .olimpiadas {
+    .header__desktop .header__titulo .olimpiadas,
+    .header__mobile .header__titulo .olimpiadas {
       font-size: 1.5rem;
       font-weight: 500; }
-  .header__desktop .header__nav, .header__mobile .header__nav {
+  .header__desktop .header__nav,
+  .header__mobile .header__nav {
     font-size: 15px;
     font-weight: 700;
     grid-area: header__nav;
     background-color: white;
     /* Estilos del menú en el nav */ }
-    .header__desktop .header__nav .header__menu, .header__mobile .header__nav .header__menu {
+    .header__desktop .header__nav .header__menu,
+    .header__mobile .header__nav .header__menu {
       /* Estilos de los elementos del menú en el nav */ }
-      .header__desktop .header__nav .header__menu .header__menu-item, .header__mobile .header__nav .header__menu .header__menu-item {
+      .header__desktop .header__nav .header__menu .header__menu-item,
+      .header__mobile .header__nav .header__menu .header__menu-item {
         /* Estilos de los enlaces del menú en el nav */
         /* Estilos de los subelementos del menú en el nav */
         /* Estilos del efecto de resaltado en los subelementos del menú */ }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link,
+        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link {
           color: #0096DA;
           transition: 100ms; }
-          .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link:hover, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link:hover {
+          .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link:hover,
+          .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link:hover {
             color: white;
             display: inline-block;
             padding: 10px 20px;
             background-color: #006794;
             border: none;
             border-radius: 50px; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem,
+        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
           color: #0096DA;
           cursor: pointer;
           padding-left: 10px;
           position: relative;
           background-color: white; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem::after, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem::after,
+        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
           content: "";
           position: absolute;
           left: 0;
@@ -86,7 +102,8 @@ body {
           transform: scaleX(0);
           transform-origin: right;
           transition: transform 300ms ease-in; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after, .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
+        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after,
+        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
           transform: scaleX(1);
           transform-origin: left; }
 
@@ -94,15 +111,21 @@ body {
   display: none; }
 
 /* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 767px) and (max-width: 1263px) {
+@media screen and (min-width: 767px) and (max-width: 1292px) {
+  .header__desktop,
   .header__mobile {
-    display: none; }
-  .header__desktop, .header__mobile {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "header__logo header__titulo" "header__nav header__nav";
     /* Alineación centrada del título en pantallas medianas */ }
-    .header__desktop .header__titulo, .header__mobile .header__titulo {
+    .header__desktop .header__caja-logo,
+    .header__mobile .header__caja-logo {
+      /* Estilos del logo en el encabezado */ }
+      .header__desktop .header__caja-logo .header__logo,
+      .header__mobile .header__caja-logo .header__logo {
+        margin-left: 1rem; }
+    .header__desktop .header__titulo,
+    .header__mobile .header__titulo {
       text-align: center; } }
 
 /* Estilos responsivos para pantallas pequeñas */
@@ -113,7 +136,7 @@ body {
   /* Estilos del encabezado para Mobile */
   .header__mobile {
     display: grid;
-    padding-top: 2rem;
+    padding-top: 1rem;
     grid-template-columns: 1fr auto;
     grid-template-areas: "header__nav header__logo";
     /* Ocultar título en pantallas pequeñas */
@@ -122,7 +145,7 @@ body {
       display: none; }
     .header__mobile .header__logo {
       width: 120px;
-      margin-top: 0; }
+      margin: 0; }
     .header__mobile .header__nav {
       font-size: 1rem;
       margin-left: 2rem;
@@ -161,7 +184,7 @@ footer {
     padding-left: 5%;
     /* Estilos del logo izquierdo del pie de página */ }
     footer .footer__izq .footer__logo-izq {
-      width: 22vw; }
+      width: 55%; }
   footer .footer__line {
     grid-area: linea;
     width: 2px;
@@ -231,20 +254,20 @@ footer {
       justify-content: center;
       text-align: center;
       margin: 0;
-      width: 100vw;
+      width: 100%;
       /* Datos de contacto */
       /* Correo de contacto */
       /* Iconos de redes sociales */
       /* Ocultar logo en pantallas pequeñas */ }
       footer .footer__der .datosContacto {
-        line-height: 1.6; }
+        line-height: 1.4; }
       footer .footer__der .correo {
         line-height: 1.2;
-        padding: 4rem 0;
+        padding: 2.5rem 0;
         overflow: hidden;
         text-overflow: ellipsis; }
       footer .footer__der .iconos img {
-        width: 5rem; }
+        width: 3.5rem; }
       footer .footer__der .logo {
         display: none; } }
 
@@ -335,6 +358,7 @@ footer {
 
 /* Estilos del main apuntes */
 .main__apuntes {
+  grid-area: main;
   /* Estilos para los párrafos */
   text-align: center; }
   .main__apuntes .parrafos {
@@ -376,17 +400,16 @@ footer {
     /* Estilos de las imagenes en la sección de competencia */
     /* Estilos del título y la descripción de cada una de las competencias */ }
     .main__competencias .main__section-competencia img {
-      width: 20rem; }
+      width: 20rem;
+      margin-right: 4rem; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
       flex-direction: column;
+      width: 25rem;
       /* Estilos del título de cada una de las competencias */
-      /* Estilos de la descripción de cada una de las competencias */
       /* Estilos de los botones en la sección de competencia */ }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
-        width: 30rem; }
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
-        width: 30rem; }
+        padding-top: 2rem; }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         display: block;
         margin-top: 10px;
@@ -395,51 +418,41 @@ footer {
           text-decoration: none;
           color: white; }
   .main__competencias .main__section-competencia:first-child {
-    margin-top: 2rem; }
+    margin-top: 3rem; }
   .main__competencias .main__section-competencia:last-child {
     margin-bottom: 3rem; }
-
-/* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 992px) and (max-width: 1263px) {
-  .main__competencias {
-    margin-left: -12rem; } }
-
-@media screen and (min-width: 870px) and (max-width: 991px) {
-  .main__competencias {
-    margin-left: -5rem; } }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 869px) {
   .main__competencias {
     /* Ajustes en la dirección de flexión para las secciones de competencia */ }
     .main__competencias .main__section-competencia {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 3rem; }
+      .main__competencias .main__section-competencia img {
+        width: 15rem;
+        margin-right: 0; } }
 
-@media screen and (max-width: 540px) {
-  .main__competencias .main__section-competencia {
-    /* Ajustes en el tamaño de la imagen para pantallas pequeñas */
-    /* Ajustes en la alineación de los elementos en la sección de competencia */ }
-    .main__competencias .main__section-competencia img {
-      width: 50vw; }
-    .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-      align-items: center;
-      /* Ajustes en el ancho máximo del título para pantallas pequeñas */
-      /* Ajustes en el ancho máximo de la descripción para pantallas pequeñas */
-      /* Ajustes en el ancho del botón para pantallas pequeñas */ }
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
-        max-width: 90vw; }
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion p {
-        max-width: 80vw; }
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
-        width: 70vw; } }
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 568px) {
+  .main__competencias {
+    /* Ajustes en la dirección de flexión para las secciones de competencia */ }
+    .main__competencias .main__section-competencia {
+      flex-direction: column; }
+      .main__competencias .main__section-competencia img {
+        width: 45%;
+        margin-right: 0; }
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+        width: 80%; } }
 
 /* Estilos del main "En qué participo" */
 .main__enqueparticipo {
+  grid-area: main;
   /* Estilos de las secciones internas */
   /* Estilos de las imágenes */ }
   .main__enqueparticipo section {
     text-align: center;
-    padding: 0 3rem; }
+    padding: 1rem 3rem; }
   .main__enqueparticipo img {
     max-width: 100%; }
 
@@ -457,6 +470,7 @@ footer {
 
 /* Estilos del main leñitas */
 .main__lenitas {
+  grid-area: main;
   /* Estilos img principal */
   /* Estilos de los párrafos */
   /* Estilos generales de cada lista de leñitas de cada año */
@@ -493,7 +507,7 @@ footer {
     .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
       margin-bottom: 1rem;
       font-weight: 900;
-      width: 80vw;
+      width: 80%;
       align-self: center;
       text-align: left; }
     .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
@@ -502,7 +516,7 @@ footer {
       justify-items: start;
       gap: 10px;
       text-align: center;
-      margin: 0 10vw;
+      margin: 0 10%;
       list-style-type: none; }
       .main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a {
         text-decoration: none;
@@ -552,13 +566,14 @@ footer {
     .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
       margin: 0;
       padding: 0;
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column;
       text-align: center; } }
 
 /* Estilos del main competencias */
 .main__libros {
+  grid-area: main;
   /* Estilos de los párrafos */
   text-align: center;
   /* Estilos de cada sección */ }
@@ -589,6 +604,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
+  grid-area: main;
   /* Estilos de las secciones internas */
   /* Bucle for para asignar colores de fondo a las secciones internas */ }
   .main__queesoma section {
@@ -600,20 +616,22 @@ footer {
     /* Estilos de la última sección */
     /* Estilos de los párrafos */ }
     .main__queesoma section h2 {
-      width: 35vw;
+      width: 35%;
       text-align: center; }
     .main__queesoma section h3 {
       font-size: 1.5rem; }
     .main__queesoma section .section-especial {
       display: flex;
       flex-direction: column;
-      width: 33vw;
+      width: 35%;
       align-items: center;
       /* Estilos del botón */ }
+      .main__queesoma section .section-especial h2 {
+        width: auto; }
       .main__queesoma section .section-especial .btn {
         width: auto; }
     .main__queesoma section .parrafos {
-      width: 65vw;
+      width: 65%;
       display: flex;
       flex-direction: column;
       padding: 10px; }
@@ -639,19 +657,27 @@ footer {
   .main__queesoma section {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 0;
     /* Ajustes en la última sección para pantallas pequeñas */
     /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
     /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */ }
     .main__queesoma section .section-especial {
-      width: 100vw; }
+      width: 100%;
+      /* Estilos del botón */ }
+      .main__queesoma section .section-especial h2 {
+        padding-bottom: 0; }
+      .main__queesoma section .section-especial .btn {
+        margin-bottom: 1rem; }
     .main__queesoma section h2 {
-      width: 100vw;
-      padding: 0 2rem; }
+      width: 90%;
+      padding: 1rem 0; }
     .main__queesoma section h3 {
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      font-size: 1.3rem; }
     .main__queesoma section .parrafos {
-      width: 100vw;
-      padding: 1rem 2rem 0 2rem;
+      padding: 0;
+      width: 80%;
       text-align: center; } }
 
 /* Estilos de la página "Secretarias Córdoba" */
@@ -659,27 +685,34 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-area: main;
+  width: 100%;
   /* Estilos del acordeón */ }
   .main__secretariascordoba .accordion {
-    width: 50vw; }
-  .main__secretariascordoba section article iframe {
+    width: 50%; }
+  .main__secretariascordoba .iframe {
     margin: 5rem 0;
-    width: 70vw;
-    height: 86vh; }
+    width: 50%;
+    height: 30rem; }
+    .main__secretariascordoba .iframe iframe {
+      width: 100%;
+      height: 100%; }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   .main__secretariascordoba {
     /* Ajustes en el ancho del acordeón para pantallas pequeñas */ }
     .main__secretariascordoba .accordion {
-      width: 80vw; }
-    .main__secretariascordoba section article iframe {
-      width: 80vw;
-      height: 70vh; } }
+      width: 80%; }
+    .main__secretariascordoba .iframe {
+      margin: 5rem 0;
+      width: 80%;
+      height: 20rem; } }
 
 /* Estilos del main contactos */
 .main__contactos {
   color: #fff;
+  grid-area: main;
   /* Estilos del contenedor de todo el form incluido el título */ }
   .main__contactos .container {
     color: #fff;

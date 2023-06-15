@@ -14,21 +14,18 @@
         /* Estilos de las imagenes en la sección de competencia */
         img {
             width: 20rem;
+            margin-right: 4rem;
         }
 
         /* Estilos del título y la descripción de cada una de las competencias */
         .main__section_titulo-descripcion {
             display: flex;
             flex-direction: column;
+            width: 25rem;
 
             /* Estilos del título de cada una de las competencias */
             h2 {
-                width: 30rem;
-            }
-
-            /* Estilos de la descripción de cada una de las competencias */
-            p {
-                width: 30rem;
+                padding-top: 2rem;
             }
 
             /* Estilos de los botones en la sección de competencia */
@@ -47,24 +44,11 @@
 
     /* Ajustes de margen para la primera y última sección de competencia */
     .main__section-competencia:first-child {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .main__section-competencia:last-child {
         margin-bottom: 3rem;
-    }
-}
-
-/* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 992px) and (max-width: 1263px) {
-    .main__competencias {
-        margin-left: -12rem;
-    }
-}
-
-@media screen and (min-width: 870px) and (max-width: 991px) {
-    .main__competencias {
-        margin-left: -5rem;
     }
 }
 
@@ -74,38 +58,30 @@
         /* Ajustes en la dirección de flexión para las secciones de competencia */
         .main__section-competencia {
             flex-direction: column;
+            margin-top: 3rem;
+
+            img{
+                width: 15rem;
+                margin-right: 0;
+            }
         }
     }
 }
 
-
-@media screen and (max-width: 540px) {
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 568px) {
     .main__competencias {
+        /* Ajustes en la dirección de flexión para las secciones de competencia */
         .main__section-competencia {
+            flex-direction: column;
 
-            /* Ajustes en el tamaño de la imagen para pantallas pequeñas */
             img{
-                width: 50vw;
+                width: 45%;
+                margin-right: 0;
             }
 
-            /* Ajustes en la alineación de los elementos en la sección de competencia */
-            .main__section_titulo-descripcion{
-                align-items: center;
-
-                /* Ajustes en el ancho máximo del título para pantallas pequeñas */
-                h2{
-                    max-width: 90vw;
-                }
-
-                /* Ajustes en el ancho máximo de la descripción para pantallas pequeñas */
-                p{
-                    max-width: 80vw;
-                }
-
-                /* Ajustes en el ancho del botón para pantallas pequeñas */
-                .btn{
-                    width: 70vw;
-                }
+            .main__section_titulo-descripcion {
+                width: 80%;
             }
         }
     }

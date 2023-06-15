@@ -24,7 +24,7 @@ footer {
 
         /* Estilos del logo izquierdo del pie de página */
         .footer__logo-izq {
-            width: 22vw;
+            width: 55%;
         }
     }
 
@@ -90,7 +90,6 @@ footer {
     }
 }
 
-
 /* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 1263px) {
     footer {
@@ -134,17 +133,17 @@ footer {
             justify-content: center;
             text-align: center;
             margin: 0;
-            width: 100vw;
+            width: 100%;
 
             /* Datos de contacto */
             .datosContacto {
-                line-height: 1.6;
+                line-height: 1.4;
             }
 
             /* Correo de contacto */
             .correo {
                 line-height: 1.2;
-                padding: 4rem 0;
+                padding: 2.5rem 0;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
@@ -152,7 +151,7 @@ footer {
             /* Iconos de redes sociales */
             .iconos {
                 img {
-                    width: 5rem;
+                    width: 3.5rem;
                 }
             }
 

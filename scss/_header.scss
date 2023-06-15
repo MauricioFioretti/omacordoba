@@ -1,5 +1,6 @@
 /* Estilos del encabezado para desktop y tablet */
-.header__desktop, .header__mobile{
+.header__desktop,
+.header__mobile {
     grid-area: header;
     font-family: 'Montserrat', sans-serif;
     display: grid;
@@ -7,12 +8,17 @@
     grid-template-areas:
         "header__logo header__titulo header__nav";
 
-    /* Estilos del logo en el encabezado */
-    .header__logo {
-        grid-area: header__logo;
-        margin-top: 0.5rem;
-        width: 7.5rem;
-        background-color: white;
+    .header__caja-logo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        /* Estilos del logo en el encabezado */
+        .header__logo {
+            grid-area: header__logo;
+            width: 7.5rem;
+            background-color: white;
+        }
     }
 
     /* Estilos del título en el encabezado */
@@ -98,22 +104,27 @@
     }
 }
 
-.header__mobile{
+.header__mobile {
     display: none;
 }
 
 /* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 767px) and (max-width: 1263px) {
-    .header__mobile{
-        display: none;
-    }
+@media screen and (min-width: 767px) and (max-width: 1292px) {
 
-    .header__desktop, .header__mobile {
+    .header__desktop,
+    .header__mobile {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
             "header__logo header__titulo"
             "header__nav header__nav";
+
+        .header__caja-logo {
+            /* Estilos del logo en el encabezado */
+            .header__logo {
+                margin-left: 1rem;
+            }
+        }
 
         /* Alineación centrada del título en pantallas medianas */
         .header__titulo {
@@ -126,14 +137,14 @@
 /* Estilos del encabezado para Mobile */
 @media screen and (max-width: 767px) {
 
-    .header__desktop{
+    .header__desktop {
         display: none;
     }
 
     /* Estilos del encabezado para Mobile */
     .header__mobile {
         display: grid;
-        padding-top: 2rem;
+        padding-top: 1rem;
         grid-template-columns: 1fr auto;
         grid-template-areas:
             "header__nav header__logo";
@@ -146,7 +157,7 @@
         /* Ajustes en el tamaño del logo en pantallas pequeñas */
         .header__logo {
             width: 120px;
-            margin-top: 0;
+            margin: 0;
         }
 
         .header__nav {
@@ -167,7 +178,7 @@
                         font-size: 1rem;
                     }
 
-                    .dropdown-menu{
+                    .dropdown-menu {
                         width: max-content;
                     }
                 }
