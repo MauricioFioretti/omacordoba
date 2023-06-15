@@ -257,23 +257,17 @@ footer {
   /* Estilos de la sección del hero */
   /* Estilos de las secciones internas */
   /* Estilos de la sección de iconos */ }
-  .main__index .img-hero {
-    position: relative;
-    opacity: 1;
-    /* Estilos de la imagen del hero */ }
-    .main__index .img-hero .hero {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      opacity: 1; }
+  .main__index .img-hero .hero {
+    width: 100%;
+    object-fit: cover; }
   .main__index section {
     /* Estilos de los artículos */ }
     .main__index section article {
       padding: 2rem;
       /* Estilos del iframe */ }
       .main__index section article iframe {
-        height: 30vw;
-        width: 50vw; }
+        height: 50vh;
+        width: 70%; }
   .main__index .main__iconos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -303,10 +297,10 @@ footer {
     .main__index .main__iconos .main__iconos-logoolimpri {
       grid-area: main__iconos-logoolimpri; }
 
-/* Estilos responsivos para pantallas pequeñas */
+/* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 800px) {
   .main__index {
-    /* Ajustes en la disposición de los iconos para pantallas pequeñas */ }
+    /* Ajustes en la disposición de los iconos para pantallas medianas */ }
     .main__index .main__iconos {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto repeat(2, 1fr);

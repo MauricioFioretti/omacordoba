@@ -1,5 +1,5 @@
 /* Estilos de la página principal */
-.main__index {
+.main__index{
     padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
@@ -7,15 +7,9 @@
 
     /* Estilos de la sección del hero */
     .img-hero{
-        position: relative;
-        opacity: 1;
-
-        /* Estilos de la imagen del hero */
-        .hero {
+        .hero{
             width: 100%;
-            height: 100vh;
             object-fit: cover;
-            opacity: 1;
         }
     }
 
@@ -28,8 +22,8 @@
 
             /* Estilos del iframe */
             iframe {
-                height: 30vw;
-                width: 50vw;
+                height: 50vh;
+                width: 70%;
             }
         }
     }
@@ -93,11 +87,11 @@
     }
 }
 
-/* Estilos responsivos para pantallas pequeñas */
+/* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 800px) {
     .main__index {
 
-        /* Ajustes en la disposición de los iconos para pantallas pequeñas */
+        /* Ajustes en la disposición de los iconos para pantallas medianas */
         .main__iconos {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto repeat(2, 1fr);
