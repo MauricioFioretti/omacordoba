@@ -98,7 +98,8 @@
                                 <!-- Subelementos del menú "COMPETENCIAS" -->
                                 <li><a class="dropdown-item header__menu-subitem"
                                         href="../pages/competencias.html">Competencias</a></li>
-                                <li><a class="dropdown-item header__menu-subitem" href="../pages/enqueparticipo.html">¿En
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="../pages/enqueparticipo.html">¿En
                                         qué puedo
                                         participar?</a></li>
                                 <li><a class="dropdown-item header__menu-subitem" target="_blank"
@@ -195,7 +196,8 @@
                                 <!-- Subelementos del menú "COMPETENCIAS" -->
                                 <li><a class="dropdown-item header__menu-subitem"
                                         href="../pages/competencias.html">Competencias</a></li>
-                                <li><a class="dropdown-item header__menu-subitem" href="../pages/enqueparticipo.html">¿En
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="../pages/enqueparticipo.html">¿En
                                         qué puedo
                                         participar?</a></li>
                                 <li><a class="dropdown-item header__menu-subitem" target="_blank"
@@ -235,71 +237,96 @@
         </nav>
     </header>
 
-    
+
+
+
+
+
+
+
     <!--Main pag Contactos-->
     <main class="main__contactos">
-
         <section class="container">
 
-            <h1 class="titulo">Contacto</h1>
+            <!--Parte izquierda del formulario-->
+            <div class="contact-form">
+                <h2>ENVIANOS UN MENSAJE</h2>
+                <form>
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Dirección de E-mail</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número de Teléfono</label>
+                        <input type="number" name="numero">
+                    </p>
+                    <p>
+                        <label>Motivo</label>
+                        <input type="text" name="motivo">
+                    </p>
 
-            <!--Contenedor de todo el formulario-->
-            <div class="contact-wrapper">
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
 
-                <!--Parte izquierda del formulario-->
-                <div class="contact-form">
-                    <h3>Contáctanos</h3>
-                    <form>
-                        <p>
-                            <label>Nombre Completo</label>
-                            <input type="text" name="nombre">
-                        </p>
-                        <p>
-                            <label>Dirección de Email</label>
-                            <input type="email" name="email">
-                        </p>
-                        <p>
-                            <label>Número de Teléfono</label>
-                            <input type="tel" name="numero">
-                        </p>
-                        <p>
-                            <label>Motivo</label>
-                            <input type="text" name="motivo">
-                        </p>
-                        <p class="block">
-                            <label>Mensaje</label>
-                            <textarea name="mensaje" rows="3"></textarea>
-                        </p>
-                        <p class="block">
-                            <button>
-                                Send
-                            </button>
-                        </p>
-                    </form>
-                </div>
+                    <p class="block enviar">
+                        <button>
+                            ENVIAR
+                        </button>
+                    </p>
 
-                <!--Parte derecha del formulario-->
-                <div class="contact-info">
-                    <h4>Mas información</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>María del Carmen Spina Gómez</li>
-                        <li><i class="fas fa-phone"></i> (0351) 4215695</li>
-                        <li><i class="fas fa-envelope-open-text"></i>omacordoba2019@gmail.com</li>
-                    </ul>
-                    <p>Secretaria regional Adjunta a la dirección de la Olimpíada</p>
-                </div>
+                </form>
             </div>
 
+            <!--Parte derecha del formulario-->
+            <div class="contact-info">
+                <div class="centrado">
+                    <h3>CONTACTO</h3>
+                    <ul>
+                        <li>María del Carmen Spina Gómez</li>
+                        <li>(0351) 4215695</li>
+                        <li>omacordoba2019@gmail.com</li>
+                        <li>Secretaria regional Adjunta a la dirección de la Olimpíada</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="../img/Pagina Contactos/iconoForm.svg" alt="icono geometria">
+                </div>
+            </div>
         </section>
-
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--Footer-->
     <footer>
 
         <!--Parte izquierda del footer. Logo FOMA a la izquierda-->
         <section class="footer__izq">
-            <img class="footer__logo-izq" src="../img/Logos Footer/FondoFOMAtransparenteLetrasBlancas.svg" alt="logo FOMA">
+            <img class="footer__logo-izq" src="../img/Logos Footer/FondoFOMAtransparenteLetrasBlancas.svg"
+                alt="logo FOMA">
         </section>
 
         <!--Linea vertical-->
@@ -326,8 +353,8 @@
 
                 <!--Instagram de OMA Córdoba-->
                 <a class="iconos-insta" target="_blank"
-                    href="https://instagram.com/omacordoba?igshid=MzRlODBiNWFlZA=="><img src="../img/Logos Footer/logoInstagram.svg"
-                        alt="logo Instagram"></a>
+                    href="https://instagram.com/omacordoba?igshid=MzRlODBiNWFlZA=="><img
+                        src="../img/Logos Footer/logoInstagram.svg" alt="logo Instagram"></a>
             </div>
 
             <!--Logo OMA-->

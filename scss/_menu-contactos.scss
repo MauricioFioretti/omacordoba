@@ -1,117 +1,156 @@
 /* Estilos del main contactos */
 .main__contactos {
-    color: #fff;
     grid-area: main;
 
-    /* Estilos del contenedor de todo el form incluido el título */
+    /* Estilos del contenedor de todo el form incluidas ambas partes */
     .container {
-        color: #fff;
-        max-width: 1170px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1.5em;
+        max-width: 1000px;
+        padding: 3rem 1.5rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
 
-        /* Estilos del título */
-        .titulo {
-            text-align: center;
-            font-size: 3em;
+        /* Estilos parte izquierda del formulario */
+        .contact-form {
             color: black;
-        }
+            background: white;
+            padding: 3rem;
 
-        /* Estilos del contenedor del form */
-        .contact-wrapper {
-            box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+            h2 {
+                text-align: center;
+                padding-bottom: 2rem;
+                color: $FondoAzul;
+                margin: 0;
+            }
 
-            /* Estilos parte izquierda del formulario */
-            .contact-form {
-                background: #222222;
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
 
-                form {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
+                p {
+                    padding: 0.8rem;
 
-                    button,
                     input,
                     textarea {
+                        color: black;
                         width: 100%;
-                        padding: .7em;
+                        padding: 0.5rem;
                         border: none;
                         background: none;
                         outline: 0;
-                        color: #fff;
-                        border-bottom: 1px solid #d63031;
+                        border-bottom: 2px solid $FondoAzul;
+                        resize: none;
                     }
 
                     button {
-                        background: #B70E21;
-                        border: 0;
-                        text-transform: uppercase;
-                        padding: 1em;
-                    }
-
-                    button:hover,
-                    button:focus {
-                        background: #d63031;
                         color: #fff;
-                        transition: background-color 1s ease-out;
-                        outline: 0;
-                    }
+                        background: $BotonEnviar;
+                        font-size: 1.5rem;
+                        font-weight: 500;
 
-
-                    .block {
-                        grid-column: 1 / 3;
+                        padding: 0.5rem 3rem;
+                        width: auto;
+                        border: none;
+                        border-radius: 50px;
                     }
 
                     label {
+                        color: black;
                         display: block;
                     }
+                }
 
-                    p {
+                .enviar {
+                    text-align: center;
+                    margin: 0;
+                }
+
+                .block {
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+
+        /* Estilos parte izquierda del formulario */
+        .contact-info {
+            color: white;
+            background: $FondoAzul;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .centrado {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 3rem 0.7rem;
+
+                h3 {
+                    padding-bottom: 2rem;
+                    margin: 0;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        padding: 0.5rem 0;
+                    }
+                }
+            }
+
+            div {
+                display: flex;
+                justify-content: end;
+
+                img {
+                    width: 40%;
+                    padding-bottom: 0.8rem;
+                    padding-right: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 569px) and (max-width: 992px) {
+
+    /* Estilos del main contactos */
+    .main__contactos {
+
+        /* Estilos del contenedor de todo el form incluidas ambas partes */
+        .container {
+            padding: 3rem 1.5rem;
+            grid-template-columns: 1fr;
+
+            /* Estilos parte izquierda del formulario */
+            .contact-form {
+                padding: 1rem;
+
+                form {
+                    .enviar {
                         margin: 0;
-                        padding: 1em;
                     }
                 }
             }
 
             /* Estilos parte izquierda del formulario */
             .contact-info {
-                background: #000;
+                .centrado {
+                    padding: 1rem 0.5rem;
+                    padding-bottom: 0;
 
-                ul {
-                    list-style: none;
-                    padding: 0;
+                    h3 {
+                        padding-bottom: 1rem;
+                        margin: 0;
+                    }
                 }
 
-
-                h4,
-                ul,
-                p {
-                    text-align: center;
-                    margin: 0 0 1rem 0;
-                }
-            }
-        }
-
-        .contact-wrapper>* {
-            padding: 1em;
-        }
-    }
-}
-
-/* Estilos responsivos para pantallas medianas */
-@media(min-width: 992px) {
-
-    .main__contactos {
-        .container {
-            .contact-wrapper {
-                display: grid;
-                grid-template-columns: 2fr 1fr;
-
-                .contact-info {
-                    h4,
-                    ul,
-                    p {
-                        text-align: left;
+                div {
+                    img {
+                        display: none;
                     }
                 }
             }
@@ -119,16 +158,32 @@
     }
 }
 
+
 /* Estilos responsivos para pantallas pequeñas */
 @media(max-width: 568px) {
-
     .main__contactos {
         .container {
-            .contact-wrapper {
-                .contact-form {
-                    form {
-                        display: flex;
-                        flex-direction: column;
+            padding-top: 4rem;
+            grid-template-columns: 1fr;
+
+            .contact-form {
+                padding: 0;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .contact-info {
+                div {
+                    img {
+                        display: none;
                     }
                 }
             }
