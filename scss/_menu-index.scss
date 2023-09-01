@@ -1,169 +1,63 @@
-/* Estilos de la página principal */
-.main__index{
-    padding-bottom: 3rem;
-    text-align: center;
+/* Estilos del main competencias */
+.main__libros {
     grid-area: main;
-    width: auto;
+    
+    /* Estilos de los párrafos */
+    .compra__libros {
+        padding-top: 3rem;
+        text-align: center;
 
-    /* Estilos de la sección del hero */
-    .img-hero{
-        .hero{
-            width: 100%;
-            object-fit: cover;
+        h1 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
         }
-    }
 
-    /* Estilos de las secciones internas */
-    section {
+        p {
+            padding: 0 3rem;
+        }        
 
-        /* Estilos de los artículos */
-        article {
-            padding: 2rem;
-
-            /* Estilos del iframe */
-            iframe {
-                height: 50vh;
-                width: 70%;
-            }
-        }
-    }
-
-    /* Estilos de la sección de iconos */
-    .main__iconos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto 2fr 2fr;
-        grid-template-areas:
-            "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
-
-            "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
-
-            "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
-
-        /* Estilos de los enlaces */
         a {
-            img {
-                width: 200px;
-            }
-        }
-
-        /* Estilos del título de los iconos */
-        .main__iconos-titulo {
-            grid-area: main__iconos-titulo;
-        }
-
-        /* Definición de las áres de los iconos */
-        .main__iconos-logomateclubes {
-            grid-area: main__iconos-logomateclubes;
-        }
-
-        .main__iconos-logonandu {
-            grid-area: main__iconos-logonandu;
-        }
-
-        .main__iconos-logolym {
-            grid-area: main__iconos-logolym;
-        }
-
-        .main__iconos-logotorngeoeimag {
-            grid-area: main__iconos-logotorngeoeimag;
-        }
-
-        .main__iconos-logointernacionales {
-            grid-area: main__iconos-logointernacionales;
-        }
-
-        .main__iconos-logoolimmayo {
-            grid-area: main__iconos-logoolimmayo;
-        }
-
-        .main__iconos-logocanguro {
-            grid-area: main__iconos-logocanguro;
-        }
-
-        .main__iconos-logoolimpri {
-            grid-area: main__iconos-logoolimpri;
+            padding: auto;
         }
     }
-}
 
-/* Estilos responsivos para pantallas medianas */
-@media screen and (max-width: 800px) {
-    .main__index {
+    text-align: center;
 
-        /* Ajustes en la disposición de los iconos para pantallas medianas */
-        .main__iconos {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto repeat(2, 1fr);
-            grid-template-areas:
-                "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
+    /* Estilos de cada sección */
+    section {
+        h2 {
+            padding: 2rem 0;
+        }
+        
+        /* Estilos de todas las cards con portadas de libros */
+        .container-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
-                "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
-
-                "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
-
-            /* Ajustes en el ancho de las imágenes de los iconos para pantallas pequeñas */
-            a {
-                img {
-                    width: 130px;
+            .card {
+                width: 20rem;
+                margin: 2rem;
+                .card-body{
+                    input{
+                        margin: 10px;
+                    }
                 }
             }
         }
     }
-}
 
-/* Estilos responsivos para pantallas más pequeñas */
-@media screen and (max-width: 550px) {
-    .main__index {
-        /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
-        .main__iconos {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto repeat(4, 1fr);
-            grid-template-areas:
-                "main__iconos-titulo main__iconos-titulo"
-
-                "main__iconos-logomateclubes main__iconos-logonandu"
-
-                "main__iconos-logolym main__iconos-logotorngeoeimag"
-
-                "main__iconos-logointernacionales main__iconos-logoolimmayo"
-
-                "main__iconos-logocanguro main__iconos-logoolimpri";
-
-            /* Ajustes en el ancho de las imágenes de los iconos para pantallas más pequeñas */
-            a {
-                img {
-                    width: 170px;
-                }
-            }
-        }
+    .table{
+        margin-top: 3rem;
     }
-}
 
-/* Estilos responsivos para pantallas aún más pequeñas */
-@media screen and (max-width: 349px) {
-    .main__index {
-        /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */
-        .main__iconos {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto repeat(4, 2fr);
-            grid-template-areas:
-                "main__iconos-titulo main__iconos-titulo"
+    .boton-eliminar {
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+    } 
 
-                "main__iconos-logomateclubes main__iconos-logonandu"
-
-                "main__iconos-logolym main__iconos-logotorngeoeimag"
-
-                "main__iconos-logointernacionales main__iconos-logoolimmayo"
-
-                "main__iconos-logocanguro main__iconos-logoolimpri";
-
-            /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */
-            a {
-                img {
-                    width: 145px;
-                }
-            }
-        }
-    }
+    .boton-finalizar {
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    } 
 }
