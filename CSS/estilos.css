@@ -36,7 +36,15 @@ body {
       color: #0096da;
     } 
 
+    /* Estilos Infografías */
+.infografia{
+  display: flex;
+  justify-content: center;
 
+}
+.infografia_img{
+  width: 50%;
+}
 
 /* Estilos hero: */
 
