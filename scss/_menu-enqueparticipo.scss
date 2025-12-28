@@ -3,19 +3,18 @@
     grid-area: main;
     
     /* Estilos de las secciones internas */
-    section{
+    .img__enqueparticipo {
         text-align: center;
         padding: 1rem 3rem;
     }
 
     /* Estilos de las imágenes */
-    img{
-        max-width: 100%;
+    .main_hero {
+        padding: 0;
     }
 
-    .main__hero img {
+    .main_hero img {
         display: block;
-        padding: 0%;
         width: 100%;
     }
 }
