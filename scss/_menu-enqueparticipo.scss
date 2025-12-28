@@ -12,6 +12,14 @@
     img{
         max-width: 100%;
     }
+
+    /* Estilos de la sección del hero */
+    .main__hero{
+        .hero{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 /* Estilos responsivos para pantallas pequeñas */
