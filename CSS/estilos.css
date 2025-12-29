@@ -524,32 +524,56 @@ footer {
   flex-direction: column;
   align-items: center;
   /* Estilos de cada sección de competencia */
+
   /* Ajustes de margen para la primera y última sección de competencia */ }
   .main__competencias .main__section-competencia {
-    margin-top: 7rem;
+    margin: 4rem 6rem;
     display: flex;
     text-align: center;
     align-items: center;
+    width: 80%;
+  }
+
     /* Estilos de las imagenes en la sección de competencia */
-    /* Estilos del título y la descripción de cada una de las competencias */ }
     .main__competencias .main__section-competencia img {
-      width: 20rem;
+      width: 20%;
       margin-right: 4rem; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
       flex-direction: column;
-      width: 25rem;
+      width:100%rem;}
+
       /* Estilos del título de cada una de las competencias */
-      /* Estilos de los botones en la sección de competencia */ }
       .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
         padding-top: 2rem; }
+
+      /* Estilos del texto de cada una de las competencias */
+      .main__competencias .main__section-competencia .main__section_titulo-descripcion  {
+        text-align: left; }
+
+       /* Estilos del contenedor del boton  */
+      .botones_competencias{
+        display:flex;
+        justify-content: right;
+        text-align: justify;
+      }
+
+      /* Estilos de los botones en la sección de competencia */ 
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         display: block;
         margin-top: 10px;
+        margin-left: 1rem;
+        background-color: #1a4789;
+        border-color: #1a4789;
+        border-radius: 5px;
+        width: 25%;
+
         /* Estilos del enlace dentro del botón */ }
         .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
           text-decoration: none;
-          color: white; }
+          color: white; 
+        }
+
   .main__competencias .main__section-competencia:first-child {
     margin-top: 3rem; }
   .main__competencias .main__section-competencia:last-child {
