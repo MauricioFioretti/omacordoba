@@ -701,6 +701,7 @@ footer {
     margin: 6rem 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center; }
     .main__lenitas .lista-lenitas .color-year, 
     .main__lenitas .main__lista-lenitas-2021 .color-year, 
@@ -724,7 +725,7 @@ footer {
       justify-items: start;
       gap: 10px;
       text-align: center;
-      margin: 0 10%;
+      margin: 0 21%;
       list-style-type: none; }
       .main__lenitas .lista-lenitas div ol a, 
       .main__lenitas .main__lista-lenitas-2021 div ol a, 
@@ -733,6 +734,7 @@ footer {
       .main__lenitas .main__lista-lenitas-2024 div ol a, 
       .main__lenitas .main__lista-lenitas-2025 div ol a {
         text-decoration: none;
+        font-size: 1.2rem;
         color: black; }
         .main__lenitas .lista-lenitas div ol a li .color-numero, 
         .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, 
@@ -744,28 +746,34 @@ footer {
   .main__lenitas .main__lista-lenitas-2021 .color-year {
     color: #D43377; }
   .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+    font-size: 1.2rem;
     color: #EB79A9; }
   .main__lenitas .main__lista-lenitas-2022 .color-year {
     color: #fdb87b; }
   .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
+    font-size: 1.2rem;
     color: #ffd1a9; }
   .main__lenitas .main__lista-lenitas-2023 {
     margin-bottom: 10rem; }
   .main__lenitas .main__lista-lenitas-2023 .color-year {
     color: #8eb370; }
   .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+    font-size: 1.2rem;
       color: #afd389; }
   .main__lenitas .main__lista-lenitas-2024 .color-year {
     color: #72a1ff; }
   .main__lenitas .main__lista-lenitas-2024 div ol a li .color-numero {
+    font-size: 1.2rem;
       color: #abc5ff; }
   .main__lenitas .main__lista-lenitas-2025 .color-year {
     color: #c450c5 }
   .main__lenitas .main__lista-lenitas-2025 div ol a li .color-numero {
+    font-size: 1.2rem;
       color: #cc6afc; }
   .main__lenitas .main__lista-lenitas-2026 .color-year {
     color: #D43377; }
   .main__lenitas .main__lista-lenitas-2026 div ol a li .color-numero {
+    font-size: 1.2rem;
     color: #EB79A9; }
 
 /* Estilos responsivos para pantallas medianas */
