@@ -1,7 +1,7 @@
 /* Estilos del main leñitas */
 .main__lenitas {
     grid-area: main;
-    
+
     /* Estilos img principal */
     .main__hero {
         img {
@@ -37,7 +37,7 @@
             font-size: 0.9rem;
         }
 
-        .ultimo{
+        .ultimo {
             color: #c0145c;
             font-weight: 500;
         }
@@ -51,7 +51,7 @@
         flex-direction: column;
         text-align: center;
 
-        .color-year{
+        .color-year {
             margin-bottom: 1rem;
             font-weight: 900;
             width: 80%;
@@ -90,7 +90,7 @@
     .main__lista-lenitas-2021 {
         @extend .lista-lenitas;
 
-        .color-year{
+        .color-year {
             color: $LetraYear1;
         }
 
@@ -98,7 +98,7 @@
             ol {
                 a {
                     li {
-                        
+
                         .color-numero {
                             color: $LetraNumero1;
                         }
@@ -112,7 +112,7 @@
     .main__lista-lenitas-2022 {
         @extend .lista-lenitas;
 
-        .color-year{
+        .color-year {
             color: $LetraYear2;
         }
 
@@ -134,7 +134,7 @@
         @extend .lista-lenitas;
         margin-bottom: 10rem;
 
-        .color-year{
+        .color-year {
             color: $LetraYear3;
         }
 
@@ -171,35 +171,35 @@
         .main__textos {
             font-size: 1rem;
             padding: 0;
-    
+
             h1 {
                 font-size: 1.5rem;
                 padding: 1rem 0;
                 padding-top: 3rem;
             }
-    
+
             h2 {
                 padding: 1rem;
             }
-    
+
             p {
                 padding: 1rem 1.5rem;
             }
 
-            .ultimo{
+            .ultimo {
                 padding-bottom: 0;
             }
-            
+
         }
 
         .lista-lenitas {
             margin: 2rem 0;
 
-            .color-year{
+            .color-year {
                 text-align: center;
                 padding-bottom: 1rem;
             }
-            
+
             div {
                 ol {
                     margin: 0;

@@ -1,16 +1,16 @@
-@import "var";
-@import "body";
-@import "header";
-@import "footer";
+@use "var";
+@use "body";
+@use "header";
+@use "footer";
 
-@import "menu-index";
-@import "menu-apuntes";
-@import "menu-competencias";
-@import "menu-enqueparticipo";
-@import "menu-festivales";
-@import "menu-lenitas";
-@import "menu-libros";
-@import "menu-queesoma";
-@import "menu-secretariascordoba";
-@import "menu-contactos"
-
+@use "menu-index";
+@use "menu-apuntes";
+@use "menu-competencias";
+@use "menu-enqueparticipo";
+@use "menu-festivales";
+@use "menu-lenitas";
+@use "menu-libros";
+@use "menu-queesoma";
+@use "menu-secretariascordoba";
+@use "menu-contactos";
+@use "cambios-final"

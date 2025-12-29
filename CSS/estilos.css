@@ -6,7 +6,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Estilos del cuerpo de la página */
 body {
@@ -15,157 +16,131 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   /* Definición de las áreas del grid */
-  grid-template-areas: "header"
- "main"
- "footer"; }
-
-/* Estilos info página: */
-
-.info_pagina {
-      margin-top: 2rem;
-      padding: 3rem 9rem;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      /* color: red;  */
-    } 
-  .info_pagina h1{
-      padding: 1rem;
-      margin-bottom:2rem;
-      font-size: 3rem;
-      color: #0096da;
-    } 
-  .info_pagina p {
-    font-size: 1.5rem;
-  }
-
-  .info_pagina .especial {
-    padding: 2rem;
-    text-align: center; 
-    font-size: 1.8rem;
-    font-weight: 700;
-    }
-
-    /* Estilos Infografías */
-.infografia{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-
+  grid-template-areas: "header" "main" "footer";
 }
-
-.infografia_img{
-  width: 60%;
-}
-
-/* Estilos separadores */
-
-    hr{
-      border-top: 2px solid #006794;
-      border-radius: 5px;
-      opacity: 1;
-    }
-
-/* Estilos hero: */
-
-.main__hero img {
-    width: 100%;
-    object-fit: cover; }
 
 /* Estilos del encabezado para desktop y tablet */
 .header__desktop,
 .header__mobile {
   grid-area: header;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
   grid-template-areas: "header__logo header__titulo header__nav";
+}
+.header__desktop .header__caja-logo,
+.header__mobile .header__caja-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* Estilos del logo en el encabezado */
+}
+.header__desktop .header__caja-logo .header__logo,
+.header__mobile .header__caja-logo .header__logo {
+  grid-area: header__logo;
+  width: 7.5rem;
+  background-color: white;
+}
+.header__desktop,
+.header__mobile {
   /* Estilos del título en el encabezado */
-  /* Estilos del nav en el encabezado */ }
-  .header__desktop .header__caja-logo,
-  .header__mobile .header__caja-logo {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    /* Estilos del logo en el encabezado */ }
-    .header__desktop .header__caja-logo .header__logo,
-    .header__mobile .header__caja-logo .header__logo {
-      grid-area: header__logo;
-      width: 7.5rem;
-      background-color: white; }
-  .header__desktop .header__titulo,
-  .header__mobile .header__titulo {
-    padding-left: 2rem;
-    background-color: white;
-    grid-area: header__titulo;
-    height: 100%;
-    text-align: left;
-    padding-top: 2rem;
-    /* Estilos de la clase "secretaria" dentro del título */
-    /* Estilos de la clase "olimpiadas" dentro del título */ }
-    .header__desktop .header__titulo .secretaria,
-    .header__mobile .header__titulo .secretaria {
-      font-size: 2rem;
-      font-weight: 600; }
-    .header__desktop .header__titulo .olimpiadas,
-    .header__mobile .header__titulo .olimpiadas {
-      font-size: 1.5rem;
-      font-weight: 500; }
-  .header__desktop .header__nav,
-  .header__mobile .header__nav {
-    font-size: 15px;
-    font-weight: 700;
-    grid-area: header__nav;
-    background-color: white;
-    /* Estilos del menú en el nav */ }
-    .header__desktop .header__nav .header__menu,
-    .header__mobile .header__nav .header__menu {
-      /* Estilos de los elementos del menú en el nav */ }
-      .header__desktop .header__nav .header__menu .header__menu-item,
-      .header__mobile .header__nav .header__menu .header__menu-item {
-        /* Estilos de los enlaces del menú en el nav */
-        /* Estilos de los subelementos del menú en el nav */
-        /* Estilos del efecto de resaltado en los subelementos del menú */ }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link,
-        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link {
-          color: #0096DA;
-          transition: 100ms; }
-          .header__desktop .header__nav .header__menu .header__menu-item .header__menu-link:hover,
-          .header__mobile .header__nav .header__menu .header__menu-item .header__menu-link:hover {
-            color: white;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #006794;
-            border: none;
-            border-radius: 50px; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem,
-        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
-          color: #0096DA;
-          cursor: pointer;
-          padding-left: 10px;
-          position: relative;
-          background-color: white; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem::after,
-        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #0096DA;
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 300ms ease-in; }
-        .header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after,
-        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
-          transform: scaleX(1);
-          transform-origin: left; }
+}
+.header__desktop .header__titulo,
+.header__mobile .header__titulo {
+  padding-left: 2rem;
+  background-color: white;
+  grid-area: header__titulo;
+  height: 100%;
+  text-align: left;
+  padding-top: 2rem;
+  /* Estilos de la clase "secretaria" dentro del título */
+}
+.header__desktop .header__titulo .secretaria,
+.header__mobile .header__titulo .secretaria {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.header__desktop .header__titulo,
+.header__mobile .header__titulo {
+  /* Estilos de la clase "olimpiadas" dentro del título */
+}
+.header__desktop .header__titulo .olimpiadas,
+.header__mobile .header__titulo .olimpiadas {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header__desktop,
+.header__mobile {
+  /* Estilos del nav en el encabezado */
+}
+.header__desktop .header__nav,
+.header__mobile .header__nav {
+  font-size: 15px;
+  font-weight: 700;
+  grid-area: header__nav;
+  background-color: white;
+  /* Estilos del menú en el nav */
+}
+.header__desktop .header__nav .header__menu,
+.header__mobile .header__nav .header__menu {
+  /* Estilos de los elementos del menú en el nav */
+}
+.header__desktop .header__nav .header__menu .header__menu-item,
+.header__mobile .header__nav .header__menu .header__menu-item {
+  /* Estilos de los enlaces del menú en el nav */
+}
+.header__desktop .header__nav .header__menu .header__menu-item .header__menu-link,
+.header__mobile .header__nav .header__menu .header__menu-item .header__menu-link {
+  color: #0096DA;
+  transition: 100ms;
+}
+.header__desktop .header__nav .header__menu .header__menu-item .header__menu-link:hover,
+.header__mobile .header__nav .header__menu .header__menu-item .header__menu-link:hover {
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006794;
+  border: none;
+  border-radius: 50px;
+}
+.header__desktop .header__nav .header__menu .header__menu-item,
+.header__mobile .header__nav .header__menu .header__menu-item {
+  /* Estilos de los subelementos del menú en el nav */
+}
+.header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem,
+.header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
+  color: #0096DA;
+  cursor: pointer;
+  padding-left: 10px;
+  position: relative;
+  background-color: white;
+}
+.header__desktop .header__nav .header__menu .header__menu-item,
+.header__mobile .header__nav .header__menu .header__menu-item {
+  /* Estilos del efecto de resaltado en los subelementos del menú */
+}
+.header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem::after,
+.header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0096DA;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+.header__desktop .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after,
+.header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 .header__mobile {
-  display: none; }
+  display: none;
+}
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1292px) {
@@ -173,24 +148,31 @@ body {
   .header__mobile {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "header__logo header__titulo"
- "header__nav header__nav";
-    /* Alineación centrada del título en pantallas medianas */ }
-    .header__desktop .header__caja-logo,
-    .header__mobile .header__caja-logo {
-      /* Estilos del logo en el encabezado */ }
-      .header__desktop .header__caja-logo .header__logo,
-      .header__mobile .header__caja-logo .header__logo {
-        margin-left: 1rem; }
-    .header__desktop .header__titulo,
-    .header__mobile .header__titulo {
-      text-align: center; } }
-
+    grid-template-areas: "header__logo header__titulo" "header__nav header__nav";
+  }
+  .header__desktop .header__caja-logo,
+  .header__mobile .header__caja-logo {
+    /* Estilos del logo en el encabezado */
+  }
+  .header__desktop .header__caja-logo .header__logo,
+  .header__mobile .header__caja-logo .header__logo {
+    margin-left: 1rem;
+  }
+  .header__desktop,
+  .header__mobile {
+    /* Alineación centrada del título en pantallas medianas */
+  }
+  .header__desktop .header__titulo,
+  .header__mobile .header__titulo {
+    text-align: center;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 /* Estilos del encabezado para Mobile */
 @media screen and (max-width: 767px) {
   .header__desktop {
-    display: none; }
+    display: none;
+  }
   /* Estilos del encabezado para Mobile */
   .header__mobile {
     display: grid;
@@ -198,26 +180,36 @@ body {
     grid-template-columns: 1fr auto;
     grid-template-areas: "header__nav header__logo";
     /* Ocultar título en pantallas pequeñas */
-    /* Ajustes en el tamaño del logo en pantallas pequeñas */ }
-    .header__mobile .header__titulo {
-      display: none; }
-    .header__mobile .header__logo {
-      width: 120px;
-      margin: 0; }
-    .header__mobile .header__nav {
-      font-size: 1rem;
-      margin-left: 2rem;
-      /* Estilos del nav en pantallas pequeñas */ }
-      .header__mobile .header__nav .navbar-toggler-icon {
-        width: 2rem;
-        height: 2rem; }
-      .header__mobile .header__nav .header__menu .header__menu-item {
-        /* Estilos de los subelementos del menú en el nav en pantallas pequeñas */ }
-        .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
-          font-size: 1rem; }
-        .header__mobile .header__nav .header__menu .header__menu-item .dropdown-menu {
-          width: max-content; } }
-
+  }
+  .header__mobile .header__titulo {
+    display: none;
+  }
+  .header__mobile {
+    /* Ajustes en el tamaño del logo en pantallas pequeñas */
+  }
+  .header__mobile .header__logo {
+    width: 120px;
+    margin: 0;
+  }
+  .header__mobile .header__nav {
+    font-size: 1rem;
+    margin-left: 2rem;
+    /* Estilos del nav en pantallas pequeñas */
+  }
+  .header__mobile .header__nav .navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header__mobile .header__nav .header__menu .header__menu-item {
+    /* Estilos de los subelementos del menú en el nav en pantallas pequeñas */
+  }
+  .header__mobile .header__nav .header__menu .header__menu-item .header__menu-subitem {
+    font-size: 1rem;
+  }
+  .header__mobile .header__nav .header__menu .header__menu-item .dropdown-menu {
+    width: max-content;
+  }
+}
 /* Estilos del pie de página */
 footer {
   display: grid;
@@ -232,57 +224,79 @@ footer {
   font-weight: 300;
   background: linear-gradient(90deg, #012a3d, #016794, #0096db, #3f87a6);
   /* Estilos del contenido izquierdo del pie de página */
+}
+footer .footer__izq {
+  grid-area: izq-footer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 5%;
+  /* Estilos del logo izquierdo del pie de página */
+}
+footer .footer__izq .footer__logo-izq {
+  width: 55%;
+}
+footer {
   /* Estilos de la línea vertical del pie de página */
-  /* Estilos del contenido derecho del pie de página */ }
-  footer .footer__izq {
-    grid-area: izq-footer;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding-left: 5%;
-    /* Estilos del logo izquierdo del pie de página */ }
-    footer .footer__izq .footer__logo-izq {
-      width: 55%; }
-  footer .footer__line {
-    grid-area: linea;
-    width: 2px;
-    height: 80%;
-    background-color: white;
-    opacity: 1;
-    align-self: center; }
-  footer .footer__der {
-    display: grid;
-    grid-template-rows: 1fr auto auto auto;
-    margin-left: 5rem;
-    /* Datos de contacto */
-    /* Correo de contacto */
-    /* Iconos de redes sociales */
-    /* Estilos del logo derecho del pie de página */ }
-    footer .footer__der .datosContacto {
-      padding-top: 10%;
-      grid-row: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: end; }
-    footer .footer__der .correo-oma {
-      padding: 4vh 0;
-      grid-row: 2;
-      margin-bottom: 0; }
-    footer .footer__der .iconos {
-      grid-row: 3;
-      padding-bottom: 7vh; }
-      footer .footer__der .iconos .iconos-face {
-        margin-right: 5vh; }
-      footer .footer__der .iconos img {
-        width: 7vh; }
-    footer .footer__der .logo {
-      grid-row: 4;
-      display: flex;
-      justify-content: end;
-      padding-right: 2rem;
-      padding-bottom: 2rem; }
-      footer .footer__der .logo img {
-        width: 30vh; }
+}
+footer .footer__line {
+  grid-area: linea;
+  width: 2px;
+  height: 80%;
+  background-color: white;
+  opacity: 1;
+  align-self: center;
+}
+footer {
+  /* Estilos del contenido derecho del pie de página */
+}
+footer .footer__der {
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  margin-left: 5rem;
+  /* Datos de contacto */
+}
+footer .footer__der .datosContacto {
+  padding-top: 10%;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer .footer__der {
+  /* Correo de contacto */
+}
+footer .footer__der .correo-oma {
+  padding: 4vh 0;
+  grid-row: 2;
+  margin-bottom: 0;
+}
+footer .footer__der {
+  /* Iconos de redes sociales */
+}
+footer .footer__der .iconos {
+  grid-row: 3;
+  padding-bottom: 7vh;
+}
+footer .footer__der .iconos .iconos-face {
+  margin-right: 5vh;
+}
+footer .footer__der .iconos img {
+  width: 7vh;
+}
+footer .footer__der {
+  /* Estilos del logo derecho del pie de página */
+}
+footer .footer__der .logo {
+  grid-row: 4;
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+footer .footer__der .logo img {
+  width: 30vh;
+}
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 1263px) {
@@ -292,260 +306,221 @@ footer {
     font-size: 1.5rem;
     font-weight: 400;
     /* Ocultar contenido izquierdo en pantallas medianas */
+  }
+  footer .footer__izq {
+    display: none;
+  }
+  footer {
     /* Ocultar línea vertical en pantallas medianas */
-    /* Estilos del contenido derecho del pie de página */ }
-    footer .footer__izq {
-      display: none; }
-    footer .footer__line {
-      display: none; }
-    footer .footer__der .logo img {
-      width: 30vh; } }
-
+  }
+  footer .footer__line {
+    display: none;
+  }
+  footer {
+    /* Estilos del contenido derecho del pie de página */
+  }
+  footer .footer__der .logo img {
+    width: 30vh;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   footer {
     font-size: 1rem;
-    font-weight: 400; }
-    footer .footer__der {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      margin: 0;
-      width: 100%;
-      /* Datos de contacto */
-      /* Correo de contacto */
-      /* Iconos de redes sociales */
-      /* Ocultar logo en pantallas pequeñas */ }
-      footer .footer__der .datosContacto {
-        line-height: 1.4; }
-      footer .footer__der .correo {
-        line-height: 1.2;
-        padding: 2.5rem 0;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      footer .footer__der .iconos img {
-        width: 3.5rem; }
-      footer .footer__der .logo {
-        display: none; } }
-
+    font-weight: 400;
+  }
+  footer .footer__der {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    /* Datos de contacto */
+  }
+  footer .footer__der .datosContacto {
+    line-height: 1.4;
+  }
+  footer .footer__der {
+    /* Correo de contacto */
+  }
+  footer .footer__der .correo {
+    line-height: 1.2;
+    padding: 2.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  footer .footer__der {
+    /* Iconos de redes sociales */
+  }
+  footer .footer__der .iconos img {
+    width: 3.5rem;
+  }
+  footer .footer__der {
+    /* Ocultar logo en pantallas pequeñas */
+  }
+  footer .footer__der .logo {
+    display: none;
+  }
+}
 /* Estilos de la página principal */
 .main__index {
   padding-bottom: 3rem;
   text-align: center;
   grid-area: main;
-  width: auto;}
+  width: auto;
   /* Estilos de la sección del hero */
+}
+.main__index .img-hero .hero {
+  width: 100%;
+  object-fit: cover;
+}
+.main__index {
   /* Estilos de las secciones internas */
-
-  .main__index .info_pagina{
-    padding-bottom: 0;
-  }
-
-  .main__index .noticias_article{
-    margin: 0 20rem;
-  }
-
-  .main__index .honor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-  }
-
-  .main__index .honor img{
-    width: 15rem;
-  }
-
-  .main__index .honor h2{
-    margin-left: 2rem;
-    font-size: 1.8rem;
-    color: #006794;
-    text-align: left;
-  }
-
-  .main__index .honor h2 .honor_olimpiada{
-    color: #000;
-  }
-
-  .main__index .honor h2 .honor_año{
-    color: #d5b76b;    
-  }
-
-  .main__index button.btn-honor{
-    color: white;
-    margin-left: 2rem;
-    background-color: #d5b76b;
-  }
-
-    hr.article_separador{
-      border-top: 2px solid #006794;
-      border-radius: 5px;
-      opacity: 1;
-    }
-
-
-  hr.noticias_separador{
-      border-top: 2px solid #006794;
-      border-radius: 5px;
-      opacity: 1;
-      margin: 2rem  0;
-    }
-
-  /* Estilos de la sección de iconos */ 
-  .main__index .img-hero .hero {
-    width: 100%;
-    object-fit: cover; }
-
-    .main__index section article {
-      padding: 2rem;
-      /* Estilos del iframe */ }
-      .main__index section article iframe {
-        height: 50vh;
-        width: 70%; }
-  .main__index .main__iconos {
-    margin-top: 3rem ;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 2fr 2fr;
-    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
-  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
-  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
-    /* Estilos de los enlaces */
-    /* Estilos del título de los iconos */
-    /* Definición de las áres de los iconos */ }
-    .main__index .main__iconos a img {
-      width: 200px; }
-    .main__index .main__iconos .main__iconos-titulo {
-      grid-area: main__iconos-titulo;
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
-    }
-    
-
-    
-    .main__index .main__iconos .main__iconos-logomateclubes {
-      grid-area: main__iconos-logomateclubes; }
-    .main__index .main__iconos .main__iconos-logonandu {
-      grid-area: main__iconos-logonandu; }
-    .main__index .main__iconos .main__iconos-logolym {
-      grid-area: main__iconos-logolym; }
-    .main__index .main__iconos .main__iconos-logotorngeoeimag {
-      grid-area: main__iconos-logotorngeoeimag; }
-    .main__index .main__iconos .main__iconos-logointernacionales {
-      grid-area: main__iconos-logointernacionales; }
-    .main__index .main__iconos .main__iconos-logoolimmayo {
-      grid-area: main__iconos-logoolimmayo; }
-    .main__index .main__iconos .main__iconos-logocanguro {
-      grid-area: main__iconos-logocanguro; }
-    .main__index .main__iconos .main__iconos-logoolimpri {
-      grid-area: main__iconos-logoolimpri; }
+}
+.main__index section {
+  /* Estilos de los artículos */
+}
+.main__index section article {
+  padding: 2rem;
+  /* Estilos del iframe */
+}
+.main__index section article iframe {
+  height: 50vh;
+  width: 70%;
+}
+.main__index {
+  /* Estilos de la sección de iconos */
+}
+.main__index .main__iconos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 2fr 2fr;
+  grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+  /* Estilos de los enlaces */
+}
+.main__index .main__iconos a img {
+  width: 200px;
+}
+.main__index .main__iconos {
+  /* Estilos del título de los iconos */
+}
+.main__index .main__iconos .main__iconos-titulo {
+  grid-area: main__iconos-titulo;
+}
+.main__index .main__iconos {
+  /* Definición de las áres de los iconos */
+}
+.main__index .main__iconos .main__iconos-logomateclubes {
+  grid-area: main__iconos-logomateclubes;
+}
+.main__index .main__iconos .main__iconos-logonandu {
+  grid-area: main__iconos-logonandu;
+}
+.main__index .main__iconos .main__iconos-logolym {
+  grid-area: main__iconos-logolym;
+}
+.main__index .main__iconos .main__iconos-logotorngeoeimag {
+  grid-area: main__iconos-logotorngeoeimag;
+}
+.main__index .main__iconos .main__iconos-logointernacionales {
+  grid-area: main__iconos-logointernacionales;
+}
+.main__index .main__iconos .main__iconos-logoolimmayo {
+  grid-area: main__iconos-logoolimmayo;
+}
+.main__index .main__iconos .main__iconos-logocanguro {
+  grid-area: main__iconos-logocanguro;
+}
+.main__index .main__iconos .main__iconos-logoolimpri {
+  grid-area: main__iconos-logoolimpri;
+}
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 800px) {
   .main__index {
-    /* Ajustes en la disposición de los iconos para pantallas medianas */ }
-    .main__index .main__iconos {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto repeat(2, 1fr);
-      grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo"
-  "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag"
-  "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
-      /* Ajustes en el ancho de las imágenes de los iconos para pantallas pequeñas */ }
-    .main__index .main__iconos a img {
-      width: 130px; } }
-    
+    /* Ajustes en la disposición de los iconos para pantallas medianas */
+  }
+  .main__index .main__iconos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
+    /* Ajustes en el ancho de las imágenes de los iconos para pantallas pequeñas */
+  }
+  .main__index .main__iconos a img {
+    width: 130px;
+  }
+}
 /* Estilos responsivos para pantallas más pequeñas */
 @media screen and (max-width: 550px) {
-    .main__index {
-    /* Ajustes en la disposición de los iconos para pantallas más pequeñas */ }
-    
-    .main__index .main__iconos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto repeat(4, 1fr);
-      grid-template-areas: "main__iconos-titulo main__iconos-titulo"
-  "main__iconos-logomateclubes main__iconos-logonandu"
-  "main__iconos-logolym main__iconos-logotorngeoeimag"
-  "main__iconos-logointernacionales main__iconos-logoolimmayo"
-  "main__iconos-logocanguro main__iconos-logoolimpri";
-      /* Ajustes en el ancho de las imágenes de los iconos para pantallas más pequeñas */ }
-      .main__index .main__iconos a img {
-        width: 170px; } }
-
+  .main__index {
+    /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
+  }
+  .main__index .main__iconos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(4, 1fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu" "main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo" "main__iconos-logocanguro main__iconos-logoolimpri";
+    /* Ajustes en el ancho de las imágenes de los iconos para pantallas más pequeñas */
+  }
+  .main__index .main__iconos a img {
+    width: 170px;
+  }
+}
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
   .main__index {
-    /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */ }
-    .main__index .main__iconos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto repeat(4, 2fr);
-      grid-template-areas: "main__iconos-titulo main__iconos-titulo"
-  "main__iconos-logomateclubes main__iconos-logonandu"
-  "main__iconos-logolym main__iconos-logotorngeoeimag"
-  "main__iconos-logointernacionales main__iconos-logoolimmayo"
-  "main__iconos-logocanguro main__iconos-logoolimpri";
-      /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */ }
-      .main__index .main__iconos a img {
-        width: 145px; } }
-
+    /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */
+  }
+  .main__index .main__iconos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(4, 2fr);
+    grid-template-areas: "main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu" "main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo" "main__iconos-logocanguro main__iconos-logoolimpri";
+    /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */
+  }
+  .main__index .main__iconos a img {
+    width: 145px;
+  }
+}
 /* Estilos del main apuntes */
 .main__apuntes {
   grid-area: main;
   /* Estilos para los párrafos */
-  text-align: center; }
-  .main__apuntes .parrafos {
-    padding-top: 3rem;
-    text-align: center; }
-    .main__apuntes .parrafos h1 {
-      font-size: 2rem;
-      padding-bottom: 1rem; }
-    .main__apuntes .parrafos p {
-      padding: 0 3rem; }
-    .main__apuntes .parrafos .especial {
-      color: red; }
-      .main__apuntes .parrafos .especial span {
-        font-weight: 700; }
-
-      .main__apuntes p.advertencia{
-        text-align: left; 
-        margin: 1rem 6rem;
-        padding: 1rem;
-        background-color:#f6f6f6 ;
-        border-radius: 20px;
-      }
-
-      .main__apuntes p.advertencia span{
-        font-size: 1.8rem;
-        color: #d43377;
-      }
-
-      .main__apuntes p.advertencia a{
-        text-decoration: none;
-        color: #90278f;
-      }
-
-      .main__apuntes p.advertencia a:hover{
-        text-decoration: none;
-        color: #c450c5;
-      }
-
-      .main__apuntes p.nota{
-        font-style: italic;
-        font-weight: 200;
-        font-size: 1.2rem;
-      }
-        
-  .main__apuntes section {
-    /* Estilos para las cards de cada apunte */ }
-    .main__apuntes section h2 {
-      padding: 2rem 0; }
-    .main__apuntes section .container-cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      .main__apuntes section .container-cards .card {
-        width: 18rem;
-        margin: 0.5rem; }
+}
+.main__apuntes .parrafos {
+  padding-top: 3rem;
+  text-align: center;
+}
+.main__apuntes .parrafos h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.main__apuntes .parrafos p {
+  padding: 0 3rem;
+}
+.main__apuntes .parrafos .especial {
+  color: red;
+}
+.main__apuntes .parrafos .especial span {
+  font-weight: 700;
+}
+.main__apuntes {
+  text-align: center;
+}
+.main__apuntes section h2 {
+  padding: 2rem 0;
+}
+.main__apuntes section {
+  /* Estilos para las cards de cada apunte */
+}
+.main__apuntes section .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__apuntes section .container-cards .card {
+  width: 18rem;
+  margin: 0.5rem;
+}
 
 /* Estilos del main competencias */
 .main__competencias {
@@ -553,405 +528,390 @@ footer {
   flex-direction: column;
   align-items: center;
   /* Estilos de cada sección de competencia */
-
-  /* Ajustes de margen para la primera y última sección de competencia */ }
-  .main__competencias .main__section-competencia {
-    margin: 4rem 6rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding:0 20rem;
-  }
-
-    /* Estilos de las imagenes en la sección de competencia */
-    .main__competencias .main__section-competencia img {
-      width: 300px;
-      margin-right: 4rem; }
-
-    .logo_cabezon{
-      padding: 20px;
-    }
-
-    .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-      display: flex;
-      flex-direction: column;
-      width:100%;
-    }
-
-      /* Estilos del título de cada una de las competencias */
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
-        padding-top: 2rem; }
-
-      /* Estilos del texto de cada una de las competencias */
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion  {
-        text-align: left; }
-
-       /* Estilos del contenedor del boton  */
-      .botones_competencias{
-        display:flex;
-        justify-content: right;
-        text-align: justify;
-      }
-
-      /* Estilos de los botones en la sección de competencia */ 
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
-        display: block;
-        padding: 0.5rem 2rem;
-        margin-top: 10px;
-        margin-left: 1rem;
-        background-color: #1a4789;
-        border-color: #1a4789;
-        border-radius: 5px;
-
-        /* Estilos del enlace dentro del botón */ }
-        .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
-          text-decoration: none;
-          color: white; 
-          font-size: 800;
-        }
-
-  .main__competencias .main__section-competencia:first-child {
-    margin-top: 3rem; }
-  .main__competencias .main__section-competencia:last-child {
-    margin-bottom: 10rem; }
+}
+.main__competencias .main__section-competencia {
+  margin-top: 7rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  /* Estilos de las imagenes en la sección de competencia */
+}
+.main__competencias .main__section-competencia img {
+  width: 20rem;
+  margin-right: 4rem;
+}
+.main__competencias .main__section-competencia {
+  /* Estilos del título y la descripción de cada una de las competencias */
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  /* Estilos del título de cada una de las competencias */
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
+  padding-top: 2rem;
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion {
+  /* Estilos de los botones en la sección de competencia */
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
+  display: block;
+  margin-top: 10px;
+  /* Estilos del enlace dentro del botón */
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
+  text-decoration: none;
+  color: white;
+}
+.main__competencias {
+  /* Ajustes de margen para la primera y última sección de competencia */
+}
+.main__competencias .main__section-competencia:first-child {
+  margin-top: 3rem;
+}
+.main__competencias .main__section-competencia:last-child {
+  margin-bottom: 3rem;
+}
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 869px) {
   .main__competencias {
-    /* Ajustes en la dirección de flexión para las secciones de competencia */ }
-    .main__competencias .main__section-competencia {
-      flex-direction: column;
-      margin-top: 3rem; }
-      .main__competencias .main__section-competencia img {
-        width: 15rem;
-        margin-right: 0; } }
-
+    /* Ajustes en la dirección de flexión para las secciones de competencia */
+  }
+  .main__competencias .main__section-competencia {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .main__competencias .main__section-competencia img {
+    width: 15rem;
+    margin-right: 0;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 568px) {
   .main__competencias {
-    /* Ajustes en la dirección de flexión para las secciones de competencia */ }
-    .main__competencias .main__section-competencia {
-      flex-direction: column; }
-      .main__competencias .main__section-competencia img {
-        width: 45%;
-        margin-right: 0; }
-      .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-        width: 80%; } }
-
+    /* Ajustes en la dirección de flexión para las secciones de competencia */
+  }
+  .main__competencias .main__section-competencia {
+    flex-direction: column;
+  }
+  .main__competencias .main__section-competencia img {
+    width: 45%;
+    margin-right: 0;
+  }
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+    width: 80%;
+  }
+}
 /* Estilos del main "En qué participo" */
 .main__enqueparticipo {
   grid-area: main;
-  }
   /* Estilos de las secciones internas */
- 
+}
+.main__enqueparticipo .img__enqueparticipo {
+  text-align: center;
+  padding: 1rem 3rem;
+}
+.main__enqueparticipo {
   /* Estilos de las imágenes */
-  .main__enqueparticipo section {
-    text-align: center;
-    padding: 1rem 3rem; }
-  .main__enqueparticipo img {
-    max-width: 100%; }
+}
+.main__enqueparticipo .main_hero img {
+  padding: 0;
+  width: 100%;
+}
+.main__enqueparticipo img {
+  max-width: 100%;
+}
 
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 800px) {
+  /* Estilos de las imágenes */
+  .main_hero img {
+    padding: 0;
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   .main__enqueparticipo {
     /* Ajustes en las secciones internas para pantallas pequeñas */
-    /* Ajustes en el ancho máximo de las imágenes para pantallas pequeñas */ }
-    .main__enqueparticipo section {
-      text-align: center;
-      padding: 0 3rem;
-      font-size: 0.7rem; }
-    .main__enqueparticipo img {
-      max-width: auto; } }
-
+  }
+  .main__enqueparticipo section {
+    text-align: center;
+    padding: 0 3rem;
+    font-size: 0.7rem;
+  }
+  .main__enqueparticipo {
+    /* Ajustes en el ancho máximo de las imágenes para pantallas pequeñas */
+  }
+  .main__enqueparticipo img {
+    max-width: auto;
+  }
+}
 /* Estilos del main leñitas */
 .main__lenitas {
   grid-area: main;
   /* Estilos img principal */
+}
+.main__lenitas .main__hero img {
+  width: 100%;
+  object-fit: cover;
+}
+.main__lenitas {
   /* Estilos de los párrafos */
 }
-
-
-    .main__lenitas .info_pagina p.especial .enfasis-especial {
-      color: #d43377;
-      text-align: center; 
-    }
-      
-
-    .main__lenitas .info_pagina .despues_de_enfasis{
-      width: 80%;
-    }
-
-    .main__lenitas .info_pagina .ultimo {
-      color: #ff914d;
+.main__lenitas .main__textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5rem 3.5rem;
 }
-
+.main__lenitas .main__textos h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+.main__lenitas .main__textos h2 .enfasis-lenita {
+  color: #90278F;
+  text-align: center;
+}
+.main__lenitas .main__textos p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.main__lenitas .main__textos .ultimo {
+  color: #c0145c;
+  font-weight: 500;
+}
+.main__lenitas {
   /* Estilos generales de cada lista de leñitas de cada año */
+}
+.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2023, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2021 {
+  margin: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  width: 80%;
+  align-self: center;
+  text-align: left;
+}
+.main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2023 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2021 div ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(18rem, 1fr));
+  justify-items: start;
+  gap: 10px;
+  text-align: center;
+  margin: 0 10%;
+  list-style-type: none;
+}
+.main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a {
+  text-decoration: none;
+  color: black;
+}
+.main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+  font-weight: 900;
+}
+.main__lenitas {
   /* Estilos leñitas del 2021 */
+}
+.main__lenitas .main__lista-lenitas-2021 .color-year {
+  color: #D43377;
+}
+.main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+  color: #EB79A9;
+}
+.main__lenitas {
   /* Estilos leñitas del 2022 */
-  /* Estilos leñitas del 2023 */ 
-
-
-
-  .main__lenitas .lista-lenitas, 
-  .main__lenitas .main__lista-lenitas-2021, 
-  .main__lenitas .main__lista-lenitas-2022, 
-  .main__lenitas .main__lista-lenitas-2023, 
-  .main__lenitas .main__lista-lenitas-2024, 
-  .main__lenitas .main__lista-lenitas-2025 {
-    margin: 6rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    .main__lenitas .lista-lenitas .color-year, 
-    .main__lenitas .main__lista-lenitas-2021 .color-year, 
-    .main__lenitas .main__lista-lenitas-2022 .color-year, 
-    .main__lenitas .main__lista-lenitas-2023 .color-year, 
-    .main__lenitas .main__lista-lenitas-2024 .color-year, 
-    .main__lenitas .main__lista-lenitas-2025 .color-year {
-      margin-bottom: 1rem;
-      font-weight: 900;
-      width: 60%;
-      align-self: center;
-      text-align: left; }
-    .main__lenitas .lista-lenitas div ol, 
-    .main__lenitas .main__lista-lenitas-2021 div ol, 
-    .main__lenitas .main__lista-lenitas-2022 div ol, 
-    .main__lenitas .main__lista-lenitas-2023 div ol, 
-    .main__lenitas .main__lista-lenitas-2024 div ol, 
-    .main__lenitas .main__lista-lenitas-2025 div ol {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(18rem, 1fr));
-      justify-items: start;
-      gap: 10px;
-      text-align: center;
-      margin: 0 21%;
-      list-style-type: none; }
-      .main__lenitas .lista-lenitas div ol a, 
-      .main__lenitas .main__lista-lenitas-2021 div ol a, 
-      .main__lenitas .main__lista-lenitas-2022 div ol a, 
-      .main__lenitas .main__lista-lenitas-2023 div ol a, 
-      .main__lenitas .main__lista-lenitas-2024 div ol a, 
-      .main__lenitas .main__lista-lenitas-2025 div ol a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: black; }
-        .main__lenitas .lista-lenitas div ol a li .color-numero, 
-        .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, 
-        .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, 
-        .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero, 
-        .main__lenitas .main__lista-lenitas-2024 .color-numero, 
-        .main__lenitas .main__lista-lenitas-2025 .color-numero {
-          font-weight: 900; }
-  .main__lenitas .main__lista-lenitas-2021 .color-year {
-    color: #D43377;
-    font-size: 3rem ;
-  }
-  .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
-    font-size: 1.5rem;
-    color: #EB79A9; }
-  .main__lenitas .main__lista-lenitas-2022 .color-year {
-    font-size: 3rem ;
-    color: #fdb87b; }
-  .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
-    font-size: 1.5rem;
-    color: #ffd1a9; }
-  .main__lenitas .main__lista-lenitas-2023 .color-year {
-    font-size: 3rem ;
-    color: #8eb370; }
-  .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
-    font-size: 1.5rem;
-      color: #afd389; }
-  .main__lenitas .main__lista-lenitas-2024 .color-year {
-    font-size: 3rem ;
-    color: #72a1ff; }
-  .main__lenitas .main__lista-lenitas-2024 div ol a li .color-numero {
-    font-size: 1.5rem;
-      color: #abc5ff; }
-  .main__lenitas .main__lista-lenitas-2025 .color-year {
-    font-size: 3rem ;
-    color: #c450c5 }
-  .main__lenitas .main__lista-lenitas-2025 div ol a li .color-numero {
-    font-size: 1.5rem;
-      color: #cc6afc; }
-  .main__lenitas .main__lista-lenitas-2026 .color-year {
-    font-size: 3rem ;
-    color: #D43377; }
-  .main__lenitas .main__lista-lenitas-2026 div ol a li .color-numero {
-    font-size: 1.5rem;
-    color: #EB79A9; }
-
-    .main__lenitas .main__lista-lenitas-2021 {
-    margin-bottom: 10rem; }
+}
+.main__lenitas .main__lista-lenitas-2022 .color-year {
+  color: #5590ff;
+}
+.main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
+  color: #729ae9;
+}
+.main__lenitas {
+  /* Estilos leñitas del 2023 */
+}
+.main__lenitas .main__lista-lenitas-2023 {
+  margin-bottom: 10rem;
+}
+.main__lenitas .main__lista-lenitas-2023 .color-year {
+  color: #ffa352;
+}
+.main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
+  color: #e7a66e;
+}
 
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
-  .main__lenitas .lista-lenitas div ol, 
-    .main__lenitas .main__lista-lenitas-2021 div ol, 
-    .main__lenitas .main__lista-lenitas-2022 div ol, 
-    .main__lenitas .main__lista-lenitas-2023 div ol, 
-    .main__lenitas .main__lista-lenitas-2024 div ol, 
-    .main__lenitas .main__lista-lenitas-2025 div ol {
-    grid-template-columns: repeat(2, minmax(18rem, 1fr)); } }
-
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+    grid-template-columns: repeat(2, minmax(18rem, 1fr));
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 568px) {
-    .main__lenitas .main__textos {
+  .main__lenitas .main__textos {
     font-size: 1rem;
-    padding: 0; }
-    .main__lenitas .main__textos h1 {
-      font-size: 1.5rem;
-      padding: 1rem 0;
-      padding-top: 3rem; }
-    .main__lenitas .main__textos h2 {
-      padding: 1rem; }
-    .main__lenitas .main__textos p {
-      padding: 1rem 1.5rem; }
-    .main__lenitas .main__textos .ultimo {
-      padding-bottom: 0; }
-    .main__lenitas .lista-lenitas, 
-    .main__lenitas .main__lista-lenitas-2021, 
-    .main__lenitas .main__lista-lenitas-2022, 
-    .main__lenitas .main__lista-lenitas-2023, 
-    .main__lenitas .main__lista-lenitas-2024, 
-    .main__lenitas .main__lista-lenitas-2025 {
-    margin: 2rem 0; }
-    .main__lenitas .lista-lenitas .color-year, 
-    .main__lenitas .main__lista-lenitas-2021 .color-year, 
-    .main__lenitas .main__lista-lenitas-2022 .color-year, 
-    .main__lenitas .main__lista-lenitas-2023 .color-year, 
-    .main__lenitas .main__lista-lenitas-2024 .color-year, 
-    .main__lenitas .main__lista-lenitas-2025 .color-year {
-      text-align: center;
-      padding-bottom: 1rem; }
-    .main__lenitas .lista-lenitas div ol, 
-    .main__lenitas .main__lista-lenitas-2021 div ol, 
-    .main__lenitas .main__lista-lenitas-2022 div ol, 
-    .main__lenitas .main__lista-lenitas-2023 div ol, 
-    .main__lenitas .main__lista-lenitas-2024 div ol, 
-    .main__lenitas .main__lista-lenitas-2025 div ol {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center; } }
-
-/* Estilos del main libros*/
+    padding: 0;
+  }
+  .main__lenitas .main__textos h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding-top: 3rem;
+  }
+  .main__lenitas .main__textos h2 {
+    padding: 1rem;
+  }
+  .main__lenitas .main__textos p {
+    padding: 1rem 1.5rem;
+  }
+  .main__lenitas .main__textos .ultimo {
+    padding-bottom: 0;
+  }
+  .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
+    margin: 2rem 0;
+  }
+  .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Estilos del main competencias */
 .main__libros {
   grid-area: main;
   /* Estilos de los párrafos */
+}
+.main__libros .compra__libros {
+  padding-top: 3rem;
   text-align: center;
-  /* Estilos de cada sección */ }
-  .main__libros .info_pagina {
-    padding-top: 3rem;
-    text-align: center; }
-    .main__libros .info_pagina h1 {
-      font-size: 2rem;
-      padding-bottom: 1rem; }
-    .main__libros .info_pagina p {
-      padding: 0 3rem; }
-
-    .main__libros .info_pagina button {
-      padding: 1rem 2rem;
-      background-color: #f7b500; 
-      border-color: #f7b500;
-      border-radius: 35px;
-      margin: 1rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-    .main__libros .info_pagina button:active {
-      background-color: #ffd48f; 
-      border-color: #ffd48f;
-  
-    }
-    .main__libros section {
-
-    /* Estilos de todas las cards con portadas de libros */ }
-    .main__libros section h2 {
-      padding: 2rem 0; }
-    .main__libros section .container-cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      .main__libros section .container-cards .card {
-        width: 20rem;
-        margin: 0.5rem; }
+}
+.main__libros .compra__libros h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.main__libros .compra__libros p {
+  padding: 0 3rem;
+}
+.main__libros .compra__libros a {
+  padding: auto;
+}
+.main__libros {
+  text-align: center;
+  /* Estilos de cada sección */
+}
+.main__libros section h2 {
+  padding: 2rem 0;
+}
+.main__libros section {
+  /* Estilos de todas las cards con portadas de libros */
+}
+.main__libros section .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__libros section .container-cards .card {
+  width: 20rem;
+  margin: 0.5rem;
+}
 
 /* Estilos de la página "¿Qué es OMA?" */
-
 .main__queesoma {
   display: flex;
   flex-direction: column;
   color: white;
   grid-area: main;
   /* Estilos de las secciones internas */
-  /* Bucle for para asignar colores de fondo a las secciones internas */ }
-  .main__queesoma section {
-    display: flex;
-    padding: 2rem 12rem;
-    align-items: center;
-    /* Estilos del título h2 */
-    /* Estilos del subtítulo h3 */
-    /* Estilos de la última sección */
-    /* Estilos de los párrafos */ }
-    .main__queesoma section.main__hero {
-      padding: 0;
-      margin-bottom: 4rem;
-    }
-    .main__queesoma section h2 {
-      width: 35%;
-      text-align: right; 
-      padding-right: 3rem;
-    }
-    .main__queesoma section h3 {
-      font-size: 1.5rem; }
-    .main__queesoma section .section-especial {
-
-      display: flex;
-      flex-direction: column;
-      width: 35%; 
-      align-items: center;
-
-
-      /* Estilos del botón */ }
-      .main__queesoma section .section-especial h2 {
-        width: auto; }
-      .main__queesoma section .section-especial .btn {
-        width: auto;
-        background-color: #d43377; 
-        border-color: #d43377;
-        border-radius: 35px;
-        font-size: 1rem;
-
-      }
-    .main__queesoma section .parrafos {
-      width: 65%;
-      display: flex;
-      flex-direction: column;
-      padding: 10px; }
-  .main__queesoma .section-1 {
-    color: #72a1ff; }
-  .main__queesoma .section-2 {
-    color: #f7b500; }
-  .main__queesoma .section-3 {
-    color: #d43377; }
-
-
-
-
+}
+.main__queesoma section {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  /* Estilos del título h2 */
+}
+.main__queesoma section h2 {
+  width: 35%;
+  text-align: center;
+}
+.main__queesoma section {
+  /* Estilos del subtítulo h3 */
+}
+.main__queesoma section h3 {
+  font-size: 1.5rem;
+}
+.main__queesoma section {
+  /* Estilos de la última sección */
+}
+.main__queesoma section .section-especial {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center;
+}
+.main__queesoma section .section-especial h2 {
+  width: auto;
+}
+.main__queesoma section .section-especial {
+  /* Estilos del botón */
+}
+.main__queesoma section .section-especial .btn {
+  width: auto;
+}
+.main__queesoma section {
+  /* Estilos de los párrafos */
+}
+.main__queesoma section .parrafos {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main__queesoma {
+  /* Bucle for para asignar colores de fondo a las secciones internas */
+}
+.main__queesoma .section-1 {
+  background-color: #0096DA;
+}
+.main__queesoma .section-2 {
+  background-color: #006794;
+}
+.main__queesoma .section-3 {
+  background-color: #012A3D;
+}
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
   .main__queesoma section {
     /* Ajustes en el tamaño del título h2 para pantallas medianas */
-    /* Ajustes en el tamaño del subtítulo h3 para pantallas medianas */ }
-    .main__queesoma section h2 {
-      font-size: 1.5rem; }
-    .main__queesoma section h3 {
-      font-size: 1.2rem; } }
-
+  }
+  .main__queesoma section h2 {
+    font-size: 1.5rem;
+  }
+  .main__queesoma section {
+    /* Ajustes en el tamaño del subtítulo h3 para pantallas medianas */
+  }
+  .main__queesoma section h3 {
+    font-size: 1.2rem;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .main__queesoma section {
@@ -960,26 +920,39 @@ footer {
     width: 100%;
     padding: 0;
     /* Ajustes en la última sección para pantallas pequeñas */
+  }
+  .main__queesoma section .section-especial {
+    width: 100%;
+  }
+  .main__queesoma section .section-especial h2 {
+    padding-bottom: 0;
+  }
+  .main__queesoma section .section-especial {
+    /* Estilos del botón */
+  }
+  .main__queesoma section .section-especial .btn {
+    margin-bottom: 1rem;
+  }
+  .main__queesoma section {
     /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
-    /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */ }
-    .main__queesoma section .section-especial {
-      width: 100%;
-      /* Estilos del botón */ }
-      .main__queesoma section .section-especial h2 {
-        padding-bottom: 0; }
-      .main__queesoma section .section-especial .btn {
-        margin-bottom: 1rem; }
-    .main__queesoma section h2 {
-      width: 90%;
-      padding: 1rem 0; }
-    .main__queesoma section h3 {
-      padding-top: 1rem;
-      font-size: 1.3rem; }
-    .main__queesoma section .parrafos {
-      padding: 0;
-      width: 80%;
-      text-align: center; } }
-
+  }
+  .main__queesoma section h2 {
+    width: 90%;
+    padding: 1rem 0;
+  }
+  .main__queesoma section {
+    /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */
+  }
+  .main__queesoma section h3 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .main__queesoma section .parrafos {
+    padding: 0;
+    width: 80%;
+    text-align: center;
+  }
+}
 /* Estilos de la página "Secretarias Córdoba" */
 .main__secretariascordoba {
   display: flex;
@@ -987,143 +960,186 @@ footer {
   align-items: center;
   grid-area: main;
   width: 100%;
-  /* Estilos del acordeón */ }
-  .main__secretariascordoba .accordion {
-    margin-top: 4rem;
-    width: 50%; }
-  .main__secretariascordoba .iframe {
-    margin: 5rem 0;
-    width: 50%;
-    height: 30rem; }
-    .main__secretariascordoba .iframe iframe {
-      width: 100%;
-      height: 100%; }
+  /* Estilos del acordeón */
+}
+.main__secretariascordoba .accordion {
+  width: 50%;
+}
+.main__secretariascordoba .iframe {
+  margin: 5rem 0;
+  width: 50%;
+  height: 30rem;
+}
+.main__secretariascordoba .iframe iframe {
+  width: 100%;
+  height: 100%;
+}
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
   .main__secretariascordoba {
-    /* Ajustes en el ancho del acordeón para pantallas pequeñas */ }
-    .main__secretariascordoba .accordion {
-      width: 80%; }
-    .main__secretariascordoba .iframe {
-      margin: 5rem 0;
-      width: 80%;
-      height: 20rem; } }
-  
+    /* Ajustes en el ancho del acordeón para pantallas pequeñas */
+  }
+  .main__secretariascordoba .accordion {
+    width: 80%;
+  }
+  .main__secretariascordoba .iframe {
+    margin: 5rem 0;
+    width: 80%;
+    height: 20rem;
+  }
+}
 /* Estilos del main contactos */
 .main__contactos {
   grid-area: main;
-  /* Estilos del contenedor de todo el form incluidas ambas partes */ }
-  .main__contactos .container {
-    max-width: 1000px;
-    padding: 3rem 1.5rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* Estilos parte izquierda del formulario */
-    /* Estilos parte izquierda del formulario */ }
-    .main__contactos .container .contact-form {
-      color: black;
-      background: white;
-      padding: 3rem; }
-      .main__contactos .container .contact-form h2 {
-        text-align: center;
-        padding-bottom: 2rem;
-        color: #006794;
-        margin: 0; }
-      .main__contactos .container .contact-form form {
-        display: grid;
-        grid-template-columns: 1fr 1fr; }
-        .main__contactos .container .contact-form form p {
-          padding: 0.8rem; }
-          .main__contactos .container .contact-form form p input,
-          .main__contactos .container .contact-form form p textarea {
-            color: black;
-            width: 100%;
-            padding: 0.5rem;
-            border: none;
-            background: none;
-            outline: 0;
-            border-bottom: 2px solid #006794;
-            resize: none; }
-          .main__contactos .container .contact-form form p button {
-            color: #fff;
-            background: #FFB800;
-            font-size: 1.5rem;
-            font-weight: 500;
-            padding: 0.5rem 3rem;
-            width: auto;
-            border: none;
-            border-radius: 50px; }
-          .main__contactos .container .contact-form form p label {
-            color: black;
-            display: block; }
-        .main__contactos .container .contact-form form .enviar {
-          text-align: center;
-          margin: 0; }
-        .main__contactos .container .contact-form form .block {
-          grid-column: 1 / 3; }
-    .main__contactos .container .contact-info {
-      color: white;
-      background: #006794;
-      display: flex;
-      flex-direction: column;
-      justify-content: end; }
-      .main__contactos .container .contact-info .centrado {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 3rem 0.7rem; }
-        .main__contactos .container .contact-info .centrado h3 {
-          padding-bottom: 2rem;
-          margin: 0; }
-        .main__contactos .container .contact-info .centrado ul {
-          list-style: none;
-          padding: 0; }
-          .main__contactos .container .contact-info .centrado ul li {
-            padding: 0.5rem 0; }
-      .main__contactos .container .contact-info div {
-        display: flex;
-        justify-content: end; }
-        .main__contactos .container .contact-info div img {
-          width: 40%;
-          padding-bottom: 0.8rem;
-          padding-right: 0.8rem; }
+  /* Estilos del contenedor de todo el form incluidas ambas partes */
+}
+.main__contactos .container {
+  max-width: 1000px;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* Estilos parte izquierda del formulario */
+}
+.main__contactos .container .contact-form {
+  color: black;
+  background: white;
+  padding: 3rem;
+}
+.main__contactos .container .contact-form h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #006794;
+  margin: 0;
+}
+.main__contactos .container .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main__contactos .container .contact-form form p {
+  padding: 0.8rem;
+}
+.main__contactos .container .contact-form form p input,
+.main__contactos .container .contact-form form p textarea {
+  color: black;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 2px solid #006794;
+  resize: none;
+}
+.main__contactos .container .contact-form form p button {
+  color: #fff;
+  background: #FFB800;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 3rem;
+  width: auto;
+  border: none;
+  border-radius: 50px;
+}
+.main__contactos .container .contact-form form p label {
+  color: black;
+  display: block;
+}
+.main__contactos .container .contact-form form .enviar {
+  text-align: center;
+  margin: 0;
+}
+.main__contactos .container .contact-form form .block {
+  grid-column: 1/3;
+}
+.main__contactos .container {
+  /* Estilos parte izquierda del formulario */
+}
+.main__contactos .container .contact-info {
+  color: white;
+  background: #006794;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.main__contactos .container .contact-info .centrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0.7rem;
+}
+.main__contactos .container .contact-info .centrado h3 {
+  padding-bottom: 2rem;
+  margin: 0;
+}
+.main__contactos .container .contact-info .centrado ul {
+  list-style: none;
+  padding: 0;
+}
+.main__contactos .container .contact-info .centrado ul li {
+  padding: 0.5rem 0;
+}
+.main__contactos .container .contact-info div {
+  display: flex;
+  justify-content: end;
+}
+.main__contactos .container .contact-info div img {
+  width: 40%;
+  padding-bottom: 0.8rem;
+  padding-right: 0.8rem;
+}
 
 @media (min-width: 569px) and (max-width: 992px) {
   /* Estilos del main contactos */
   .main__contactos {
-    /* Estilos del contenedor de todo el form incluidas ambas partes */ }
-    .main__contactos .container {
-      padding: 3rem 1.5rem;
-      grid-template-columns: 1fr;
-      /* Estilos parte izquierda del formulario */
-      /* Estilos parte izquierda del formulario */ }
-      .main__contactos .container .contact-form {
-        padding: 1rem; }
-        .main__contactos .container .contact-form form .enviar {
-          margin: 0; }
-      .main__contactos .container .contact-info .centrado {
-        padding: 1rem 0.5rem;
-        padding-bottom: 0; }
-        .main__contactos .container .contact-info .centrado h3 {
-          padding-bottom: 1rem;
-          margin: 0; }
-      .main__contactos .container .contact-info div img {
-        display: none; } }
-
+    /* Estilos del contenedor de todo el form incluidas ambas partes */
+  }
+  .main__contactos .container {
+    padding: 3rem 1.5rem;
+    grid-template-columns: 1fr;
+    /* Estilos parte izquierda del formulario */
+  }
+  .main__contactos .container .contact-form {
+    padding: 1rem;
+  }
+  .main__contactos .container .contact-form form .enviar {
+    margin: 0;
+  }
+  .main__contactos .container {
+    /* Estilos parte izquierda del formulario */
+  }
+  .main__contactos .container .contact-info .centrado {
+    padding: 1rem 0.5rem;
+    padding-bottom: 0;
+  }
+  .main__contactos .container .contact-info .centrado h3 {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .main__contactos .container .contact-info div img {
+    display: none;
+  }
+}
 /* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 568px) {
   .main__contactos .container {
     padding-top: 4rem;
-    grid-template-columns: 1fr; }
-    .main__contactos .container .contact-form {
-      padding: 0; }
-      .main__contactos .container .contact-form form {
-        display: flex;
-        flex-direction: column; }
-        .main__contactos .container .contact-form form button {
-          font-size: 1rem;
-          font-weight: 500; }
-    .main__contactos .container .contact-info div img {
-      display: none; } }
+    grid-template-columns: 1fr;
+  }
+  .main__contactos .container .contact-form {
+    padding: 0;
+  }
+  .main__contactos .container .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__contactos .container .contact-form form button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .main__contactos .container .contact-info div img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

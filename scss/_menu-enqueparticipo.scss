@@ -1,7 +1,7 @@
 /* Estilos del main "En qué participo" */
-.main__enqueparticipo{ 
+.main__enqueparticipo {
     grid-area: main;
-    
+
     /* Estilos de las secciones internas */
     .img__enqueparticipo {
         text-align: center;
@@ -9,29 +9,43 @@
     }
 
     /* Estilos de las imágenes */
-    .main_hero {
+    .main_hero img {
         padding: 0;
+        width: 100%;
     }
 
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 800px) {
+
+    /* Estilos de las imágenes */
     .main_hero img {
-        display: block;
+        padding: 0;
         width: 100%;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
-    .main__enqueparticipo{
+    .main__enqueparticipo {
 
         /* Ajustes en las secciones internas para pantallas pequeñas */
-        section{
+        section {
             text-align: center;
             padding: 0 3rem;
             font-size: 0.7rem;
         }
-        
+
         /* Ajustes en el ancho máximo de las imágenes para pantallas pequeñas */
-        img{
+        img {
             max-width: auto;
         }
     }
