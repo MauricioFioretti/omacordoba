@@ -528,21 +528,23 @@ footer {
 
   /* Ajustes de margen para la primera y última sección de competencia */ }
   .main__competencias .main__section-competencia {
+    background-color: red;
     margin: 4rem 6rem;
     display: flex;
     text-align: center;
     align-items: center;
-    width: 80%;
+    padding:0 20rem;
   }
 
     /* Estilos de las imagenes en la sección de competencia */
     .main__competencias .main__section-competencia img {
-      width: 20%;
+      width: 20rem;
       margin-right: 4rem; }
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
       flex-direction: column;
-      width:100%rem;}
+      width:100%;
+    }
 
       /* Estilos del título de cada una de las competencias */
       .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
@@ -562,17 +564,18 @@ footer {
       /* Estilos de los botones en la sección de competencia */ 
       .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
         display: block;
+        padding: 0.5rem 2rem;
         margin-top: 10px;
         margin-left: 1rem;
         background-color: #1a4789;
         border-color: #1a4789;
         border-radius: 5px;
-        width: 25%;
 
         /* Estilos del enlace dentro del botón */ }
         .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
           text-decoration: none;
           color: white; 
+          font-size: 800;
         }
 
   .main__competencias .main__section-competencia:first-child {
