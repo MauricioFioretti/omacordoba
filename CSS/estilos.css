@@ -55,9 +55,18 @@ body {
   margin-bottom: 2rem;
 
 }
+
 .infografia_img{
-  width: 60rem;
+  width: 60%;
 }
+
+/* Estilos separadores */
+
+    hr{
+      border-top: 2px solid #006794;
+      border-radius: 5px;
+      opacity: 1;
+    }
 
 /* Estilos hero: */
 
@@ -395,6 +404,7 @@ footer {
         height: 50vh;
         width: 70%; }
   .main__index .main__iconos {
+    margin-top: 3rem ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 2fr 2fr;
@@ -407,7 +417,13 @@ footer {
     .main__index .main__iconos a img {
       width: 200px; }
     .main__index .main__iconos .main__iconos-titulo {
-      grid-area: main__iconos-titulo; }
+      grid-area: main__iconos-titulo;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    
+
+    
     .main__index .main__iconos .main__iconos-logomateclubes {
       grid-area: main__iconos-logomateclubes; }
     .main__index .main__iconos .main__iconos-logonandu {
@@ -549,8 +565,13 @@ footer {
 
     /* Estilos de las imagenes en la sección de competencia */
     .main__competencias .main__section-competencia img {
-      width: 20rem;
+      width: 300px;
       margin-right: 4rem; }
+
+    .logo_cabezon{
+      padding: 20px;
+    }
+
     .main__competencias .main__section-competencia .main__section_titulo-descripcion {
       display: flex;
       flex-direction: column;
@@ -592,7 +613,7 @@ footer {
   .main__competencias .main__section-competencia:first-child {
     margin-top: 3rem; }
   .main__competencias .main__section-competencia:last-child {
-    margin-bottom: 3rem; }
+    margin-bottom: 10rem; }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 869px) {
@@ -853,38 +874,57 @@ footer {
   /* Bucle for para asignar colores de fondo a las secciones internas */ }
   .main__queesoma section {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 12rem;
     align-items: center;
     /* Estilos del título h2 */
     /* Estilos del subtítulo h3 */
     /* Estilos de la última sección */
     /* Estilos de los párrafos */ }
+    .main__queesoma section.main__hero {
+      padding: 0;
+      margin-bottom: 4rem;
+    }
     .main__queesoma section h2 {
       width: 35%;
-      text-align: center; }
+      text-align: right; 
+      padding-right: 3rem;
+    }
     .main__queesoma section h3 {
       font-size: 1.5rem; }
     .main__queesoma section .section-especial {
+
       display: flex;
       flex-direction: column;
-      width: 35%;
+      width: 35%; 
       align-items: center;
+
+
       /* Estilos del botón */ }
       .main__queesoma section .section-especial h2 {
         width: auto; }
       .main__queesoma section .section-especial .btn {
-        width: auto; }
+        width: auto;
+        background-color: #d43377; 
+        border-color: #d43377;
+        border-radius: 35px;
+        font-size: 1rem;
+
+      }
     .main__queesoma section .parrafos {
       width: 65%;
       display: flex;
       flex-direction: column;
       padding: 10px; }
   .main__queesoma .section-1 {
-    background-color: #0096DA; }
+    color: #72a1ff; }
   .main__queesoma .section-2 {
-    background-color: #006794; }
+    color: #fdb87b; }
   .main__queesoma .section-3 {
-    background-color: #012A3D; }
+    color: #d43377; }
+
+
+
+
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (min-width: 767px) and (max-width: 1263px) {
@@ -933,6 +973,7 @@ footer {
   width: 100%;
   /* Estilos del acordeón */ }
   .main__secretariascordoba .accordion {
+    margin-top: 4rem;
     width: 50%; }
   .main__secretariascordoba .iframe {
     margin: 5rem 0;
