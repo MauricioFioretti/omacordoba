@@ -40,10 +40,11 @@ body {
 .infografia{
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 
 }
 .infografia_img{
-  width: 70rem;
+  width: 60rem;
 }
 
 /* Estilos hero: */
