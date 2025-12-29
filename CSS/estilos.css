@@ -22,6 +22,7 @@ body {
 /* Estilos info página: */
 
 .info_pagina {
+      margin-top: 2rem;
       padding: 3rem 9rem;
       display:flex;
       flex-direction: column;
@@ -32,9 +33,20 @@ body {
     } 
   .info_pagina h1{
       padding: 1rem;
-      font-size: 2rem;
+      margin-bottom:2rem;
+      font-size: 3rem;
       color: #0096da;
     } 
+  .info_pagina p {
+    font-size: 1.5rem;
+  }
+
+  .info_pagina .especial {
+    padding: 2rem;
+    text-align: center; 
+    font-size: 1.8rem;
+    font-weight: 700;
+    }
 
     /* Estilos Infografías */
 .infografia{
@@ -487,7 +499,7 @@ footer {
       }
 
       .main__apuntes p.advertencia span{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         color: #d43377;
       }
 
@@ -504,7 +516,7 @@ footer {
       .main__apuntes p.nota{
         font-style: italic;
         font-weight: 200;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
         
   .main__apuntes section {
@@ -528,7 +540,6 @@ footer {
 
   /* Ajustes de margen para la primera y última sección de competencia */ }
   .main__competencias .main__section-competencia {
-    background-color: red;
     margin: 4rem 6rem;
     display: flex;
     text-align: center;
@@ -637,12 +648,7 @@ footer {
   /* Estilos img principal */
   /* Estilos de los párrafos */
 }
-    .main__lenitas .info_pagina p.especial {
-      padding: 2rem;
-      text-align: center; 
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
+
 
     .main__lenitas .info_pagina p.especial .enfasis-especial {
       color: #d43377;
@@ -650,9 +656,13 @@ footer {
     }
       
 
+    .main__lenitas .info_pagina .despues_de_enfasis{
+      width: 80%;
+    }
+
     .main__lenitas .info_pagina .ultimo {
       color: #ff914d;
-      font-weight: 500; }
+}
 
   /* Estilos generales de cada lista de leñitas de cada año */
   /* Estilos leñitas del 2021 */
@@ -804,13 +814,15 @@ footer {
       padding-bottom: 1rem; }
     .main__libros .info_pagina p {
       padding: 0 3rem; }
-    .main__libros .info_pagina a {
-      padding: auto; }
+
     .main__libros .info_pagina button {
+      padding: 1rem 2rem;
       background-color: #f7b500; 
       border-color: #f7b500;
-      border-radius: 25px;
+      border-radius: 35px;
       margin: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
     }
     .main__libros .info_pagina button:active {
       background-color: #ffd48f; 
@@ -818,7 +830,7 @@ footer {
   
     }
     .main__libros section {
- 
+
     /* Estilos de todas las cards con portadas de libros */ }
     .main__libros section h2 {
       padding: 2rem 0; }
