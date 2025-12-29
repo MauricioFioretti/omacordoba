@@ -711,7 +711,7 @@ footer {
     .main__lenitas .main__lista-lenitas-2025 .color-year {
       margin-bottom: 1rem;
       font-weight: 900;
-      width: 80%;
+      width: 60%;
       align-self: center;
       text-align: left; }
     .main__lenitas .lista-lenitas div ol, 
@@ -734,7 +734,7 @@ footer {
       .main__lenitas .main__lista-lenitas-2024 div ol a, 
       .main__lenitas .main__lista-lenitas-2025 div ol a {
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: black; }
         .main__lenitas .lista-lenitas div ol a li .color-numero, 
         .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, 
@@ -744,37 +744,45 @@ footer {
         .main__lenitas .main__lista-lenitas-2025 .color-numero {
           font-weight: 900; }
   .main__lenitas .main__lista-lenitas-2021 .color-year {
-    color: #D43377; }
+    color: #D43377;
+    font-size: 3rem ;
+  }
   .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #EB79A9; }
   .main__lenitas .main__lista-lenitas-2022 .color-year {
+    font-size: 3rem ;
     color: #fdb87b; }
   .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffd1a9; }
-  .main__lenitas .main__lista-lenitas-2023 {
-    margin-bottom: 10rem; }
   .main__lenitas .main__lista-lenitas-2023 .color-year {
+    font-size: 3rem ;
     color: #8eb370; }
   .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
       color: #afd389; }
   .main__lenitas .main__lista-lenitas-2024 .color-year {
+    font-size: 3rem ;
     color: #72a1ff; }
   .main__lenitas .main__lista-lenitas-2024 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
       color: #abc5ff; }
   .main__lenitas .main__lista-lenitas-2025 .color-year {
+    font-size: 3rem ;
     color: #c450c5 }
   .main__lenitas .main__lista-lenitas-2025 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
       color: #cc6afc; }
   .main__lenitas .main__lista-lenitas-2026 .color-year {
+    font-size: 3rem ;
     color: #D43377; }
   .main__lenitas .main__lista-lenitas-2026 div ol a li .color-numero {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #EB79A9; }
+
+    .main__lenitas .main__lista-lenitas-2021 {
+    margin-bottom: 10rem; }
 
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
