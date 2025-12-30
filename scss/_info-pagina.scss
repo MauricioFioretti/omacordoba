@@ -1,0 +1,15 @@
+main{
+    .info_pagina{
+        padding: 3rem 9rem;
+        text-align: center;
+
+        h1{
+            color: $ColorTitulosInfoPag;
+            margin-bottom: 1.5rem;
+        }
+
+        .info_intro{
+            font-size: 1.3rem;
+        }
+    }
+}

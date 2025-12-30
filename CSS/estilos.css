@@ -369,13 +369,6 @@ footer .footer__der .logo img {
   text-align: center;
   grid-area: main;
   width: auto;
-  /* Estilos de la sección del hero */
-}
-.main__index .img-hero .hero {
-  width: 100%;
-  object-fit: cover;
-}
-.main__index {
   /* Estilos de las secciones internas */
 }
 .main__index section {
@@ -1140,6 +1133,27 @@ footer .footer__der .logo img {
   .main__contactos .container .contact-info div img {
     display: none;
   }
+}
+main .info_pagina {
+  padding: 3rem 9rem;
+  text-align: center;
+}
+main .info_pagina h1 {
+  color: #0096DA;
+  margin-bottom: 1.5rem;
+}
+main .info_pagina .info_intro {
+  font-size: 1.3rem;
+}
+
+main .img-hero {
+  padding: 0;
+}
+main .img-hero .hero {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */
