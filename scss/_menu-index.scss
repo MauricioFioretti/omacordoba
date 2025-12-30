@@ -7,23 +7,11 @@
     width: auto;
 
 
-    /* Estilos de las secciones internas */
-    section {
-
-        /* Estilos de los artículos */
-        article {
-            padding: 2rem;
-
-            /* Estilos del iframe */
-            iframe {
-                height: 50vh;
-                width: 70%;
-            }
-        }
-    }
 
     /* Estilos de la sección de iconos */
     .main__iconos {
+        margin: 0 10rem;
+        margin-bottom: 5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 2fr 2fr;
@@ -34,11 +22,18 @@
 
             "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
 
+            h2{
+                margin-bottom: 5rem;
+            } 
         /* Estilos de los enlaces */
         a {
             img {
-                width: 200px;
+                width: 15rem;
             }
+            &:hover{
+                    opacity: 0.5;
+                }
+
         }
 
         /* Estilos del título de los iconos */
