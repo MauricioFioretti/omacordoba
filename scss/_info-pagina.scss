@@ -1,6 +1,6 @@
 main{
     .info_pagina{
-        padding: 3rem 9rem;
+        padding: 3rem 10rem;
         text-align: center;
 
         h1{
@@ -10,6 +10,24 @@ main{
 
         .info_intro{
             font-size: 1.3rem;
+            margin-bottom: 2rem;
         }
+
+        hr{
+            border: 1px solid $ColorSeparadorIndex;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        .btn-libros{
+            background-color: $ColorBotonLibros;
+            border-color:$ColorBotonLibros ;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+        }
+
+
     }
 }

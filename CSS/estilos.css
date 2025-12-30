@@ -1135,7 +1135,7 @@ footer .footer__der .logo img {
   }
 }
 main .info_pagina {
-  padding: 3rem 9rem;
+  padding: 3rem 10rem;
   text-align: center;
 }
 main .info_pagina h1 {
@@ -1144,6 +1144,20 @@ main .info_pagina h1 {
 }
 main .info_pagina .info_intro {
   font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+main .info_pagina hr {
+  border: 1px solid #006794;
+  border-radius: 5px;
+  opacity: 1;
+}
+main .info_pagina .btn-libros {
+  background-color: #FFB800;
+  border-color: #FFB800;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
 }
 
 main .img-hero {
@@ -1154,6 +1168,31 @@ main .img-hero .hero {
   object-fit: cover;
   margin: 0;
   padding: 0;
+}
+
+main .noticias {
+  margin-bottom: 10rem;
+}
+main .noticias img {
+  width: 20rem;
+}
+main .noticias article {
+  padding: 0;
+  margin: 0 15rem;
+}
+main .noticias article .noticias_titulo {
+  color: #6a7993;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+main .noticias article .noticias_texto {
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+}
+main .noticias article hr {
+  border: 1px solid #006794;
+  border-radius: 5px;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=estilos.css.map */
