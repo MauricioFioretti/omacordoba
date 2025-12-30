@@ -1149,11 +1149,14 @@ main .info_pagina hr {
 }
 main .info_pagina .btn-libros {
   background-color: #FFB800;
-  border-color: #FFB800;
+  border: none;
   border-radius: 30px;
   font-weight: 700;
   padding: 1rem 3rem;
   font-size: 1.1rem;
+}
+main .info_pagina .btn-libros:hover {
+  background-color: #ffd48f;
 }
 
 main .img-hero {
@@ -1169,13 +1172,13 @@ main .img-hero .hero {
 main .noticias {
   margin-bottom: 10rem;
 }
-main .noticias img {
-  width: 20rem;
-  margin-bottom: 2rem;
-}
 main .noticias article {
   padding: 0;
   margin: 0 15rem;
+}
+main .noticias article img {
+  width: 20rem;
+  margin-bottom: 2rem;
 }
 main .noticias article .noticias_titulo {
   color: #006794;
@@ -1190,6 +1193,27 @@ main .noticias article hr {
   border: 1.5px solid #006794;
   border-radius: 5px;
   opacity: 1;
+  margin: 3rem;
+}
+main .noticias .problemas_semanales img {
+  width: 80rem;
+  margin-bottom: 2rem;
+}
+main .noticias .problemas_semanales p b {
+  text-decoration: none;
+  font-weight: 700;
+}
+main .noticias .problemas_semanales .noticias-btn {
+  color: white;
+  background-color: #FFB800;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+}
+main .noticias .problemas_semanales .noticias-btn:hover {
+  background-color: #ffd48f;
 }
 
 /*# sourceMappingURL=estilos.css.map */
