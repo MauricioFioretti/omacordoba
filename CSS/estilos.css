@@ -475,20 +475,47 @@ footer .footer__der .logo img {
   grid-area: main;
   text-align: center;
 }
-.main__apuntes section h2 {
+.main__apuntes .pdf__links {
+  margin: 0 12rem;
+}
+.main__apuntes .pdf__links h2 {
+  display: flex;
+  justify-content: left;
   padding: 2rem 0;
 }
-.main__apuntes section {
+.main__apuntes .pdf__links p {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+.main__apuntes .pdf__links {
   /* Estilos para las cards de cada apunte */
 }
-.main__apuntes section .container-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main__apuntes .pdf__links .container-cards {
+  border-radius: 25px;
 }
-.main__apuntes section .container-cards .card {
-  width: 18rem;
-  margin: 0.5rem;
+.main__apuntes .pdf__links .container-cards .card {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.main__apuntes .pdf__links .card_1 {
+  background-color: #e0f0ff;
+}
+.main__apuntes .pdf__links .card_1 h5 {
+  text-align: left;
+  color: #0096DA;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main__apuntes .pdf__links .card_2 {
+  background-color: #ffeff6;
+}
+.main__apuntes .pdf__links .card_2 h5 {
+  text-align: left;
+  color: #D43377;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* Estilos del main competencias */

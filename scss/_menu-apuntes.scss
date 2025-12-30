@@ -5,21 +5,54 @@
 
 
 
-    section {
+    .pdf__links{
+
+        margin: 0 12rem;
         h2 {
+            display: flex;
+            justify-content: left;
             padding: 2rem 0;
+        }
+        p{
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            
         }
         
         /* Estilos para las cards de cada apunte */
         .container-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
+            border-radius: 25px;
             .card {
-                width: 18rem;
-                margin: 0.5rem;
+                display: flex;
+                background-color: #00000000;
+                border: none;
+
             }
+        
+            }
+
+        .card_1{
+                background-color: $ColorCard1;
+                h5{
+                    text-align: left;
+                    color: $ColorCard1Titulo;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+
+        .card_2{
+                background-color: $ColorCard2;
+                h5{
+                    text-align: left;
+                    color: $ColorCard2Titulo;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+
+
         }
-    }
+
 }
