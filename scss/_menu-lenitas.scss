@@ -2,48 +2,6 @@
 .main__lenitas {
     grid-area: main;
 
-    /* Estilos img principal */
-    .main__hero {
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    /* Estilos de los párrafos */
-    .main__textos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 5rem 3.5rem;
-
-        h1 {
-            text-align: center;
-            font-size: 1.5rem;
-            padding: 2rem 0;
-        }
-
-        h2 {
-            .enfasis-lenita {
-                color: $LetraLenitas;
-                text-align: center;
-            }
-        }
-
-        p {
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        .ultimo {
-            color: #c0145c;
-            font-weight: 500;
-        }
-
-    }
-
     /* Estilos generales de cada lista de leñitas de cada año */
     .lista-lenitas {
         margin: 6rem 0;

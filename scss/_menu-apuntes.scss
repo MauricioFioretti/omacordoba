@@ -1,31 +1,9 @@
 /* Estilos del main apuntes */
 .main__apuntes {
     grid-area: main;
-    
-    /* Estilos para los párrafos */
-    .parrafos {
-        padding-top: 3rem;
-        text-align: center;
-
-        h1 {
-            font-size: 2rem;
-            padding-bottom: 1rem;
-        }
-
-        p {
-            padding: 0 3rem;
-        }
-
-        .especial {
-            color: red;
-
-            span {
-                font-weight: 700;
-            }
-        }
-    }
-
     text-align: center;
+
+
 
     section {
         h2 {

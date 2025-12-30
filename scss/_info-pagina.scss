@@ -8,15 +8,42 @@ main{
             margin-bottom: 1.5rem;
         }
 
-        .info_intro{
+        p{
             font-size: 1.3rem;
             margin-bottom: 2rem;
         }
 
-        hr{
-            border: 1.5px solid $ColorSeparadorIndex;
-            border-radius: 5px;
-            opacity: 1;
+        
+        .enfasis_lenitas{
+            font-size: 1.5rem;
+            span{
+                color: $ColorEnfasisLenitas1;
+            }
+        }
+
+        .ultimo_lenitas{
+            color: $ColorEnfasisLenitas2;
+        }
+
+        .advertencia_apuntes{
+            background-color:$ColorFondoImportanteApuntes;
+            border-radius: 25px;
+            padding: 1rem;
+            span{
+                color: $colorImportanteApuntes;
+            }
+            a{
+                text-decoration: none;
+                color: $ColorLinkReglamentos;
+                &:hover{
+                    color:$ColorLinkReglamentosHover;
+                }
+            }
+        }
+
+        .nota{
+            font-size: 1rem;
+            font-weight: 200;
         }
 
         .btn-libros{
@@ -30,7 +57,12 @@ main{
                 background-color: $ColorBotonLibrosHover;
                 }
         }
-        
+
+        hr{
+            border: 1.5px solid $ColorSeparadorIndex;
+            border-radius: 5px;
+            opacity: 1;
+        }
 
 
     }

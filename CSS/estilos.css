@@ -473,26 +473,6 @@ footer .footer__der .logo img {
 /* Estilos del main apuntes */
 .main__apuntes {
   grid-area: main;
-  /* Estilos para los párrafos */
-}
-.main__apuntes .parrafos {
-  padding-top: 3rem;
-  text-align: center;
-}
-.main__apuntes .parrafos h1 {
-  font-size: 2rem;
-  padding-bottom: 1rem;
-}
-.main__apuntes .parrafos p {
-  padding: 0 3rem;
-}
-.main__apuntes .parrafos .especial {
-  color: red;
-}
-.main__apuntes .parrafos .especial span {
-  font-weight: 700;
-}
-.main__apuntes {
   text-align: center;
 }
 .main__apuntes section h2 {
@@ -644,41 +624,6 @@ footer .footer__der .logo img {
 /* Estilos del main leñitas */
 .main__lenitas {
   grid-area: main;
-  /* Estilos img principal */
-}
-.main__lenitas .main__hero img {
-  width: 100%;
-  object-fit: cover;
-}
-.main__lenitas {
-  /* Estilos de los párrafos */
-}
-.main__lenitas .main__textos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 5rem 3.5rem;
-}
-.main__lenitas .main__textos h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 2rem 0;
-}
-.main__lenitas .main__textos h2 .enfasis-lenita {
-  color: #90278F;
-  text-align: center;
-}
-.main__lenitas .main__textos p {
-  text-align: center;
-  font-size: 0.9rem;
-}
-.main__lenitas .main__textos .ultimo {
-  color: #c0145c;
-  font-weight: 500;
-}
-.main__lenitas {
   /* Estilos generales de cada lista de leñitas de cada año */
 }
 .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2023, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2021 {
@@ -1138,14 +1083,37 @@ main .info_pagina h1 {
   color: #0096DA;
   margin-bottom: 1.5rem;
 }
-main .info_pagina .info_intro {
+main .info_pagina p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
-main .info_pagina hr {
-  border: 1.5px solid #006794;
-  border-radius: 5px;
-  opacity: 1;
+main .info_pagina .enfasis_lenitas {
+  font-size: 1.5rem;
+}
+main .info_pagina .enfasis_lenitas span {
+  color: #90278F;
+}
+main .info_pagina .ultimo_lenitas {
+  color: #ff751f;
+}
+main .info_pagina .advertencia_apuntes {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 1rem;
+}
+main .info_pagina .advertencia_apuntes span {
+  color: #D43377;
+}
+main .info_pagina .advertencia_apuntes a {
+  text-decoration: none;
+  color: #0096DA;
+}
+main .info_pagina .advertencia_apuntes a:hover {
+  color: #8dbdeb;
+}
+main .info_pagina .nota {
+  font-size: 1rem;
+  font-weight: 200;
 }
 main .info_pagina .btn-libros {
   background-color: #FFB800;
@@ -1157,6 +1125,11 @@ main .info_pagina .btn-libros {
 }
 main .info_pagina .btn-libros:hover {
   background-color: #ffd48f;
+}
+main .info_pagina hr {
+  border: 1.5px solid #006794;
+  border-radius: 5px;
+  opacity: 1;
 }
 
 main .img-hero {
