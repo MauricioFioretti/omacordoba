@@ -1186,6 +1186,7 @@ main .noticias article .noticias_titulo {
   font-size: 1.8rem;
 }
 main .noticias article .noticias_texto {
+  padding: 0 12rem;
   margin-bottom: 4rem;
   font-size: 1.2rem;
 }
@@ -1196,7 +1197,7 @@ main .noticias article hr {
   margin: 3rem;
 }
 main .noticias .problemas_semanales img {
-  width: 80rem;
+  width: 70%;
   margin-bottom: 2rem;
 }
 main .noticias .problemas_semanales p b {
