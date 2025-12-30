@@ -496,8 +496,14 @@ footer .footer__der .logo img {
 }
 .main__apuntes .pdf__links .container-cards .card {
   display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "card-body card-link";
   background-color: rgba(0, 0, 0, 0);
   border: none;
+}
+.main__apuntes .pdf__links .container-cards .card .card-body {
+  flex: 1;
 }
 .main__apuntes .pdf__links .card_1 {
   background-color: #e0f0ff;
