@@ -1190,4 +1190,12 @@ main .noticias .problemas_semanales .noticias-btn:hover {
   background-color: #ffd48f;
 }
 
+main .infografia {
+  display: flex;
+  justify-content: center;
+}
+main .infografia .infografia_img {
+  width: 70%;
+}
+
 /*# sourceMappingURL=estilos.css.map */
