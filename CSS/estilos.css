@@ -680,20 +680,21 @@ footer .footer__der .logo img {
   grid-area: main;
   /* Estilos generales de cada lista de leñitas de cada año */
 }
-.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2023, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2021 {
-  margin: 6rem 0;
+.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2025, .main__lenitas .main__lista-lenitas-2024, .main__lenitas .main__lista-lenitas-2023, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2020, .main__lenitas .main__lista-lenitas-2019 {
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year {
+.main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2025 .color-year, .main__lenitas .main__lista-lenitas-2024 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2020 .color-year, .main__lenitas .main__lista-lenitas-2019 .color-year {
   margin-bottom: 1rem;
   font-weight: 900;
   width: 80%;
   align-self: center;
   text-align: left;
+  font-size: 2.5rem;
 }
-.main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2023 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2021 div ol {
+.main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2025 div ol, .main__lenitas .main__lista-lenitas-2024 div ol, .main__lenitas .main__lista-lenitas-2023 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2020 div ol, .main__lenitas .main__lista-lenitas-2019 div ol {
   display: grid;
   grid-template-columns: repeat(3, minmax(18rem, 1fr));
   justify-items: start;
@@ -702,12 +703,33 @@ footer .footer__der .logo img {
   margin: 0 10%;
   list-style-type: none;
 }
-.main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a {
+.main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-2025 div ol a, .main__lenitas .main__lista-lenitas-2024 div ol a, .main__lenitas .main__lista-lenitas-2023 div ol a, .main__lenitas .main__lista-lenitas-2022 div ol a, .main__lenitas .main__lista-lenitas-2021 div ol a, .main__lenitas .main__lista-lenitas-2020 div ol a, .main__lenitas .main__lista-lenitas-2019 div ol a {
   text-decoration: none;
   color: black;
 }
-.main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
+.main__lenitas .lista-lenitas div ol a li, .main__lenitas .main__lista-lenitas-2025 div ol a li, .main__lenitas .main__lista-lenitas-2024 div ol a li, .main__lenitas .main__lista-lenitas-2023 div ol a li, .main__lenitas .main__lista-lenitas-2022 div ol a li, .main__lenitas .main__lista-lenitas-2021 div ol a li, .main__lenitas .main__lista-lenitas-2020 div ol a li, .main__lenitas .main__lista-lenitas-2019 div ol a li {
+  font-size: 1.5rem;
+}
+.main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2025 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2024 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2023 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2020 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2019 div ol a li .color-numero {
   font-weight: 900;
+}
+.main__lenitas {
+  /* Estilos leñitas del 2019 */
+}
+.main__lenitas .main__lista-lenitas-2019 .color-year {
+  color: #ffa352;
+}
+.main__lenitas .main__lista-lenitas-2019 div ol a li .color-numero {
+  color: #e7a66e;
+}
+.main__lenitas {
+  /* Estilos leñitas del 2020 */
+}
+.main__lenitas .main__lista-lenitas-2020 .color-year {
+  color: #5590ff;
+}
+.main__lenitas .main__lista-lenitas-2020 div ol a li .color-numero {
+  color: #729ae9;
 }
 .main__lenitas {
   /* Estilos leñitas del 2021 */
@@ -740,9 +762,31 @@ footer .footer__der .logo img {
   color: #e7a66e;
 }
 
+/* Estilos leñitas del 2024 */
+.main__lista-lenitas-2024 {
+  margin-bottom: 10rem;
+}
+.main__lista-lenitas-2024 .color-year {
+  color: #D43377;
+}
+.main__lista-lenitas-2024 div ol a li .color-numero {
+  color: #EB79A9;
+}
+
+/* Estilos leñitas del 2025 */
+.main__lista-lenitas-2025 {
+  margin-bottom: 10rem;
+}
+.main__lista-lenitas-2025 .color-year {
+  color: #5590ff;
+}
+.main__lista-lenitas-2025 div ol a li .color-numero {
+  color: #729ae9;
+}
+
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
-  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2019 div ol, .main__lenitas .main__lista-lenitas-2020 div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol, .main__lenitas .main__lista-lenitas-2024 div ol, .main__lenitas .main__lista-lenitas-2025 div ol {
     grid-template-columns: repeat(2, minmax(18rem, 1fr));
   }
 }
@@ -766,14 +810,14 @@ footer .footer__der .logo img {
   .main__lenitas .main__textos .ultimo {
     padding-bottom: 0;
   }
-  .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023 {
+  .main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-2019, .main__lenitas .main__lista-lenitas-2020, .main__lenitas .main__lista-lenitas-2021, .main__lenitas .main__lista-lenitas-2022, .main__lenitas .main__lista-lenitas-2023, .main__lenitas .main__lista-lenitas-2024, .main__lenitas .main__lista-lenitas-2025 {
     margin: 2rem 0;
   }
-  .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year {
+  .main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-2019 .color-year, .main__lenitas .main__lista-lenitas-2020 .color-year, .main__lenitas .main__lista-lenitas-2021 .color-year, .main__lenitas .main__lista-lenitas-2022 .color-year, .main__lenitas .main__lista-lenitas-2023 .color-year, .main__lenitas .main__lista-lenitas-2024 .color-year, .main__lenitas .main__lista-lenitas-2025 .color-year {
     text-align: center;
     padding-bottom: 1rem;
   }
-  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol {
+  .main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-2019 div ol, .main__lenitas .main__lista-lenitas-2020 div ol, .main__lenitas .main__lista-lenitas-2021 div ol, .main__lenitas .main__lista-lenitas-2022 div ol, .main__lenitas .main__lista-lenitas-2023 div ol, .main__lenitas .main__lista-lenitas-2024 div ol, .main__lenitas .main__lista-lenitas-2025 div ol {
     margin: 0;
     padding: 0;
     width: 100%;

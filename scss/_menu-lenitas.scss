@@ -4,10 +4,11 @@
 
     /* Estilos generales de cada lista de leñitas de cada año */
     .lista-lenitas {
-        margin: 6rem 0;
+        margin: 4rem 0;
         display: flex;
         flex-direction: column;
         text-align: center;
+
 
         .color-year {
             margin-bottom: 1rem;
@@ -15,6 +16,7 @@
             width: 80%;
             align-self: center;
             text-align: left;
+            font-size: 2.5rem;
         }
 
         div {
@@ -33,6 +35,7 @@
                     color: black;
 
                     li {
+                        font-size: 1.5rem;
 
                         .color-numero {
                             font-weight: 900;
@@ -40,6 +43,50 @@
                     }
                 }
 
+            }
+        }
+    }
+
+    /* Estilos leñitas del 2019 */
+    .main__lista-lenitas-2019 {
+        @extend .lista-lenitas;
+
+        .color-year {
+            color: $LetraYear3;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+
+                        .color-numero {
+                            color: $LetraNumero3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Estilos leñitas del 2020 */
+    .main__lista-lenitas-2020 {
+        @extend .lista-lenitas;
+
+        .color-year {
+            color: $LetraYear2;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+
+                        .color-numero {
+                            color: $LetraNumero2;
+                        }
+                    }
+                }
             }
         }
     }
@@ -109,6 +156,51 @@
         }
     }
 }
+
+    /* Estilos leñitas del 2024 */
+    .main__lista-lenitas-2024 {
+        @extend .lista-lenitas;
+        margin-bottom: 10rem;
+
+        .color-year {
+            color: $LetraYear1;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+                        .color-numero {
+                            color: $LetraNumero1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Estilos leñitas del 2025 */
+    .main__lista-lenitas-2025 {
+        @extend .lista-lenitas;
+        margin-bottom: 10rem;
+
+        .color-year {
+            color: $LetraYear2;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+                        .color-numero {
+                            color: $LetraNumero2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 900px) {
