@@ -995,6 +995,7 @@ footer .footer__der .logo img {
   /* Estilos del acordeón */
 }
 .main__secretariascordoba .accordion {
+  margin-top: 4rem;
   width: 50%;
 }
 .main__secretariascordoba .iframe {
