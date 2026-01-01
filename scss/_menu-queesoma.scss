@@ -107,9 +107,10 @@
     .main__queesoma {
 
         section {
+            background-color: red;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 80%;
             padding: 0;
 
             /* Ajustes en la última sección para pantallas pequeñas */
@@ -118,19 +119,20 @@
 
                 h2 {
                     padding-bottom: 0;
+                    padding: 1rem 1rem;
 
                 }
 
                 /* Estilos del botón */
-                .btn {
-                    margin-bottom: 1rem;
-                }
+                // .btn {
+                //     margin-bottom: 1rem;
+                // }
             }
 
             /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
             h2 {
                 width: 90%;
-                padding: 1rem 0;
+                padding: 1rem 1rem;
 
             }
 
@@ -143,7 +145,13 @@
             .parrafos {
                 padding: 0;
                 width: 80%;
-                text-align: center;
+
+                p{
+                    display: flex;
+                    text-align: left;
+                    color: red;
+                }
+
             }
         }
     }
