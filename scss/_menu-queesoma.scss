@@ -11,10 +11,12 @@
         padding: 2rem;
         align-items: center;
 
+
         /* Estilos del título h2 */
         h2 {
             width: 35%;
-            text-align: center;
+            text-align: right;
+            margin-right: 2rem;
         }
 
         /* Estilos del subtítulo h3 */
@@ -27,7 +29,7 @@
             display: flex;
             flex-direction: column;
             width: 35%;
-            align-items: center;
+            align-items: left;
 
             h2 {
                 width: auto;
@@ -35,24 +37,48 @@
 
             /* Estilos del botón */
             .btn {
-                width: auto;
+                align-self: flex-end;
+                width: 12rem;
+                margin-right: 2rem;
             }
+
         }
+
 
         /* Estilos de los párrafos */
         .parrafos {
             width: 65%;
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 2rem;
+            text-align: justify;
+            color: black;
 
         }
+
+
+    }
+
+    .hr_1{
+        border: 1px solid $bgCol1;
+        opacity: 1;
+
+    }
+    .hr_2{
+        border: 1px solid $bgCol2;
+        opacity: 1;
+
+    }
+    .hr_3{
+        border: 1px solid $bgCol3;
+        opacity: 1;
+
     }
 
     /* Bucle for para asignar colores de fondo a las secciones internas */
     @for $i from 1 through 3 {
         .section-#{$i} {
-            background-color: map-get($bgColors, $i);
+            color: map-get($bgColors, $i);
         }
     }
 }

@@ -897,7 +897,8 @@ footer .footer__der .logo img {
 }
 .main__queesoma section h2 {
   width: 35%;
-  text-align: center;
+  text-align: right;
+  margin-right: 2rem;
 }
 .main__queesoma section {
   /* Estilos del subtítulo h3 */
@@ -912,7 +913,7 @@ footer .footer__der .logo img {
   display: flex;
   flex-direction: column;
   width: 35%;
-  align-items: center;
+  align-items: left;
 }
 .main__queesoma section .section-especial h2 {
   width: auto;
@@ -921,7 +922,9 @@ footer .footer__der .logo img {
   /* Estilos del botón */
 }
 .main__queesoma section .section-especial .btn {
-  width: auto;
+  align-self: flex-end;
+  width: 12rem;
+  margin-right: 2rem;
 }
 .main__queesoma section {
   /* Estilos de los párrafos */
@@ -930,19 +933,33 @@ footer .footer__der .logo img {
   width: 65%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 2rem;
+  text-align: justify;
+  color: black;
+}
+.main__queesoma .hr_1 {
+  border: 1px solid #0096DA;
+  opacity: 1;
+}
+.main__queesoma .hr_2 {
+  border: 1px solid #faa48a;
+  opacity: 1;
+}
+.main__queesoma .hr_3 {
+  border: 1px solid #D43377;
+  opacity: 1;
 }
 .main__queesoma {
   /* Bucle for para asignar colores de fondo a las secciones internas */
 }
 .main__queesoma .section-1 {
-  background-color: #0096DA;
+  color: #0096DA;
 }
 .main__queesoma .section-2 {
-  background-color: #006794;
+  color: #faa48a;
 }
 .main__queesoma .section-3 {
-  background-color: #012A3D;
+  color: #D43377;
 }
 
 /* Estilos responsivos para pantallas medianas */
