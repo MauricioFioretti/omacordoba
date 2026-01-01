@@ -1205,6 +1205,17 @@ main .info_pagina .btn-libros {
 main .info_pagina .btn-libros:hover {
   background-color: #ffd48f;
 }
+main .info_pagina .btn-recomendar-apuntes {
+  background-color: #a3b95e;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+}
+main .info_pagina .btn-recomendar-apuntes:hover {
+  background-color: #d2dd91;
+}
 main .info_pagina hr {
   border: 1.5px solid #006794;
   border-radius: 5px;

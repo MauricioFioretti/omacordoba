@@ -58,6 +58,18 @@ main{
                 }
         }
 
+        .btn-recomendar-apuntes{
+            background-color: $ColorBotonRecomendarApuntes;
+            border:none;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            &:hover{
+                background-color: $ColorBotonRecomendarApuntesHover;
+                }
+        }
+
         hr{
             border: 1.5px solid $ColorSeparadorIndex;
             border-radius: 5px;
