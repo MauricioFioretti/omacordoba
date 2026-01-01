@@ -6,6 +6,7 @@
 
     /* Estilos de cada sección de competencia */
     .main__section-competencia {
+        width: 80%;
         margin-top: 7rem;
         display: flex;
         text-align: center;
@@ -15,29 +16,49 @@
         img {
             width: 20rem;
             margin-right: 4rem;
+            
         }
+        .logo_cabezon{
+                padding: 3rem;
+            }
 
         /* Estilos del título y la descripción de cada una de las competencias */
         .main__section_titulo-descripcion {
             display: flex;
             flex-direction: column;
             width: 25rem;
+            text-align: justify;
+            width: 100%;
 
             /* Estilos del título de cada una de las competencias */
             h2 {
                 padding-top: 2rem;
             }
 
+            .botones_competencias{
+                display: flex;
+                justify-content: flex-end;
+
+
+            }
+
             /* Estilos de los botones en la sección de competencia */
             .btn {
-                display: block;
-                margin-top: 10px;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                padding: 0.5rem 2rem;
+                background-color: $ColorBotonCompetencias;
+                border: none;
+
 
                 /* Estilos del enlace dentro del botón */
                 a {
                     text-decoration: none;
                     color: white;
                 }
+            &:hover{
+                background-color: $ColorBotonCompetenciasHover;
+            }
             }
         }
     }

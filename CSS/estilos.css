@@ -553,6 +553,7 @@ footer .footer__der .logo img {
   /* Estilos de cada sección de competencia */
 }
 .main__competencias .main__section-competencia {
+  width: 80%;
   margin-top: 7rem;
   display: flex;
   text-align: center;
@@ -563,6 +564,9 @@ footer .footer__der .logo img {
   width: 20rem;
   margin-right: 4rem;
 }
+.main__competencias .main__section-competencia .logo_cabezon {
+  padding: 3rem;
+}
 .main__competencias .main__section-competencia {
   /* Estilos del título y la descripción de cada una de las competencias */
 }
@@ -570,22 +574,34 @@ footer .footer__der .logo img {
   display: flex;
   flex-direction: column;
   width: 25rem;
+  text-align: justify;
+  width: 100%;
   /* Estilos del título de cada una de las competencias */
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
   padding-top: 2rem;
 }
+.main__competencias .main__section-competencia .main__section_titulo-descripcion .botones_competencias {
+  display: flex;
+  justify-content: flex-end;
+}
 .main__competencias .main__section-competencia .main__section_titulo-descripcion {
   /* Estilos de los botones en la sección de competencia */
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
-  display: block;
-  margin-top: 10px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: #1a4789;
+  border: none;
   /* Estilos del enlace dentro del botón */
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn a {
   text-decoration: none;
   color: white;
+}
+.main__competencias .main__section-competencia .main__section_titulo-descripcion .btn:hover {
+  background-color: #5d83bb;
 }
 .main__competencias {
   /* Ajustes de margen para la primera y última sección de competencia */
@@ -1243,7 +1259,7 @@ main .infografia {
   justify-content: center;
 }
 main .infografia .infografia_img {
-  width: 70%;
+  width: 60%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
