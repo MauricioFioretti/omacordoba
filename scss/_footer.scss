@@ -25,7 +25,7 @@ footer {
 
         /* Estilos del logo izquierdo del pie de página */
         .footer__logo-izq {
-            width: 55%;
+            width: 45%;
         }
     }
 
@@ -37,6 +37,7 @@ footer {
         background-color: white;
         opacity: 1;
         align-self: center;
+        border-radius: 25px;
     }
 
     /* Estilos del contenido derecho del pie de página */
@@ -53,6 +54,7 @@ footer {
             flex-direction: column;
             justify-content: end;
 
+
         }
 
         /* Correo de contacto */
@@ -60,6 +62,7 @@ footer {
             padding: 4vh 0;
             grid-row: 2;
             margin-bottom: 0;
+
         }
 
         /* Iconos de redes sociales */
@@ -85,7 +88,7 @@ footer {
             padding-bottom: 2rem;
 
             img {
-                width: 30vh;
+                width: 20vh;
             }
         }
     }

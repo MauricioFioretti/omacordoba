@@ -235,7 +235,7 @@ footer .footer__izq {
   /* Estilos del logo izquierdo del pie de página */
 }
 footer .footer__izq .footer__logo-izq {
-  width: 55%;
+  width: 45%;
 }
 footer {
   /* Estilos de la línea vertical del pie de página */
@@ -247,6 +247,7 @@ footer .footer__line {
   background-color: white;
   opacity: 1;
   align-self: center;
+  border-radius: 25px;
 }
 footer {
   /* Estilos del contenido derecho del pie de página */
@@ -296,7 +297,7 @@ footer .footer__der .logo {
   padding-bottom: 2rem;
 }
 footer .footer__der .logo img {
-  width: 30vh;
+  width: 20vh;
 }
 
 /* Estilos responsivos para pantallas medianas */
