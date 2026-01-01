@@ -52,50 +52,6 @@
         @extend .lista-lenitas;
 
         .color-year {
-            color: $LetraYear3;
-        }
-
-        div {
-            ol {
-                a {
-                    li {
-
-                        .color-numero {
-                            color: $LetraNumero3;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /* Estilos leñitas del 2020 */
-    .main__lista-lenitas-2020 {
-        @extend .lista-lenitas;
-
-        .color-year {
-            color: $LetraYear2;
-        }
-
-        div {
-            ol {
-                a {
-                    li {
-
-                        .color-numero {
-                            color: $LetraNumero2;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /* Estilos leñitas del 2021 */
-    .main__lista-lenitas-2021 {
-        @extend .lista-lenitas;
-
-        .color-year {
             color: $LetraYear1;
         }
 
@@ -113,8 +69,30 @@
         }
     }
 
-    /* Estilos leñitas del 2022 */
-    .main__lista-lenitas-2022 {
+    /* Estilos leñitas del 2020 */
+    .main__lista-lenitas-2020 {
+        @extend .lista-lenitas;
+
+        .color-year {
+            color: $LetraYear3;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+
+                        .color-numero {
+                            color: $LetraNumero3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Estilos leñitas del 2021 */
+    .main__lista-lenitas-2021 {
         @extend .lista-lenitas;
 
         .color-year {
@@ -125,8 +103,30 @@
             ol {
                 a {
                     li {
+
                         .color-numero {
                             color: $LetraNumero2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Estilos leñitas del 2022 */
+    .main__lista-lenitas-2022 {
+        @extend .lista-lenitas;
+
+        .color-year {
+            color: $LetraYear1;
+        }
+
+        div {
+            ol {
+                a {
+                    li {
+                        .color-numero {
+                            color: $LetraNumero1;
                         }
                     }
                 }
@@ -137,7 +137,7 @@
     /* Estilos leñitas del 2023 */
     .main__lista-lenitas-2023 {
         @extend .lista-lenitas;
-        margin-bottom: 10rem;
+
 
         .color-year {
             color: $LetraYear3;
@@ -163,7 +163,7 @@
         margin-bottom: 10rem;
 
         .color-year {
-            color: $LetraYear1;
+            color: $LetraYear2;
         }
 
         div {
@@ -171,7 +171,7 @@
                 a {
                     li {
                         .color-numero {
-                            color: $LetraNumero1;
+                            color: $LetraNumero2;
                         }
                     }
                 }
@@ -185,7 +185,7 @@
         margin-bottom: 10rem;
 
         .color-year {
-            color: $LetraYear2;
+            color: $LetraYear1;
         }
 
         div {
@@ -193,7 +193,7 @@
                 a {
                     li {
                         .color-numero {
-                            color: $LetraNumero2;
+                            color: $LetraNumero1;
                         }
                     }
                 }

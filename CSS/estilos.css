@@ -733,43 +733,40 @@ footer .footer__der .logo img {
   /* Estilos leñitas del 2019 */
 }
 .main__lenitas .main__lista-lenitas-2019 .color-year {
-  color: #ffa352;
+  color: #D43377;
 }
 .main__lenitas .main__lista-lenitas-2019 div ol a li .color-numero {
-  color: #e7a66e;
+  color: #EB79A9;
 }
 .main__lenitas {
   /* Estilos leñitas del 2020 */
 }
 .main__lenitas .main__lista-lenitas-2020 .color-year {
-  color: #5590ff;
+  color: #ffa352;
 }
 .main__lenitas .main__lista-lenitas-2020 div ol a li .color-numero {
-  color: #729ae9;
+  color: #e7a66e;
 }
 .main__lenitas {
   /* Estilos leñitas del 2021 */
 }
 .main__lenitas .main__lista-lenitas-2021 .color-year {
-  color: #D43377;
+  color: #5590ff;
 }
 .main__lenitas .main__lista-lenitas-2021 div ol a li .color-numero {
-  color: #EB79A9;
+  color: #729ae9;
 }
 .main__lenitas {
   /* Estilos leñitas del 2022 */
 }
 .main__lenitas .main__lista-lenitas-2022 .color-year {
-  color: #5590ff;
+  color: #D43377;
 }
 .main__lenitas .main__lista-lenitas-2022 div ol a li .color-numero {
-  color: #729ae9;
+  color: #EB79A9;
 }
 .main__lenitas {
   /* Estilos leñitas del 2023 */
-}
-.main__lenitas .main__lista-lenitas-2023 {
-  margin-bottom: 10rem;
 }
 .main__lenitas .main__lista-lenitas-2023 .color-year {
   color: #ffa352;
@@ -783,10 +780,10 @@ footer .footer__der .logo img {
   margin-bottom: 10rem;
 }
 .main__lista-lenitas-2024 .color-year {
-  color: #D43377;
+  color: #5590ff;
 }
 .main__lista-lenitas-2024 div ol a li .color-numero {
-  color: #EB79A9;
+  color: #729ae9;
 }
 
 /* Estilos leñitas del 2025 */
@@ -794,10 +791,10 @@ footer .footer__der .logo img {
   margin-bottom: 10rem;
 }
 .main__lista-lenitas-2025 .color-year {
-  color: #5590ff;
+  color: #D43377;
 }
 .main__lista-lenitas-2025 div ol a li .color-numero {
-  color: #729ae9;
+  color: #EB79A9;
 }
 
 /* Estilos responsivos para pantallas medianas */
