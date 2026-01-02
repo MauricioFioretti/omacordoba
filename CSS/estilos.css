@@ -978,9 +978,10 @@ footer .footer__der .logo img {
 /* Estilos responsivos para pantallas pequeñas (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .main__queesoma section {
+    background-color: red;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     padding: 0;
     /* Ajustes en la última sección para pantallas pequeñas */
   }
@@ -989,19 +990,17 @@ footer .footer__der .logo img {
   }
   .main__queesoma section .section-especial h2 {
     padding-bottom: 0;
+    padding: 1rem 1rem;
   }
   .main__queesoma section .section-especial {
     /* Estilos del botón */
-  }
-  .main__queesoma section .section-especial .btn {
-    margin-bottom: 1rem;
   }
   .main__queesoma section {
     /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
   }
   .main__queesoma section h2 {
     width: 90%;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
   }
   .main__queesoma section {
     /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */
@@ -1013,7 +1012,11 @@ footer .footer__der .logo img {
   .main__queesoma section .parrafos {
     padding: 0;
     width: 80%;
-    text-align: center;
+  }
+  .main__queesoma section .parrafos p {
+    display: flex;
+    text-align: left;
+    color: red;
   }
 }
 /* Estilos de la página "Secretarias Córdoba" */
@@ -1286,6 +1289,81 @@ main .infografia {
 }
 main .infografia .infografia_img {
   width: 60%;
+}
+
+/* Ir Arriba */
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #2071b2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 576px) {
+  /* Ir Arriba */
+  .go-top-container {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .go-top-button {
+    top: 50%;
+    left: 50%;
+  }
+  .go-top-button i {
+    font-size: 1rem;
+    top: 48%;
+    left: 50%;
+  }
+  .show .go-top-button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .show i {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
