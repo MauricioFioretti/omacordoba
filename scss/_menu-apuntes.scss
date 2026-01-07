@@ -3,8 +3,6 @@
     grid-area: main;
     text-align: center;
 
-
-
     .pdf__links {
 
         margin: 0 12rem;
@@ -18,10 +16,9 @@
 
         p {
             padding-left: 1rem;
-            display: flex;
-            justify-content: left;
+            // display: flex;
+            // justify-content: left;
             text-align: left;
-
         }
 
         /* Estilos para las cards de cada apunte */
@@ -32,36 +29,35 @@
                 display: flex;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-areas:"card-body card-link";
+                grid-template-areas: "card-body card-link";
                 background-color: #00000000;
                 border: none;
 
                 .card-body {
                     flex: 1;
                 }
-                a{
+
+                a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-decoration: none;
 
-                    button{
+                    button {
                         color: white;
                         background-color: $ColorBotonLibros;
-                        border:none;
+                        border: none;
                         border-radius: 5px;
                         font-weight: 700;
-                        padding:0.5rem 3rem;
+                        padding: 0.5rem 3rem;
                         font-size: 0.8rem;
-                        &:hover{
+
+                        &:hover {
                             background-color: $ColorBotonLibrosHover;
-                            }
                         }
+                    }
                 }
-                
-
             }
-
         }
 
         .card_1 {
@@ -84,14 +80,6 @@
                 font-size: 1.5rem;
                 font-weight: 700;
             }
-
-
-
         }
-
-
     }
-
 }
-
-

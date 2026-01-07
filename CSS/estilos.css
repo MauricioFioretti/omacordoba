@@ -488,8 +488,6 @@ footer .footer__der .logo img {
 }
 .main__apuntes .pdf__links p {
   padding-left: 1rem;
-  display: flex;
-  justify-content: left;
   text-align: left;
 }
 .main__apuntes .pdf__links {
