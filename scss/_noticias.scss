@@ -1,63 +1,348 @@
-main{
-    .noticias{
+/* Estilos de las noticias en la pagina principal */
+.main__index {
+    padding-bottom: 3rem;
+    text-align: center;
+    grid-area: main;
+    width: auto;
+
+    .img-hero {
+        img {
+            /* */
+        }
+    }
+
+    .info_pagina {
+
+        h1 {
+            /* */
+        }
+
+        .info_intro {
+            /* */
+        }
+
+        hr {
+            /* */
+        }
+    }
+
+    .noticias {
+
         margin-bottom: 10rem;
+        padding: 0;
+        margin: 0 15rem;
 
+        .noticias_article {
 
-
-        article{
-            padding: 0;
-            margin: 0 15rem;
-
-            img{
+            .noticias_img {
                 width: 20rem;
                 margin-bottom: 2rem;
             }
 
-            .noticias_titulo{
+            .noticias_titulo {
                 color: $ColorTituloNoticia;
                 margin-bottom: 1.5rem;
                 font-size: 1.8rem;
             }
-            .noticias_texto{
+
+            .noticias_texto {
                 padding: 0 12rem;
                 margin-bottom: 4rem;
                 font-size: 1.2rem;
-
             }
 
-            hr{
-            border: 1.5px solid $ColorSeparadorIndex;
-            border-radius: 5px;
-            opacity: 1;
-            margin: 3rem; 
-        }
+            .noticias_link {
+                /* */
+            }
+
+            .noticias_separador {
+                border: 1.5px solid $ColorSeparadorIndex;
+                border-radius: 5px;
+                opacity: 1;
+                margin: 3rem;
+            }
         }
 
-        .problemas_semanales{
-            img{
+
+        .problemas_semanales {
+
+            .noticias_img {
                 width: 70%;
                 margin-bottom: 2rem;
             }
-            p{
-                b{
+
+            .noticias_texto {
+                padding: 0 7rem;
+                b {
                     text-decoration: none;
                     font-weight: 700;
                 }
             }
 
-            .noticias-btn{
-            color: white;
-            background-color: $ColorBotonLibros;
-            border:none ;
-            border-radius: 30px;
-            font-weight: 700;
-            padding: 1rem 3rem;
-            font-size: 1.1rem;
-            &:hover{
-                background-color: $ColorBotonLibrosHover;
+            .noticias_link {
+
+                .noticias-btn {
+                    color: white;
+                    background-color: $ColorBotonLibros;
+                    border: none;
+                    border-radius: 30px;
+                    font-weight: 700;
+                    padding: 1rem 3rem;
+                    font-size: 1.1rem;
+
+                    &:hover {
+                        background-color: $ColorBotonLibrosHover;
+                    }
                 }
             }
+
+            .noticias_separador {
+                border: 1.5px solid $ColorSeparadorIndex;
+                border-radius: 5px;
+                opacity: 1;
+                margin: 3rem;
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 1292px) {
+    .main__index {
+
+        .img-hero {
+            img {
+                /* responsive */
             }
         }
 
+        .info_pagina {
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
+
+        .noticias {
+
+            margin: 0;
+            padding: 0;
+
+            .noticias_article {
+
+                .noticias_img {
+                    /* responsive */
+                }
+
+                .noticias_titulo {
+                    /* responsive */
+                }
+
+                .noticias_texto {
+                    /* responsive */
+                }
+
+                .noticias_link {
+                    /* responsive */
+                }
+
+                .noticias_separador {
+                    /* responsive */
+                }
+            }
+
+
+            .problemas_semanales {
+
+                .noticias_img {
+                    /* responsive */
+                }
+
+                .noticias_texto {
+                    padding: 0 12rem;
+
+                    b {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_link {
+
+                    .noticias-btn {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_separador {
+                    /* responsive */
+                }
+            }
+        }
     }
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .main__index {
+
+        .img-hero {
+            img {
+                /* responsive */
+            }
+        }
+
+        .info_pagina {
+
+            padding: 3rem 5rem;
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
+
+        .noticias {
+
+            padding: 3rem 5rem;
+
+            .noticias_article {
+
+                .noticias_img {
+                    /* responsive */
+                }
+
+                .noticias_titulo {
+                    /* responsive */
+                }
+
+                .noticias_texto {
+                    padding: 0;
+                }
+
+                .noticias_link {
+                    /* responsive */
+                }
+
+                .noticias_separador {
+                    /* responsive */
+                }
+            }
+
+
+            .problemas_semanales {
+
+                .noticias_img {
+                    width: 90%;
+                }
+
+                .noticias_texto {
+                    padding: 0rem;
+
+                    b {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_link {
+
+                    .noticias-btn {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_separador {
+                    /* responsive */
+                }
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas aún más pequeñas */
+@media screen and (max-width: 349px) {
+    .main__index {
+        /* responsive */
+    }
+}
+
+
+
+
+// main {
+//     .noticias {
+//         margin-bottom: 10rem;
+
+//         article {
+//             padding: 0;
+//             margin: 0 15rem;
+
+//             img {
+//                 width: 20rem;
+//                 margin-bottom: 2rem;
+//             }
+
+//             .noticias_titulo {
+//                 color: $ColorTituloNoticia;
+//                 margin-bottom: 1.5rem;
+//                 font-size: 1.8rem;
+//             }
+
+//             .noticias_texto {
+//                 padding: 0 12rem;
+//                 margin-bottom: 4rem;
+//                 font-size: 1.2rem;
+
+//             }
+
+//             hr {
+//                 border: 1.5px solid $ColorSeparadorIndex;
+//                 border-radius: 5px;
+//                 opacity: 1;
+//                 margin: 3rem;
+//             }
+//         }
+
+//         .problemas_semanales {
+//             img {
+//                 width: 70%;
+//                 margin-bottom: 2rem;
+//             }
+
+//             p {
+//                 b {
+//                     text-decoration: none;
+//                     font-weight: 700;
+//                 }
+//             }
+
+//             .noticias-btn {
+//                 color: white;
+//                 background-color: $ColorBotonLibros;
+//                 border: none;
+//                 border-radius: 30px;
+//                 font-weight: 700;
+//                 padding: 1rem 3rem;
+//                 font-size: 1.1rem;
+
+//                 &:hover {
+//                     background-color: $ColorBotonLibrosHover;
+//                 }
+//             }
+//         }
+//     }
+// }

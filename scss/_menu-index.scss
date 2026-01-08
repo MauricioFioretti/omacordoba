@@ -1,12 +1,72 @@
 /* Estilos de la página principal */
-
-.main__index{
+.main__index {
     padding-bottom: 3rem;
     text-align: center;
     grid-area: main;
     width: auto;
 
+    // .noticias {
+    //     margin-bottom: 10rem;
 
+    //     article {
+    //         padding: 0;
+    //         margin: 0 15rem;
+
+    //         img {
+    //             width: 20rem;
+    //             margin-bottom: 2rem;
+    //         }
+
+    //         .noticias_titulo {
+    //             color: $ColorTituloNoticia;
+    //             margin-bottom: 1.5rem;
+    //             font-size: 1.8rem;
+    //         }
+
+    //         .noticias_texto {
+    //             padding: 0 12rem;
+    //             margin-bottom: 4rem;
+    //             font-size: 1.2rem;
+
+    //         }
+
+    //         /* Separador de noticias */
+    //         hr {
+    //             border: 1.5px solid $ColorSeparadorIndex;
+    //             border-radius: 5px;
+    //             opacity: 1;
+    //             margin: 3rem;
+    //         }
+    //     }
+
+    //     .problemas_semanales {
+    //         img {
+    //             width: 70%;
+    //             margin-bottom: 2rem;
+    //         }
+
+    //         p {
+    //             b {
+    //                 text-decoration: none;
+    //                 font-weight: 700;
+    //             }
+    //         }
+
+    //         .noticias-btn {
+    //             color: white;
+    //             background-color: $ColorBotonLibros;
+    //             border: none;
+    //             border-radius: 30px;
+    //             font-weight: 700;
+    //             padding: 1rem 3rem;
+    //             font-size: 1.1rem;
+
+    //             &:hover {
+    //                 background-color: $ColorBotonLibrosHover;
+    //             }
+    //         }
+    //     }
+    // }
 
     /* Estilos de la sección de iconos */
     .main__iconos {
@@ -22,17 +82,19 @@
 
             "main__iconos-logointernacionales main__iconos-logoolimmayo main__iconos-logocanguro main__iconos-logoolimpri";
 
-            h2{
-                margin-bottom: 5rem;
-            } 
+        h2 {
+            margin-bottom: 5rem;
+        }
+
         /* Estilos de los enlaces */
         a {
             img {
                 width: 15rem;
             }
-            &:hover{
-                    opacity: 0.5;
-                }
+
+            &:hover {
+                opacity: 0.5;
+            }
 
         }
 
@@ -77,8 +139,33 @@
 }
 
 /* Estilos responsivos para pantallas medianas */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1292px) {
     .main__index {
+
+        // .noticias {
+        //     padding: 0;
+        //     margin: 0;
+
+        //     .noticias_article {
+        //         padding: 0;
+        //         margin: 0;
+
+        //         .noticias_titulo {
+        //             padding: 0;
+        //             margin: 0;
+        //         }
+
+        //         .noticias_texto p {
+        //             padding: 0;
+        //             margin: 0;
+        //         }
+
+        //         p {
+        //             padding: 0 !important;
+        //             margin: 0 !important;
+        //         }
+        //     }
+        // }
 
         /* Ajustes en la disposición de los iconos para pantallas medianas */
         .main__iconos {
@@ -104,6 +191,7 @@
 /* Estilos responsivos para pantallas más pequeñas */
 @media screen and (max-width: 550px) {
     .main__index {
+
         /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
         .main__iconos {
             grid-template-columns: 1fr 1fr;
@@ -132,6 +220,7 @@
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
     .main__index {
+
         /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */
         .main__iconos {
             grid-template-columns: 1fr 1fr;

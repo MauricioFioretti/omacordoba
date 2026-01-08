@@ -326,7 +326,7 @@ footer .footer__der .logo img {
 }
 /* Estilos de la página principal */
 .main__index {
-  padding-bottom: 3rem;
+  padding-bottom: 0;
   text-align: center;
   grid-area: main;
   width: auto;
