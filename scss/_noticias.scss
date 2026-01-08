@@ -1,7 +1,7 @@
 /* Estilos de las noticias en la pagina principal */
 .main__index {
     padding-bottom: 3rem;
-    text-align: center;
+    // text-align: center;
     grid-area: main;
     width: auto;
 
@@ -73,6 +73,7 @@
 
             .noticias_texto {
                 padding: 0 7rem;
+
                 b {
                     text-decoration: none;
                     font-weight: 700;
@@ -218,7 +219,7 @@
 
         .noticias {
 
-            padding: 3rem 5rem;
+            padding: 3rem 4rem;
 
             .noticias_article {
 
@@ -276,7 +277,84 @@
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
     .main__index {
-        /* responsive */
+
+        .img-hero {
+            img {
+                /* responsive */
+            }
+        }
+
+        .info_pagina {
+
+            padding: 3rem 3rem;
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
+
+        .noticias {
+
+            padding: 3rem 2rem;
+
+            .noticias_article {
+
+                .noticias_img {
+                    /* responsive */
+                }
+
+                .noticias_titulo {
+                    /* responsive */
+                }
+
+                .noticias_texto {
+                    padding: 0;
+                }
+
+                .noticias_link {
+                    /* responsive */
+                }
+
+                .noticias_separador {
+                    margin: 3rem 0;
+                }
+            }
+
+
+            .problemas_semanales {
+
+                .noticias_img {
+                    width: 90%;
+                }
+
+                .noticias_texto {
+                    padding: 0rem;
+
+                    b {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_link {
+
+                    .noticias-btn {
+                        /* responsive */
+                    }
+                }
+
+                .noticias_separador {
+                    margin: 3rem 0;
+                }
+            }
+        }
     }
 }
 

@@ -448,6 +448,7 @@ footer .footer__der .logo img {
     /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
   }
   .main__index .main__iconos {
+    margin: 0 4rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(4, 1fr);
     grid-template-areas: "main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu" "main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo" "main__iconos-logocanguro main__iconos-logoolimpri";
@@ -463,6 +464,7 @@ footer .footer__der .logo img {
     /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */
   }
   .main__index .main__iconos {
+    margin: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(4, 2fr);
     grid-template-areas: "main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu" "main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo" "main__iconos-logocanguro main__iconos-logoolimpri";
@@ -1236,7 +1238,6 @@ main .img-hero .hero {
 /* Estilos de las noticias en la pagina principal */
 .main__index {
   padding-bottom: 3rem;
-  text-align: center;
   grid-area: main;
   width: auto;
 }
@@ -1377,7 +1378,7 @@ main .img-hero .hero {
     /* responsive */
   }
   .main__index .noticias {
-    padding: 3rem 5rem;
+    padding: 3rem 4rem;
   }
   .main__index .noticias .noticias_article .noticias_img {
     /* responsive */
@@ -1412,8 +1413,53 @@ main .img-hero .hero {
 }
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
-  .main__index {
+  .main__index .img-hero img {
     /* responsive */
+  }
+  .main__index .info_pagina {
+    padding: 3rem 3rem;
+  }
+  .main__index .info_pagina h1 {
+    /* responsive */
+  }
+  .main__index .info_pagina .info_intro {
+    /* responsive */
+  }
+  .main__index .info_pagina hr {
+    /* responsive */
+  }
+  .main__index .noticias {
+    padding: 3rem 2rem;
+  }
+  .main__index .noticias .noticias_article .noticias_img {
+    /* responsive */
+  }
+  .main__index .noticias .noticias_article .noticias_titulo {
+    /* responsive */
+  }
+  .main__index .noticias .noticias_article .noticias_texto {
+    padding: 0;
+  }
+  .main__index .noticias .noticias_article .noticias_link {
+    /* responsive */
+  }
+  .main__index .noticias .noticias_article .noticias_separador {
+    margin: 3rem 0;
+  }
+  .main__index .noticias .problemas_semanales .noticias_img {
+    width: 90%;
+  }
+  .main__index .noticias .problemas_semanales .noticias_texto {
+    padding: 0rem;
+  }
+  .main__index .noticias .problemas_semanales .noticias_texto b {
+    /* responsive */
+  }
+  .main__index .noticias .problemas_semanales .noticias_link .noticias-btn {
+    /* responsive */
+  }
+  .main__index .noticias .problemas_semanales .noticias_separador {
+    margin: 3rem 0;
   }
 }
 main .infografia {
