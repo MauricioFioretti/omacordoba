@@ -468,10 +468,6 @@ footer .footer__der .logo img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(4, 2fr);
     grid-template-areas: "main__iconos-titulo main__iconos-titulo" "main__iconos-logomateclubes main__iconos-logonandu" "main__iconos-logolym main__iconos-logotorngeoeimag" "main__iconos-logointernacionales main__iconos-logoolimmayo" "main__iconos-logocanguro main__iconos-logoolimpri";
-    /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */
-  }
-  .main__index .main__iconos a img {
-    width: 145px;
   }
 }
 /* Estilos del main apuntes */
@@ -573,7 +569,7 @@ footer .footer__der .logo img {
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
   .main__apuntes .pdf__links {
-    margin: 0 2rem;
+    margin: 0 1.5rem;
   }
 }
 /* Estilos del main competencias */
@@ -1407,7 +1403,7 @@ footer .footer__der .logo img {
   .main__competencias .info_pagina,
   .main__lenitas .info_pagina,
   .main__index .info_pagina {
-    padding: 3rem 3rem;
+    padding: 3rem 1.5rem;
   }
   .main__libros .info_pagina h1,
   .main__apuntes .info_pagina h1,
@@ -1581,7 +1577,7 @@ main .img-hero .hero {
     /* responsive */
   }
   .main__index .noticias {
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
   }
   .main__index .noticias .noticias_article .noticias_img {
     /* responsive */
@@ -1599,7 +1595,7 @@ main .img-hero .hero {
     /* responsive */
   }
   .main__index .noticias .problemas_semanales .noticias_img {
-    width: 90%;
+    width: 100%;
   }
   .main__index .noticias .problemas_semanales .noticias_texto {
     padding: 0rem;
@@ -1647,7 +1643,7 @@ main .img-hero .hero {
     margin: 3rem 0;
   }
   .main__index .noticias .problemas_semanales .noticias_img {
-    width: 90%;
+    width: 100%;
   }
   .main__index .noticias .problemas_semanales .noticias_texto {
     padding: 0rem;

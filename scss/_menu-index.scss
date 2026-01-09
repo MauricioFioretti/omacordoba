@@ -107,7 +107,7 @@
         /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
         .main__iconos {
 
-            margin: 0 4rem ;
+            margin: 0 4rem;
 
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto repeat(4, 1fr);
@@ -135,7 +135,6 @@
 /* Estilos responsivos para pantallas aún más pequeñas */
 @media screen and (max-width: 349px) {
     .main__index {
-
         /* Ajustes en la disposición de los iconos para pantallas aún más pequeñas */
         .main__iconos {
             margin: 0;
@@ -151,13 +150,6 @@
                 "main__iconos-logointernacionales main__iconos-logoolimmayo"
 
                 "main__iconos-logocanguro main__iconos-logoolimpri";
-
-            /* Ajustes en el ancho de las imágenes de los iconos para pantallas aún más pequeñas */
-            a {
-                img {
-                    width: 145px;
-                }
-            }
         }
     }
 }
