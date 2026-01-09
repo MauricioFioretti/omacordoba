@@ -1,81 +1,173 @@
-main{
-    .info_pagina{
+.main__libros,
+.main__apuntes,
+.main__competencias,
+.main__lenitas,
+.main__index {
+    .info_pagina {
         padding: 3rem 10rem;
         text-align: center;
 
-        h1{
+        h1 {
             color: $ColorTitulosInfoPag;
             margin-bottom: 1.5rem;
         }
 
-        p{
+        p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
         }
 
-        
-        .enfasis_lenitas{
+
+        .enfasis_lenitas {
             font-size: 1.5rem;
-            span{
+
+            span {
                 color: $ColorEnfasisLenitas1;
             }
         }
 
-        .ultimo_lenitas{
+        .ultimo_lenitas {
             color: $ColorEnfasisLenitas2;
         }
 
-        .advertencia_apuntes{
-            background-color:$ColorFondoImportanteApuntes;
+        .advertencia_apuntes {
+            background-color: $ColorFondoImportanteApuntes;
             border-radius: 25px;
             padding: 1rem;
-            span{
+
+            span {
                 color: $colorImportanteApuntes;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: $ColorLinkReglamentos;
-                &:hover{
-                    color:$ColorLinkReglamentosHover;
+
+                &:hover {
+                    color: $ColorLinkReglamentosHover;
                 }
             }
         }
 
-        .nota{
+        .nota {
             font-size: 1rem;
             font-weight: 200;
         }
 
-        .btn-libros{
+        .btn-libros {
             background-color: $ColorBotonLibros;
-            border:none;
+            border: none;
             border-radius: 30px;
             font-weight: 700;
             padding: 1rem 3rem;
             font-size: 1.1rem;
-            &:hover{
+
+            &:hover {
                 background-color: $ColorBotonLibrosHover;
-                }
+            }
         }
 
-        .btn-recomendar-apuntes{
+        .btn-recomendar-apuntes {
             background-color: $ColorBotonRecomendarApuntes;
-            border:none;
+            border: none;
             border-radius: 30px;
             font-weight: 700;
             padding: 1rem 3rem;
             font-size: 1.1rem;
-            &:hover{
+
+            &:hover {
                 background-color: $ColorBotonRecomendarApuntesHover;
-                }
+            }
         }
 
-        hr{
+        hr {
             border: 1.5px solid $ColorSeparadorIndex;
             border-radius: 5px;
             opacity: 1;
         }
 
 
+    }
+}
+
+
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 1292px) {
+
+    .main__libros,
+    .main__apuntes,
+    .main__competencias,
+    .main__lenitas,
+    .main__index {
+        .info_pagina {
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+
+    .main__libros,
+    .main__apuntes,
+    .main__competencias,
+    .main__lenitas,
+    .main__index {
+
+        .info_pagina {
+
+            padding: 3rem 5rem;
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas aún más pequeñas */
+@media screen and (max-width: 349px) {
+
+    .main__libros,
+    .main__apuntes,
+    .main__competencias,
+    .main__lenitas,
+    .main__index {
+
+        .info_pagina {
+
+            padding: 3rem 3rem;
+
+            h1 {
+                /* responsive */
+            }
+
+            .info_intro {
+                /* responsive */
+            }
+
+            hr {
+                /* responsive */
+            }
+        }
     }
 }
