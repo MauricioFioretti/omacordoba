@@ -16,36 +16,35 @@
         img {
             width: 20rem;
             margin-right: 4rem;
-            
         }
-        .logo_cabezon{
-                padding: 3rem;
-            }
+
+        .logo_cabezon {
+            padding: 3rem;
+        }
 
         /* Estilos del título y la descripción de cada una de las competencias */
         .main__section_titulo-descripcion {
             display: flex;
             flex-direction: column;
-            width: 25rem;
-            text-align: justify;
             width: 100%;
+            text-align: justify;
+            align-items: center;
 
             /* Estilos del título de cada una de las competencias */
             h2 {
                 padding-top: 2rem;
+                width: 100%;
             }
 
-            .botones_competencias{
+            .botones_competencias {
+                width: 100%;
                 display: flex;
                 justify-content: flex-end;
-
-
+                gap: 2rem;
             }
 
             /* Estilos de los botones en la sección de competencia */
             .btn {
-                margin-top: 1rem;
-                margin-left: 2rem;
                 padding: 0.5rem 2rem;
                 background-color: $ColorBotonCompetencias;
                 border: none;
@@ -56,9 +55,10 @@
                     text-decoration: none;
                     color: white;
                 }
-            &:hover{
-                background-color: $ColorBotonCompetenciasHover;
-            }
+
+                &:hover {
+                    background-color: $ColorBotonCompetenciasHover;
+                }
             }
         }
     }
@@ -74,14 +74,33 @@
 }
 
 /* Estilos responsivos para pantallas pequeñas */
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 1292px) {
     .main__competencias {
+
+        /* Ajustes en la dirección de flexión para las secciones de competencia */
+        .main__section-competencia {
+
+            .main__section_titulo-descripcion {
+                text-align: center;
+
+                .botones_competencias {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .main__competencias {
+
         /* Ajustes en la dirección de flexión para las secciones de competencia */
         .main__section-competencia {
             flex-direction: column;
             margin-top: 3rem;
 
-            img{
+            img {
                 width: 15rem;
                 margin-right: 0;
             }
@@ -89,20 +108,29 @@
     }
 }
 
-/* Estilos responsivos para pantallas pequeñas */
-@media screen and (max-width: 568px) {
+/* Estilos responsivos para pantallas muy pequeñas */
+@media screen and (max-width: 349px) {
     .main__competencias {
-        /* Ajustes en la dirección de flexión para las secciones de competencia */
+
         .main__section-competencia {
+            width: 100%;
             flex-direction: column;
 
-            img{
-                width: 45%;
+            img {
+                // width: 45%;
                 margin-right: 0;
             }
 
             .main__section_titulo-descripcion {
-                width: 80%;
+                width: 85%;
+
+                .botones_competencias {
+                    gap: 1rem;
+
+                    .btn {
+                        padding: 0.5rem 1rem;
+                    }
+                }
             }
         }
     }

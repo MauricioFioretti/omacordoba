@@ -574,24 +574,25 @@ footer .footer__der .logo img {
 .main__competencias .main__section-competencia .main__section_titulo-descripcion {
   display: flex;
   flex-direction: column;
-  width: 25rem;
-  text-align: justify;
   width: 100%;
+  text-align: justify;
+  align-items: center;
   /* Estilos del título de cada una de las competencias */
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion h2 {
   padding-top: 2rem;
+  width: 100%;
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion .botones_competencias {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  gap: 2rem;
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion {
   /* Estilos de los botones en la sección de competencia */
 }
 .main__competencias .main__section-competencia .main__section_titulo-descripcion .btn {
-  margin-top: 1rem;
-  margin-left: 2rem;
   padding: 0.5rem 2rem;
   background-color: #1a4789;
   border: none;
@@ -615,7 +616,19 @@ footer .footer__der .logo img {
 }
 
 /* Estilos responsivos para pantallas pequeñas */
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 1292px) {
+  .main__competencias {
+    /* Ajustes en la dirección de flexión para las secciones de competencia */
+  }
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion {
+    text-align: center;
+  }
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion .botones_competencias {
+    justify-content: center;
+  }
+}
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
   .main__competencias {
     /* Ajustes en la dirección de flexión para las secciones de competencia */
   }
@@ -628,20 +641,23 @@ footer .footer__der .logo img {
     margin-right: 0;
   }
 }
-/* Estilos responsivos para pantallas pequeñas */
-@media screen and (max-width: 568px) {
-  .main__competencias {
-    /* Ajustes en la dirección de flexión para las secciones de competencia */
-  }
+/* Estilos responsivos para pantallas muy pequeñas */
+@media screen and (max-width: 349px) {
   .main__competencias .main__section-competencia {
+    width: 100%;
     flex-direction: column;
   }
   .main__competencias .main__section-competencia img {
-    width: 45%;
     margin-right: 0;
   }
   .main__competencias .main__section-competencia .main__section_titulo-descripcion {
-    width: 80%;
+    width: 85%;
+  }
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion .botones_competencias {
+    gap: 1rem;
+  }
+  .main__competencias .main__section-competencia .main__section_titulo-descripcion .botones_competencias .btn {
+    padding: 0.5rem 1rem;
   }
 }
 /* Estilos del main "En qué participo" */
