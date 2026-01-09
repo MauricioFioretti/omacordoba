@@ -977,7 +977,7 @@ footer .footer__der .logo img {
 }
 
 /* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 767px) and (max-width: 1263px) {
+@media screen and (max-width: 1292px) {
   .main__queesoma section {
     /* Ajustes en el tamaño del título h2 para pantallas medianas */
   }
@@ -994,10 +994,8 @@ footer .footer__der .logo img {
 /* Estilos responsivos para pantallas pequeñas (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .main__queesoma section {
-    background-color: red;
     display: flex;
     flex-direction: column;
-    width: 80%;
     padding: 0;
     /* Ajustes en la última sección para pantallas pequeñas */
   }
@@ -1008,15 +1006,14 @@ footer .footer__der .logo img {
     padding-bottom: 0;
     padding: 1rem 1rem;
   }
-  .main__queesoma section .section-especial {
-    /* Estilos del botón */
-  }
   .main__queesoma section {
     /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
   }
   .main__queesoma section h2 {
     width: 90%;
+    margin: 0;
     padding: 1rem 1rem;
+    text-align: center;
   }
   .main__queesoma section {
     /* Ajustes en el tamaño del subtítulo h3 para pantallas pequeñas */
@@ -1028,11 +1025,17 @@ footer .footer__der .logo img {
   .main__queesoma section .parrafos {
     padding: 0;
     width: 80%;
+    text-align: center;
   }
   .main__queesoma section .parrafos p {
     display: flex;
     text-align: left;
-    color: red;
+  }
+}
+/* Estilos responsivos para pantallas muy pequeñas (max-width: 349px) */
+@media screen and (max-width: 349px) {
+  .main__queesoma {
+    /* Estilos responsivos */
   }
 }
 /* Estilos de la página "Secretarias Córdoba" */

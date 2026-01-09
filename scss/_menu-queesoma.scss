@@ -53,10 +53,7 @@
             padding: 2rem;
             text-align: justify;
             color: black;
-
         }
-
-
     }
 
     .hr_1{
@@ -84,7 +81,7 @@
 }
 
 /* Estilos responsivos para pantallas medianas */
-@media screen and (min-width: 767px) and (max-width: 1263px) {
+@media screen and (max-width: 1292px) {
     .main__queesoma {
 
         section {
@@ -107,10 +104,8 @@
     .main__queesoma {
 
         section {
-            background-color: red;
             display: flex;
             flex-direction: column;
-            width: 80%;
             padding: 0;
 
             /* Ajustes en la última sección para pantallas pequeñas */
@@ -120,19 +115,15 @@
                 h2 {
                     padding-bottom: 0;
                     padding: 1rem 1rem;
-
                 }
-
-                /* Estilos del botón */
-                // .btn {
-                //     margin-bottom: 1rem;
-                // }
             }
 
             /* Ajustes en el tamaño del título h2 para pantallas pequeñas */
             h2 {
                 width: 90%;
+                margin: 0;
                 padding: 1rem 1rem;
+                text-align: center;
 
             }
 
@@ -145,14 +136,21 @@
             .parrafos {
                 padding: 0;
                 width: 80%;
+                text-align: center;
 
                 p{
                     display: flex;
                     text-align: left;
-                    color: red;
                 }
 
             }
         }
+    }
+}
+
+/* Estilos responsivos para pantallas muy pequeñas (max-width: 349px) */
+@media screen and (max-width: 349px) {
+    .main__queesoma {
+        /* Estilos responsivos */
     }
 }
