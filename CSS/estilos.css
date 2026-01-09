@@ -480,7 +480,7 @@ footer .footer__der .logo img {
   text-align: center;
 }
 .main__apuntes .pdf__links {
-  margin: 0 12rem;
+  margin: 0 10rem;
 }
 .main__apuntes .pdf__links h2 {
   display: flex;
@@ -499,15 +499,11 @@ footer .footer__der .logo img {
   border-radius: 25px;
 }
 .main__apuntes .pdf__links .container-cards .card {
-  display: flex;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   grid-template-areas: "card-body card-link";
   background-color: rgba(0, 0, 0, 0);
   border: none;
-}
-.main__apuntes .pdf__links .container-cards .card .card-body {
-  flex: 1;
 }
 .main__apuntes .pdf__links .container-cards .card a {
   display: flex;
@@ -546,6 +542,40 @@ footer .footer__der .logo img {
   font-weight: 700;
 }
 
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 1292px) {
+  .main__apuntes .pdf__links {
+    margin: 0 7rem;
+  }
+}
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 1000px) {
+  .main__apuntes .pdf__links .container-cards .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__apuntes .pdf__links .container-cards .card .card-body .card-title {
+    text-align: center;
+  }
+  .main__apuntes .pdf__links .container-cards .card .card-body .card-text {
+    text-align: center;
+  }
+  .main__apuntes .pdf__links .container-cards a {
+    padding-bottom: 2rem;
+  }
+}
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  .main__apuntes .pdf__links {
+    margin: 0 3rem;
+  }
+}
+/* Estilos responsivos para pantallas aún más pequeñas */
+@media screen and (max-width: 349px) {
+  .main__apuntes .pdf__links {
+    margin: 0 2rem;
+  }
+}
 /* Estilos del main competencias */
 .main__competencias {
   display: flex;
@@ -1310,6 +1340,13 @@ footer .footer__der .logo img {
 
 /* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 1292px) {
+  .main__libros .info_pagina,
+  .main__apuntes .info_pagina,
+  .main__competencias .info_pagina,
+  .main__lenitas .info_pagina,
+  .main__index .info_pagina {
+    padding: 3rem 6rem;
+  }
   .main__libros .info_pagina h1,
   .main__apuntes .info_pagina h1,
   .main__competencias .info_pagina h1,

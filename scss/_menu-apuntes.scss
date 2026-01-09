@@ -5,7 +5,7 @@
 
     .pdf__links {
 
-        margin: 0 12rem;
+        margin: 0 10rem;
 
         h2 {
             display: flex;
@@ -16,8 +16,6 @@
 
         p {
             padding-left: 1rem;
-            // display: flex;
-            // justify-content: left;
             text-align: left;
         }
 
@@ -26,16 +24,12 @@
             border-radius: 25px;
 
             .card {
-                display: flex;
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                // grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 3fr 1fr;
                 grid-template-areas: "card-body card-link";
                 background-color: #00000000;
                 border: none;
-
-                .card-body {
-                    flex: 1;
-                }
 
                 a {
                     display: flex;
@@ -79,6 +73,81 @@
                 color: $ColorCard2Titulo;
                 font-size: 1.5rem;
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+/* Estilos responsivos para pantallas medianas */
+@media screen and (max-width: 1292px) {
+    .main__apuntes {
+        .pdf__links {
+            margin: 0 7rem;
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 1000px) {
+    .main__apuntes {
+        .pdf__links {
+
+            .container-cards {
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+
+                    .card-body{
+                        .card-title{
+                            text-align: center;
+                        }
+                        
+                        .card-text{
+                            text-align: center;
+                        }
+                    }
+                }
+
+                a {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .main__apuntes {
+        .pdf__links {
+
+            margin: 0 3rem;
+
+            .container-cards {
+
+                .card {}
+
+                a {}
+            }
+        }
+    }
+}
+
+/* Estilos responsivos para pantallas aún más pequeñas */
+@media screen and (max-width: 349px) {
+    .main__apuntes {
+        .pdf__links {
+
+            margin: 0 2rem;
+
+            .container-cards {
+
+                .card {}
+
+                a {}
             }
         }
     }
