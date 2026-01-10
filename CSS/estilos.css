@@ -548,6 +548,10 @@ footer .footer__der .logo img {
 }
 /* Estilos responsivos para pantallas más pequeñas */
 @media screen and (max-width: 1000px) {
+  .main__apuntes .pdf__links h2 {
+    justify-content: center;
+    padding-left: 0;
+  }
   .main__apuntes .pdf__links .container-cards .card {
     display: flex;
     flex-direction: column;
