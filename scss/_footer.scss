@@ -141,13 +141,15 @@ footer {
 
             /* Datos de contacto */
             .datosContacto {
+                padding-left: 2rem;
+                padding-right: 2rem;
                 line-height: 1.4;
             }
 
             /* Correo de contacto */
             .correo {
                 line-height: 1.2;
-                padding: 2.5rem 0;
+                padding: 2.5rem 1.5rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
