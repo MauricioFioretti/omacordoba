@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components</title>
+
+    <!-- TU CSS REAL -->
+    <link rel="stylesheet" href="../CSS/estilos.css" />
+
+    <style>
+        /* UI del catálogo – aislada con ds- */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: #f4f5f7;
+        }
+
+        .ds-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            padding: 12px 16px;
+        }
+
+        .ds-topbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 10px;
+        }
+
+        .ds-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ds-title {
+            font-weight: 800;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .ds-controls {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr auto;
+            gap: 10px;
+        }
+
+        .ds-input,
+        .ds-select,
+        .ds-textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            font-size: 14px;
+        }
+
+        .ds-btn {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .ds-btn.primary {
+            background: #111;
+            color: #fff;
+            border-color: #111;
+        }
+
+        .ds-wrap {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .ds-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .ds-card {
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            overflow: hidden;
+        }
+
+        .ds-cardhead {
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(0, 0, 0, .08);
+        }
+
+        .ds-cardtitle {
+            margin: 0;
+            font-weight: 800;
+        }
+
+        .ds-preview {
+            padding: 14px;
+        }
+
+        .ds-previewframe {
+            border: 1px dashed rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            padding: 12px;
+            background: #fff;
+        }
+
+        .ds-codewrap {
+            padding: 14px;
+            border-top: 1px solid rgba(0, 0, 0, .08);
+            background: #fafafa;
+        }
+
+        pre {
+            margin: 0;
+            padding: 12px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, .15);
+            font-size: 12px;
+            overflow: auto;
+        }
+
+        .ds-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        /* Panel agregar */
+        .ds-panel {
+            display: none;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            padding: 14px;
+        }
+
+        .ds-panel.show {
+            display: block;
+        }
+
+        .ds-form {
+            display: grid;
+            gap: 10px;
+        }
+
+        .ds-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .ds-textarea {
+            min-height: 160px;
+            font-family: monospace;
+        }
+
+        .ds-toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, .85);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+        .ds-toast.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            .ds-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .ds-split {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="ds-topbar">
+        <div class="ds-topbar-inner">
+            <div class="ds-row">
+                <h1 class="ds-title">Components</h1>
+                <button id="toggleAdd" class="ds-btn primary">+ Agregar componente</button>
+            </div>
+
+            <div class="ds-controls">
+                <input id="searchInput" class="ds-input" placeholder="Buscar componentes…" />
+                <select id="categoryFilter" class="ds-select">
+                    <option value="">Todas las categorías</option>
+                </select>
+                <select id="statusFilter" class="ds-select">
+                    <option value="active">Activos</option>
+                    <option value="all">Todos</option>
+                </select>
+                <button id="reloadBtn" class="ds-btn">Recargar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="ds-wrap">
+
+        <!-- PANEL AGREGAR -->
+        <section id="addPanel" class="ds-panel">
+            <div class="ds-form">
+                <input id="categoryInput" class="ds-input" placeholder="Categoría (ej: Textos)" />
+                <input id="nameInput" class="ds-input" placeholder="Nombre del componente" />
+                <input id="idInput" class="ds-input" placeholder="ID (opcional, se genera solo)" />
+
+                <textarea id="htmlInput" class="ds-textarea" placeholder="Pegá acá el HTML"></textarea>
+
+                <div class="ds-split">
+                    <div>
+                        <strong>Preview</strong>
+                        <div id="preview" class="ds-previewframe"></div>
+                    </div>
+                    <div>
+                        <strong>Código</strong>
+                        <pre id="code"><code></code></pre>
+                        <div class="ds-actions">
+                            <button id="copyBtn" class="ds-btn">Copiar</button>
+                            <button id="saveBtn" class="ds-btn primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTADO -->
+        <div id="grid" class="ds-grid"></div>
+
+    </main>
+
+    <div id="toast" class="ds-toast">OK</div>
+
+    <script>
+        const API_URL = "https://script.google.com/macros/s/AKfycbyAagZ2YodYXoiXLA34EhYl7KutIHHSYH8SCicJL-Khj5tDbMjcU83STNnUIo5KSku8/exec";
+
+        const $ = id => document.getElementById(id);
+        const toast = msg => {
+            $("toast").textContent = msg;
+            $("toast").classList.add("show");
+            setTimeout(() => $("toast").classList.remove("show"), 900);
+        };
+
+        function escapeHtml(s) {
+            return s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+        }
+
+        function sanitize(html) {
+            return html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "");
+        }
+
+        function slug(s) {
+            return s.toLowerCase().replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+        }
+
+        /* PANEL */
+        $("toggleAdd").onclick = () => $("addPanel").classList.toggle("show");
+
+        $("htmlInput").oninput = () => {
+            const raw = $("htmlInput").value;
+            $("preview").innerHTML = sanitize(raw);
+            $("code").innerHTML = `<code>${escapeHtml(raw)}</code>`;
+        };
+
+        $("copyBtn").onclick = () => {
+            navigator.clipboard.writeText($("htmlInput").value);
+            toast("Copiado");
+        };
+
+        $("saveBtn").onclick = async () => {
+            const category = $("categoryInput").value.trim();
+            const name = $("nameInput").value.trim();
+            const html = $("htmlInput").value.trim();
+            let id = $("idInput").value.trim();
+
+            if (!category || !name || !html) {
+                toast("Completá categoría, nombre y HTML");
+                return;
+            }
+
+            if (!id) id = slug(name);
+
+            const payload = {
+                action: "upsert",
+                item: { id, category, name, html, status: "active" }
+            };
+
+            const res = await fetch(API_URL, {
+                method: "POST",
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+
+            if (data.ok) {
+                toast("Guardado");
+                loadComponents();
+            } else {
+                toast("Error al guardar");
+            }
+        };
+
+        /* LISTADO */
+        async function loadComponents() {
+            const url = new URL(API_URL);
+            url.searchParams.set("status", $("statusFilter").value);
+            if ($("categoryFilter").value)
+                url.searchParams.set("category", $("categoryFilter").value);
+            if ($("searchInput").value)
+                url.searchParams.set("search", $("searchInput").value);
+
+            const res = await fetch(url);
+            const data = await res.json();
+            const grid = $("grid");
+            grid.innerHTML = "";
+
+            if (!data.ok || !data.items.length) {
+                grid.innerHTML = "<p>No hay componentes</p>";
+                return;
+            }
+
+            const cats = [...new Set(data.items.map(i => i.category))];
+            $("categoryFilter").innerHTML =
+                `<option value="">Todas las categorías</option>` +
+                cats.map(c => `<option>${c}</option>`).join("");
+
+            data.items.forEach(it => {
+                const card = document.createElement("div");
+                card.className = "ds-card";
+                card.innerHTML = `
+      <div class="ds-cardhead"><strong>${it.name}</strong></div>
+      <div class="ds-preview"><div class="ds-previewframe">${sanitize(it.html)}</div></div>
+      <div class="ds-codewrap">
+        <pre><code>${escapeHtml(it.html)}</code></pre>
+        <div class="ds-actions">
+          <button class="ds-btn">Copiar</button>
+        </div>
+      </div>`;
+                card.querySelector("button").onclick = () => {
+                    navigator.clipboard.writeText(it.html);
+                    toast("Copiado");
+                };
+                grid.appendChild(card);
+            });
+        }
+
+        $("reloadBtn").onclick = loadComponents;
+        $("searchInput").oninput = () => setTimeout(loadComponents, 300);
+        $("categoryFilter").onchange = loadComponents;
+        $("statusFilter").onchange = loadComponents;
+
+        loadComponents();
+    </script>
+</body>
+
+</html>
