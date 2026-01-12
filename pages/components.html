@@ -92,13 +92,15 @@
         }
 
         .ds-wrap {
+            background-color: black;
             max-width: 100%;
             margin: 0 auto;
         }
 
         .ds-grid {
+            padding: 30px 0;
             display: grid;
-            gap: 16px;
+            gap: 30px;
         }
 
         .ds-card {
@@ -113,6 +115,11 @@
             border-bottom: 1px solid rgba(0, 0, 0, .08);
         }
 
+        .ds-cardhead {
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+            background: #dddddd;
+        }
+
         .ds-cardtitle {
             margin: 0;
             font-weight: 800;
@@ -120,6 +127,7 @@
 
         .ds-preview {
             padding: 0;
+            background: #f0f2f5;
         }
 
         .ds-previewframe {
@@ -131,7 +139,7 @@
         .ds-codewrap {
             padding: 14px;
             border-top: 1px solid rgba(0, 0, 0, .08);
-            background: #fafafa;
+            background: #dddddd;
         }
 
         pre {
@@ -148,6 +156,9 @@
             display: flex;
             justify-content: flex-end;
             margin-top: 10px;
+            justify-content: space-between;
+            /* izquierda toggle, derecha copiar */
+            align-items: center;
         }
 
         /* Panel agregar */
@@ -195,6 +206,35 @@
 
         .ds-toast.show {
             opacity: 1;
+        }
+
+        /* ====== Details (código desplegable) ====== */
+        .ds-details {
+            max-width: 100%;
+        }
+
+        .ds-summary {
+            cursor: pointer;
+            user-select: none;
+            list-style: none;
+            font-weight: 700;
+            padding: 8px 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .15);
+            display: inline-block;
+        }
+
+        .ds-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .ds-details[open] .ds-summary {
+            background: rgba(255, 255, 255, .12);
+        }
+
+        .ds-pre {
+            margin-top: 10px;
         }
 
         @media (max-width: 900px) {
@@ -289,6 +329,44 @@
             return s.toLowerCase().replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
         }
 
+        let searchTimer = null;
+
+        // Guardamos todas las categorías detectadas (de un fetch "all")
+        let allCategories = [];
+
+        // Evita que respuestas viejas pisen las nuevas
+        let lastRequestId = 0;
+
+        function setCategoryOptions(categories, keepSelectedValue = true) {
+            const select = $("categoryFilter");
+            const current = keepSelectedValue ? select.value : "";
+
+            select.innerHTML = `<option value="">Todas las categorías</option>` +
+                categories.map(c => `<option value="${c}">${c}</option>`).join("");
+
+            // restaura selección si todavía existe
+            if (keepSelectedValue) {
+                select.value = current;
+                // si la selección ya no existe (por ejemplo quedó vieja), vuelve a todas
+                if (select.value !== current) select.value = "";
+            }
+        }
+
+        async function refreshCategories() {
+            // Pedimos TODOS para armar el listado de categorías una sola vez
+            const url = new URL(API_URL);
+            url.searchParams.set("status", "all"); // traemos todo para extraer categorías
+
+            const res = await fetch(url);
+            const data = await res.json();
+
+            if (!data.ok) return;
+
+            allCategories = [...new Set((data.items || []).map(i => i.category).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+            setCategoryOptions(allCategories, true);
+        }
+
+
         /* PANEL */
         $("toggleAdd").onclick = () => $("addPanel").classList.toggle("show");
 
@@ -329,64 +407,112 @@
 
             if (data.ok) {
                 toast("Guardado");
-                loadComponents();
-            } else {
+                $("nameInput").value = "";
+                $("idInput").value = "";
+                $("htmlInput").value = "";
+                $("preview").innerHTML = "";
+                $("code").innerHTML = "<code></code>";
+
+                await refreshCategories();
+                await loadComponents();
+            }
+            else {
                 toast("Error al guardar");
             }
         };
 
         /* LISTADO */
         async function loadComponents() {
+            const requestId = ++lastRequestId;
+
             const url = new URL(API_URL);
             url.searchParams.set("status", $("statusFilter").value);
-            if ($("categoryFilter").value)
-                url.searchParams.set("category", $("categoryFilter").value);
-            if ($("searchInput").value)
-                url.searchParams.set("search", $("searchInput").value);
+
+            const cat = $("categoryFilter").value;
+            const q = $("searchInput").value.trim();
+
+            if (cat) url.searchParams.set("category", cat);
+            if (q) url.searchParams.set("search", q);
 
             const res = await fetch(url);
             const data = await res.json();
+
+            // Si mientras tanto disparaste otra búsqueda, ignoramos esta respuesta vieja
+            if (requestId !== lastRequestId) return;
+
             const grid = $("grid");
             grid.innerHTML = "";
 
             if (!data.ok || !data.items.length) {
-                grid.innerHTML = "<p>No hay componentes</p>";
+                grid.innerHTML = "<p style='padding:12px'>No hay componentes</p>";
                 return;
             }
-
-            const cats = [...new Set(data.items.map(i => i.category))];
-            $("categoryFilter").innerHTML =
-                `<option value="">Todas las categorías</option>` +
-                cats.map(c => `<option>${c}</option>`).join("");
 
             data.items.forEach(it => {
                 const card = document.createElement("div");
                 card.className = "ds-card";
                 card.innerHTML = `
-      <div class="ds-cardhead"><strong>${it.name}</strong></div>
-      <div class="ds-preview"><div class="ds-previewframe">${sanitize(it.html)}</div></div>
-      <div class="ds-codewrap">
-        <pre><code>${escapeHtml(it.html)}</code></pre>
-        <div class="ds-actions">
-          <button class="ds-btn ds-copy" type="button">Copiar</button>
-        </div>
-      </div>`;
+                    <div class="ds-cardhead"><strong>${it.name}</strong></div>
+
+                    <div class="ds-preview">
+                        <div class="ds-previewframe">${sanitize(it.html)}</div>
+                    </div>
+
+                    <div class="ds-codewrap">
+                        <div class="ds-actions">
+                        <details class="ds-details">
+                            <summary class="ds-summary">Ver código</summary>
+                            <pre class="ds-pre"><code>${escapeHtml(it.html)}</code></pre>
+                        </details>
+
+                        <button class="ds-btn ds-copy" type="button">Copiar</button>
+                        </div>
+                    </div>
+                    `;
+
                 card.querySelector(".ds-copy").onclick = () => {
                     navigator.clipboard.writeText(it.html);
                     toast("Copiado");
                 };
+
                 grid.appendChild(card);
             });
         }
 
-        $("reloadBtn").onclick = loadComponents;
-        $("searchInput").oninput = () => setTimeout(loadComponents, 300);
-        $("categoryFilter").onchange = loadComponents;
-        $("statusFilter").onchange = loadComponents;
+        // ====== EVENTOS FILTROS + INIT ======
 
-        loadComponents();
+        $("reloadBtn").onclick = async () => {
+            $("searchInput").value = "";
+            $("categoryFilter").value = "";
+            $("statusFilter").value = "active";
+            await refreshCategories();
+            await loadComponents();
+        };
+
+        $("statusFilter").onchange = async () => {
+            await refreshCategories();
+            await loadComponents();
+        };
+
+        $("categoryFilter").onchange = () => loadComponents();
+
+        // Debounce real (si no, se acumulan requests al tipear/borrar)
+        $("searchInput").oninput = () => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(() => {
+                loadComponents();
+            }, 250);
+        };
+
+        // INIT: cargar categorías (para que el select siempre tenga todas)
+        // y luego cargar los componentes
+        (async () => {
+            await refreshCategories();
+            await loadComponents();
+        })();
+
+
     </script>
 </body>
 
 </html>
-
