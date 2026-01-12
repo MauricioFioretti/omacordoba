@@ -368,10 +368,10 @@
       <div class="ds-codewrap">
         <pre><code>${escapeHtml(it.html)}</code></pre>
         <div class="ds-actions">
-          <button class="ds-btn">Copiar</button>
+          <button class="ds-btn ds-copy" type="button">Copiar</button>
         </div>
       </div>`;
-                card.querySelector("button").onclick = () => {
+                card.querySelector(".ds-copy").onclick = () => {
                     navigator.clipboard.writeText(it.html);
                     toast("Copiado");
                 };
@@ -389,3 +389,4 @@
 </body>
 
 </html>
+
