@@ -1466,6 +1466,15 @@ main .img-hero .hero {
   padding: 0;
   margin: 0 15rem;
 }
+.main__index .noticias a {
+  color: #a3b95e;
+}
+.main__index .noticias a:hover {
+  color: #c1d193;
+}
+.main__index .noticias .noticias_article ul li {
+  list-style-type: none;
+}
 .main__index .noticias .noticias_article .noticias_img {
   width: 20rem;
   margin-bottom: 2rem;
@@ -1475,13 +1484,29 @@ main .img-hero .hero {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
+.main__index .noticias .noticias_article .inicio_año {
+  color: #D43377;
+}
 .main__index .noticias .noticias_article .noticias_texto {
   padding: 0 12rem;
   margin-bottom: 4rem;
   font-size: 1.2rem;
 }
 .main__index .noticias .noticias_article .noticias_link {
-  /* */
+  list-style-type: none;
+}
+.main__index .noticias .noticias_article .noticias_link .noticias-btn {
+  color: white;
+  background-color: #FFB800;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+.main__index .noticias .noticias_article .noticias_link .noticias-btn:hover {
+  background-color: #ffd48f;
 }
 .main__index .noticias .noticias_article .noticias_separador {
   border: 1.5px solid #006794;
@@ -1502,15 +1527,16 @@ main .img-hero .hero {
 }
 .main__index .noticias .problemas_semanales .noticias_link .noticias-btn {
   color: white;
-  background-color: #FFB800;
+  background-color: #fc4547;
   border: none;
   border-radius: 30px;
   font-weight: 700;
   padding: 1rem 3rem;
   font-size: 1.1rem;
+  margin: 1rem 0;
 }
 .main__index .noticias .problemas_semanales .noticias_link .noticias-btn:hover {
-  background-color: #ffd48f;
+  background-color: #e36d6f;
 }
 .main__index .noticias .problemas_semanales .noticias_separador {
   border: 1.5px solid #006794;
