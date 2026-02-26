@@ -2,22 +2,19 @@
 .main__lenitas {
     grid-area: main;
 
-    /* Estilos generales de cada lista de leñitas de cada año */
-    .lista-lenitas {
+
+
+
+//     /* Estilos leñitas 1 */
+
+    .main__lista-lenitas-1 {
+        @extend .lista-lenitas;
+        margin-bottom: 10rem;
+
         margin: 4rem 0;
         display: flex;
         flex-direction: column;
         text-align: center;
-
-
-        .color-year {
-            margin-bottom: 1rem;
-            font-weight: 900;
-            width: 80%;
-            align-self: center;
-            text-align: left;
-            font-size: 2.5rem;
-        }
 
         div {
             ol {
@@ -37,26 +34,20 @@
                     li {
                         font-size: 1.5rem;
 
-                        .color-numero {
-                            font-weight: 900;
-                        }
                     }
                 }
 
             }
         }
-    }
-
-
-
-//     /* Estilos leñitas 1 */
-
-    .main__lista-lenitas-1 {
-        @extend .lista-lenitas;
-        margin-bottom: 10rem;
 
         .color-year-1 {
             color: $LetraYear1;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            width: 80%;
+            align-self: center;
+            text-align: left;
+            font-size: 2.5rem;
         }
 
         
@@ -67,6 +58,7 @@
                     li {
                         .color-numero-1{
                             color: $LetraNumero1;
+                            font-weight: 900;
                         }
                     }
                 }
@@ -81,8 +73,43 @@
         @extend .lista-lenitas;
         margin-bottom: 10rem;
 
+                margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            ol {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(18rem, 1fr));
+                justify-items: start;
+                gap: 10px;
+
+                text-align: center;
+                margin: 0 10%;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    li {
+                        font-size: 1.5rem;
+
+                    }
+                }
+
+            }
+        }
+
         .color-year-2 {
             color: $LetraYear2;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            width: 80%;
+            align-self: center;
+            text-align: left;
+            font-size: 2.5rem;
         }
 
         
@@ -93,6 +120,7 @@
                     li {
                         .color-numero-2{
                             color: $LetraNumero2;
+                            font-weight: 900;
                         }
                     }
                 }
@@ -106,8 +134,42 @@
         @extend .lista-lenitas;
         margin-bottom: 10rem;
 
+                margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            ol {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(18rem, 1fr));
+                justify-items: start;
+                gap: 10px;
+
+                text-align: center;
+                margin: 0 10%;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    li {
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
         .color-year-3 {
             color: $LetraYear3;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            width: 80%;
+            align-self: center;
+            text-align: left;
+            font-size: 2.5rem;
         }
 
         
@@ -118,6 +180,7 @@
                     li {
                         .color-numero-3{
                             color: $LetraNumero3;
+                            font-weight: 900;
                         }
                     }
                 }

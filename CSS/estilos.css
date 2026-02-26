@@ -743,23 +743,15 @@ footer .footer__der .logo img {
 /* Estilos del main leñitas */
 .main__lenitas {
   grid-area: main;
-  /* Estilos generales de cada lista de leñitas de cada año */
 }
-.main__lenitas .lista-lenitas, .main__lenitas .main__lista-lenitas-3, .main__lenitas .main__lista-lenitas-2, .main__lenitas .main__lista-lenitas-1 {
+.main__lenitas .main__lista-lenitas-1 {
+  margin-bottom: 10rem;
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.main__lenitas .lista-lenitas .color-year, .main__lenitas .main__lista-lenitas-3 .color-year, .main__lenitas .main__lista-lenitas-2 .color-year, .main__lenitas .main__lista-lenitas-1 .color-year {
-  margin-bottom: 1rem;
-  font-weight: 900;
-  width: 80%;
-  align-self: center;
-  text-align: left;
-  font-size: 2.5rem;
-}
-.main__lenitas .lista-lenitas div ol, .main__lenitas .main__lista-lenitas-3 div ol, .main__lenitas .main__lista-lenitas-2 div ol, .main__lenitas .main__lista-lenitas-1 div ol {
+.main__lenitas .main__lista-lenitas-1 div ol {
   display: grid;
   grid-template-columns: repeat(3, minmax(18rem, 1fr));
   justify-items: start;
@@ -768,44 +760,99 @@ footer .footer__der .logo img {
   margin: 0 10%;
   list-style-type: none;
 }
-.main__lenitas .lista-lenitas div ol a, .main__lenitas .main__lista-lenitas-3 div ol a, .main__lenitas .main__lista-lenitas-2 div ol a, .main__lenitas .main__lista-lenitas-1 div ol a {
+.main__lenitas .main__lista-lenitas-1 div ol a {
   text-decoration: none;
   color: black;
 }
-.main__lenitas .lista-lenitas div ol a li, .main__lenitas .main__lista-lenitas-3 div ol a li, .main__lenitas .main__lista-lenitas-2 div ol a li, .main__lenitas .main__lista-lenitas-1 div ol a li {
+.main__lenitas .main__lista-lenitas-1 div ol a li {
   font-size: 1.5rem;
-}
-.main__lenitas .lista-lenitas div ol a li .color-numero, .main__lenitas .main__lista-lenitas-3 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-2 div ol a li .color-numero, .main__lenitas .main__lista-lenitas-1 div ol a li .color-numero {
-  font-weight: 900;
-}
-.main__lenitas .main__lista-lenitas-1 {
-  margin-bottom: 10rem;
 }
 .main__lenitas .main__lista-lenitas-1 .color-year-1 {
   color: #D43377;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  width: 80%;
+  align-self: center;
+  text-align: left;
+  font-size: 2.5rem;
 }
 .main__lenitas .main__lista-lenitas-1 div ol a li .color-numero-1 {
   color: #EB79A9;
+  font-weight: 900;
 }
 
 .main__lista-lenitas-2 {
   margin-bottom: 10rem;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__lista-lenitas-2 div ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(18rem, 1fr));
+  justify-items: start;
+  gap: 10px;
+  text-align: center;
+  margin: 0 10%;
+  list-style-type: none;
+}
+.main__lista-lenitas-2 div ol a {
+  text-decoration: none;
+  color: black;
+}
+.main__lista-lenitas-2 div ol a li {
+  font-size: 1.5rem;
 }
 .main__lista-lenitas-2 .color-year-2 {
   color: #5590ff;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  width: 80%;
+  align-self: center;
+  text-align: left;
+  font-size: 2.5rem;
 }
 .main__lista-lenitas-2 div ol a li .color-numero-2 {
   color: #729ae9;
+  font-weight: 900;
 }
 
 .main__lista-lenitas-3 {
   margin-bottom: 10rem;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__lista-lenitas-3 div ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(18rem, 1fr));
+  justify-items: start;
+  gap: 10px;
+  text-align: center;
+  margin: 0 10%;
+  list-style-type: none;
+}
+.main__lista-lenitas-3 div ol a {
+  text-decoration: none;
+  color: black;
+}
+.main__lista-lenitas-3 div ol a li {
+  font-size: 1.5rem;
 }
 .main__lista-lenitas-3 .color-year-3 {
   color: #ffa352;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  width: 80%;
+  align-self: center;
+  text-align: left;
+  font-size: 2.5rem;
 }
 .main__lista-lenitas-3 div ol a li .color-numero-3 {
   color: #e7a66e;
+  font-weight: 900;
 }
 
 /* Estilos responsivos para pantallas medianas */
