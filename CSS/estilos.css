@@ -1476,10 +1476,10 @@ main .img-hero .hero {
   margin: 0 15rem;
 }
 .main__index .noticias a {
-  color: #a3b95e;
+  color: #329e57;
 }
 .main__index .noticias a:hover {
-  color: #c1d193;
+  color: #54bc78;
 }
 .main__index .noticias .noticias_article ul li {
   list-style-type: none;
@@ -1488,8 +1488,17 @@ main .img-hero .hero {
   width: 20rem;
   margin-bottom: 2rem;
 }
+.main__index .noticias .noticias_article .noticias_logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
 .main__index .noticias .noticias_article .noticias_titulo {
   color: #006794;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.main__index .noticias .noticias_article .honor_titulo {
+  color: #d5b76b;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
@@ -1516,6 +1525,19 @@ main .img-hero .hero {
 }
 .main__index .noticias .noticias_article .noticias_link .noticias-btn:hover {
   background-color: #ffd48f;
+}
+.main__index .noticias .noticias_article .noticias_link .honor-btn {
+  color: white;
+  background-color: #d5b76b;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+.main__index .noticias .noticias_article .noticias_link .honor-btn:hover {
+  background-color: #ffebb9;
 }
 .main__index .noticias .noticias_article .noticias_separador {
   border: 1.5px solid #006794;
