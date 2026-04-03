@@ -1492,6 +1492,10 @@ main .img-hero .hero {
   width: 10rem;
   margin-bottom: 1rem;
 }
+.main__index .noticias .noticias_article .noticias_flyer {
+  width: 50rem;
+  margin-bottom: 2rem;
+}
 .main__index .noticias .noticias_article .noticias_titulo {
   color: #006794;
   margin-bottom: 1.5rem;
