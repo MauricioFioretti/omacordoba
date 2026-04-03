@@ -78,6 +78,12 @@ NOTICIA ANUNCIO DE CERTAMEN:
             <!-- Fin de noticia -->
 
 
+NOTICIA CONJUNTA (OMA Y ÑANDÚ): Borrar el tag de la imagen del logo y reemplazar por:
+
+                <img src="./img/Logos Index/logoÑandu.png" alt="Taller de Geometria 1" class="noticias_logo">
+                <img src="./img/Logos Competencias/logoOMAtransparente.svg" width="500" alt="Taller de Geometria 1" style="padding: 1.2rem;" class="noticias_logo">
+
+
 NOTICIA RESULTADOS CERTAMEN:
 
             <!-- Noticia -->
