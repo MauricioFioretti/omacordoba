@@ -135,3 +135,16 @@ NOTICIAS SUGERIR UN PROBLEMA:
                 <hr class="noticias_separador">
             </article>
             <!-- Fin de noticia -->
+
+
+CONECTAR CON SASS:
+    1. Tener Node.js y npm instalados
+    2. Parate en la carpeta raíz del proyecto
+    3. Crear el package.json con el comando "npm init -y"
+    4. Instalar Sass con el comando "npm install --save-dev sass"
+    5. Configurar package.json:
+        "scripts": {
+            "sass": "sass scss/estilos.scss CSS/estilos.css",
+            "watch": "sass --watch scss/estilos.scss:CSS/estilos.css"
+        }
+    6. Compilar con el comando "npm run watch"

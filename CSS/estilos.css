@@ -1498,6 +1498,7 @@ main .img-hero .hero {
 }
 .main__index .noticias .noticias_article .noticias_titulo {
   color: #006794;
+  padding: 0 5rem;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
@@ -1510,7 +1511,7 @@ main .img-hero .hero {
   color: #D43377;
 }
 .main__index .noticias .noticias_article .noticias_texto {
-  padding: 0 12rem;
+  padding: 0 6rem;
   margin-bottom: 4rem;
   font-size: 1.2rem;
 }
@@ -1650,7 +1651,7 @@ main .img-hero .hero {
     /* responsive */
   }
   .main__index .noticias .noticias_article .noticias_titulo {
-    /* responsive */
+    padding: 0;
   }
   .main__index .noticias .noticias_article .noticias_texto {
     padding: 0;
