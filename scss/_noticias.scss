@@ -73,6 +73,13 @@
                 font-size: 1.8rem;
             }
 
+            .noticias_subtítulo{
+                color: $ColorSubtituloNoticia;
+                margin-top: 2rem;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+
             .honor_titulo {
                 color: $ColorTituloHonor;
                 margin-bottom: 1.5rem;
@@ -86,7 +93,27 @@
             .noticias_texto {
                 padding: 0 6rem;
                 margin-bottom: 4rem;
+                font-size: 1rem;
+            }
+            .noticias_texto_interno {
+                padding: 0 6rem;
+                font-size: 1rem;
+            }
+
+            .noticias_disclaimer{
+                padding: 0 6rem;
+                font-size: 0.8rem;
+                color: $ColorDisclaimerNoticias;
+            }
+            
+            .noticia_importante{
                 font-size: 1.2rem;
+                font-weight: 700 ;
+                color: $ColorImportanteNoticias;
+            }
+
+            li b{
+                color: $ColorBancoNoticias;
             }
 
             .noticias_link {
