@@ -1831,5 +1831,75 @@ main .infografia .infografia_img {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+.grid_container {
+  padding: 0 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2" "area-1 area-3 area-3 area-4 area-4 area-4 area-4 area-4" "area-5 area-5 area-5 area-5 area-6 area-6 area-6 area-6" "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8";
+}
+
+.logo_noticia_certamen {
+  padding: 0;
+  grid-area: area-1;
+  width: 200px;
+}
+
+.titulo_noticia_certamen {
+  padding: 0;
+  margin: 0;
+  color: #006794;
+  font-size: 1.8rem;
+  grid-area: area-2;
+  text-align: left;
+  align-self: end;
+}
+.titulo_noticia_certamen .color_ronda {
+  color: #0096DA;
+}
+
+.items_info_certamen {
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+  grid-area: area-3;
+  text-align: left;
+  align-self: start;
+  background-color: #fff5ee;
+  border-radius: 10px;
+}
+.items_info_certamen .items_info {
+  margin: 0;
+}
+.items_info_certamen .items_info .titulo_items_info {
+  color: #ff914d;
+}
+
+.info_certamen {
+  padding: 0 4rem;
+  grid-area: area-4;
+  text-align: left;
+  align-self: center;
+}
+
+.certamen_inscripcion {
+  grid-area: area-5;
+  background-color: #fff5ee;
+  border-radius: 10px;
+}
+
+.certamen_pago {
+  grid-area: area-6;
+  background-color: #fff5ee;
+  border-radius: 10px;
+}
+
+.noticia_certamen_disclaimer {
+  grid-area: area-7;
+}
+
+.advertencia_certamen {
+  grid-area: area-8;
+  background-color: #fff5ee;
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=estilos.css.map */

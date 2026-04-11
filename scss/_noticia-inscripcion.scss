@@ -1,0 +1,86 @@
+.grid_container{
+    padding: 0 5em;
+    display: grid;
+    // background-color: red;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2"
+    "area-1 area-3 area-3 area-4 area-4 area-4 area-4 area-4" 
+    "area-5 area-5 area-5 area-5 area-6 area-6 area-6 area-6" 
+    "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" 
+    "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8" 
+    ;
+}
+
+.logo_noticia_certamen{
+    padding: 0;
+    grid-area: area-1;
+    width: 200px;
+}
+
+.titulo_noticia_certamen{
+    // background-color: blue;
+    padding: 0;
+    margin: 0;
+    color: $ColorTituloNoticia;
+    font-size: 1.8rem;
+    grid-area: area-2;
+    text-align: left;
+    align-self: end;
+
+    .color_ronda{
+        color: $ColorTituloRonda;
+    }
+}
+
+.items_info_certamen{
+    margin-top: 0.5rem;
+    padding: 0.5rem 2rem;
+    grid-area: area-3;
+    text-align: left;
+    align-self: start;
+    background-color:$ColorFondoItemsInfoCertamen;
+    border-radius: 10px;
+    .items_info{
+        margin: 0;
+        .titulo_items_info{
+            color: $ColorTituloItemsInfoCertamen;
+        }
+    }
+
+}
+
+.info_certamen{
+    padding: 0 4rem;
+    grid-area: area-4;
+    text-align: left;
+    align-self: center;
+    // background-color: orange;
+}
+
+.certamen_inscripcion{
+    grid-area: area-5;
+
+    background-color:$ColorFondoItemsInfoCertamen;
+    border-radius: 10px;
+}
+
+.certamen_pago{
+    grid-area: area-6;
+
+background-color:$ColorFondoItemsInfoCertamen;
+    border-radius: 10px;
+}
+
+.noticia_certamen_disclaimer{
+    grid-area: area-7;
+    // background-color: hotpink;
+}
+
+.advertencia_certamen{
+    grid-area: area-8;
+    background-color:$ColorFondoItemsInfoCertamen;
+    border-radius: 10px;
+}
+
+
