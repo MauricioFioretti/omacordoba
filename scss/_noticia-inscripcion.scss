@@ -1,25 +1,36 @@
+*{
+    margin: 0;
+}
+
 .grid_container{
+    align-self: center;
+    max-width: 1500px;
     padding: 0 5em;
+    margin:0 auto;
     display: grid;
     // background-color: red;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2"
-    "area-1 area-3 area-3 area-4 area-4 area-4 area-4 area-4" 
-    "area-5 area-5 area-5 area-5 area-6 area-6 area-6 area-6" 
-    "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" 
-    "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8" 
+    "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2"
+    "area-1 area-3 area-3 area-3 area-4 area-4 area-4 area-4  area-4  ." 
+    " . area-5 area-5 area-5 area-5 area-5 area-6 area-6 area-6 . " 
+    "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" 
+    "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8"
     ;
+    gap: 0.5rem;
+}
+
+p{
+    font-size: 0.8rem;
 }
 
 .logo_noticia_certamen{
-    padding: 0;
     grid-area: area-1;
-    width: 200px;
+    max-width: 150px;
+    width: 20em;
 }
 
 .titulo_noticia_certamen{
-    // background-color: blue;
     padding: 0;
     margin: 0;
     color: $ColorTituloNoticia;
@@ -34,15 +45,17 @@
 }
 
 .items_info_certamen{
-    margin-top: 0.5rem;
     padding: 0.5rem 2rem;
     grid-area: area-3;
     text-align: left;
     align-self: start;
+    display: grid;
+    align-items: center;
     background-color:$ColorFondoItemsInfoCertamen;
     border-radius: 10px;
     .items_info{
         margin: 0;
+        font-size: 0.8rem;
         .titulo_items_info{
             color: $ColorTituloItemsInfoCertamen;
         }
@@ -51,36 +64,240 @@
 }
 
 .info_certamen{
-    padding: 0 4rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem;
     grid-area: area-4;
     text-align: left;
-    align-self: center;
+    align-self: start;
     // background-color: orange;
 }
 
 .certamen_inscripcion{
     grid-area: area-5;
-
-    background-color:$ColorFondoItemsInfoCertamen;
+    text-align: justify;
+    display: grid;
+    padding: 0.5rem 2rem;
+    background-color:$ColorFondoInscripcionCertamen;
     border-radius: 10px;
+        .titulo_inscripcion{
+        color: $ColorTituloInscripcionCertamen;
+        margin-top: 0.2rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+
+        .noticias_link{
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            text-decoration: none;
+            margin: 0;
+        }
+        .noticias_certamen_btn{
+            color: white;
+            background-color: $ColorBotonLibros;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.8rem;
+            &:hover {
+                background-color: $ColorBotonLibrosHover;
+            }
+        }
 }
 
 .certamen_pago{
     grid-area: area-6;
-
-background-color:$ColorFondoItemsInfoCertamen;
+    background-color:$ColorFondoPagoCertamen;
     border-radius: 10px;
+    text-align: center;
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+
+        p{
+            font-size: 0.75rem;
+        }
+        ul{
+            font-size: 0.75rem;
+            text-align: left;
+            padding: 0;
+
+            li b{
+                color: $ColorBancoNoticias;
+            }
+        }
 }
 
 .noticia_certamen_disclaimer{
     grid-area: area-7;
     // background-color: hotpink;
-}
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    color: $ColorDisclaimerNoticias;
+    }
+
+
 
 .advertencia_certamen{
     grid-area: area-8;
-    background-color:$ColorFondoItemsInfoCertamen;
+    background-color:$ColorFondoImportanteNoticias;
     border-radius: 10px;
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 4fr 1fr;
+
+    .noticia_importante{
+    font-size: 1.2rem;
+    font-weight: 700 ;
+    color: $ColorImportanteNoticias;
+    align-self: start;
+    }
+
+    .importante_info{
+        font-size: 0.8rem;
+        text-align: left;
+        padding: 0 1rem;
+        align-self: center;
+    }
+
+    .certamen_info_link{
+        display: grid;
+        align-items: end;
+        justify-items: center;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .noticias_certamen_btn{
+            color: white;
+            background-color: $ColorBotonImportanteNoticias;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 0.8rem 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.8rem;
+
+            &:hover {
+                background-color: $ColorColorBotonImportanteNoticiasHover;
+            }
+        }
+    
 }
 
 
+
+@media (max-width: 1600px){
+
+    .grid_container{
+        align-self: center;
+        margin:0 auto;
+        display: grid;
+        // background-color: red;
+        grid-template-columns: 1fr 4fr 5fr;
+        grid-template-areas: 
+        "area-1 area-2 area-2"
+        "area-1 area-3 area-4" 
+        "area-5 area-5 area-5" 
+        "area-6 area-6 area-6" 
+        "area-7 area-7 area-7" 
+        "area-8 area-8 area-8"
+        ;
+        gap: 0.5rem;
+    }
+
+
+
+}
+
+@media (max-width: 1100px){
+
+    .grid_container{
+        align-self: center;
+        margin:0 auto;
+        display: grid;
+        // background-color: red;
+        grid-template-columns: 1fr 9fr;
+        grid-template-areas: 
+        "area-1 area-2"
+        "area-1 area-3" 
+        "area-4 area-4" 
+        "area-5 area-5" 
+        "area-6 area-6" 
+        "area-8 area-8"
+        "area-7 area-7" 
+        ;
+        gap: 0.5rem;
+    }
+
+    .items_info_certamen{
+        width: fit-content;
+        justify-self: end;
+        margin-top: 0.5rem;
+    }
+
+        .titulo_noticia_certamen{
+        font-size: 1.7rem;
+    }
+
+    .advertencia_certamen{
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+@media (max-width: 767px){
+    .grid_container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "area-1"
+        "area-2"
+        "area-3" 
+        "area-4" 
+        "area-5" 
+        "area-6" 
+        "area-8"
+        "area-7" 
+        ;
+    }
+    .items_info_certamen{
+        justify-self: center;
+    }
+    .titulo_noticia_certamen{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .info_certamen{
+        text-align: center;
+    }
+    .logo_noticia_certamen{
+        justify-self: center;        
+    }
+
+
+}
+
+@media (max-width: 500px){
+
+    p{
+        padding: 0;
+
+    }
+
+    .grid_container{
+
+        padding: 0;
+    }
+
+}
