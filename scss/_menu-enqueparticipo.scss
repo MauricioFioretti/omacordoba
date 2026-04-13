@@ -19,6 +19,115 @@
     }
 }
 
+
+.grid_container_que_participo{
+    backface-visibility: green;
+    display: grid;
+
+    .en_que_participo_header{
+        display: grid;
+        justify-items: center;
+        padding: 0 3rem;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "header-1 header-2 header-3 header-4 header-4 . . . . ."
+        ". . . header-41 header-42 logo-1 logo-2 logo-3 logo-4 logo-5"
+        ;
+    }
+        
+        .tipo_colegio{
+            color: white;
+            font-weight: 500;
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .tipo_colegio_1{
+            grid-area: "header-1";
+            background-color: $ColorHeader;
+
+        }
+
+        .tipo_colegio_2{
+            grid-area: "header-2";
+            background-color: $ColorHeader;
+        }
+
+        .tipo_colegio_3{
+            grid-area: "header-3";
+            background-color: $ColorHeader;
+        }
+
+        .tipo_colegio_4{
+            grid-area: "header-4";
+            background-color: $ColorHeader;
+
+        .tipo_colegio_41{
+            grid-area: "header-41";
+            background-color: $ColorSubHeader;
+        }
+
+        .tipo_colegio_42{
+            grid-area: "header-42";
+            background-color: $ColorSubHeader;
+        }
+
+        .img_que_participo{
+            width: 5em;
+        }
+
+        .img-1 {
+            grid-area: "logo-1";
+        }
+
+        .img-2 {
+            grid-area: "logo-2";
+        }
+
+        .img-3 {
+            grid-area: "logo-3";
+        }
+
+        .img-4 {
+            grid-area: "logo-4";
+        }
+
+        .img-5 {
+            grid-area: "logo-5";
+        }
+    }
+
+
+    .año_de_escolaridad {
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr ;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 800px) {
 
