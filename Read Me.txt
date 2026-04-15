@@ -92,17 +92,19 @@ NOTICIA INSCRIPCIÓN A CERTAMEN:
 
                             <p class="items_info"><b class="titulo_items_info">Fecha:</b> 07/05/2026</p>
                             <p class="items_info"><b class="titulo_items_info">Hora de Ingreso:</b> 13:45</p>
-                            <p class="items_info"><b class="titulo_items_info">Lugar:</b> A confirmar</p>
+                            <p class="items_info"><b class="titulo_items_info">Lugar:</b> <br>
+                            <a href="https://maps.app.goo.gl/qjFpA9AFidWDfyV99" target="_blank">Colegio Parroquial "San Pablo Apóstol"</a> <i>(Sólo los alumnos de escuelas municipales inscriptas)</i> <br> 
+                            <a href="https://maps.app.goo.gl/WqYUyJRwkt1oankC7" target="_blank">Instituto Jesuita "Sagrada Familia"</a> <i>(Los demás alumnos inscriptos de Córdoba Capital y alrededores)</i> </p>
 
                         </div>
                         
-                        <p class="info_certamen">La prueba consta de <b>3 problemas</b>  que el alumno resolverá con desarrollo en formato papel con una duración de <b>2 horas</b> <a class="noticias_link" href="https://www.oma.org.ar/contents/paginas/nandu.html">(Revisar reglamento)</a></p>
+                        <p class="info_certamen">La prueba consta de <b>3 problemas</b>  que el alumno resolverá con desarrollo en formato papel con una duración de <b>2 horas</b> <a class="noticias_link" href="https://www.oma.org.ar/contents/paginas/nandu.html" target="_blank">(Revisar reglamento)</a></p>
                         
                         <div class="certamen_inscripcion">
 
                             <h3 class="titulo_inscripcion">Inscripción:</h3>
                             <p class="noticias_texto_interno">La inscripción se hará respondiendo al link que está abajo, cuidando de poner todos los datos, y el apellido del alumno <b>ANTES</b> del nombre. </p>
-                            <p>La fecha límite para enviar las inscripciones es el <b>jueves 30 de abril</b> y tiene un costo de <b>$26.000</b> (veinte y seis mil pesos) por alumno, que habilita para participar 
+                            <p>La fecha límite para enviar las inscripciones es el <b>jueves 30 de abril</b> y tiene un costo de <b>$26.000</b> (veintiseis mil pesos) por alumno, que habilita para participar 
                             de los demás certámenes durante el año, excepto el provincial y el nacional.</p>
                             <a class="noticias_link" href=" https://nueva.oma.org.ar/virtual/inscripcion.php?competencia=OMN&region=7&hash=924c4d78&ano=2026" target="_blank"><button class="noticias_certamen_btn">INSCRIBITE</button></a>  
 
@@ -110,7 +112,7 @@ NOTICIA INSCRIPCIÓN A CERTAMEN:
 
                         <div class="certamen_pago">
 
-                            <p>El monto deberá ser depositado en la cuenta de la <b>F.O.M.A</b> y el día de la prueba el adulto acompañante presentará el comprobante y para que se le entregue el recibo correspondiente.</p>
+                            <p>El monto deberá ser depositado en la cuenta de la <b>F.O.M.A</b> y el día de la prueba el adulto acompañante presentará el comprobante para que se le entregue el recibo correspondiente.</p>
                             <ul>
                                 <li><b>BANCO:</b> GALICIA (Cuenta corriente)</li>
                                 <li><b>Nº:</b> 0002676-5665-6</li>
@@ -118,7 +120,7 @@ NOTICIA INSCRIPCIÓN A CERTAMEN:
                                 <li><b>CUIT:</b> 30-67928383-5</li>
                                 <li><b>ALIAS:</b> FOMA.OLIMPIADA</li>
                             </ul>
-                            <p class="noticias_texto_interno">La institución que necesite <b>Factura C</b> deberá cumplimentar el siguiente <a class="noticias_link" href="https://docs.google.com/forms/d/e/1FAIpQLSf343cswOs3SyPXbAM0FjYj_dAZuuijv2FzBjbhoY_YHKS-fw/viewform">Formulario</a></p>
+                            <p class="noticias_texto_interno">La institución que necesite <b>Factura C</b> deberá cumplimentar el siguiente <a class="noticias_link" href="https://docs.google.com/forms/d/e/1FAIpQLSf343cswOs3SyPXbAM0FjYj_dAZuuijv2FzBjbhoY_YHKS-fw/viewform" target="_blank">Formulario</a></p>
 
                         </div>
 
@@ -126,9 +128,10 @@ NOTICIA INSCRIPCIÓN A CERTAMEN:
 
                         <div  class="advertencia_certamen">
                             <p><span class="noticia_importante">¡IMPORTANTE!:</span></p>
-                            <p class="importante_info">Cada alumno deberá llevar <b>consigo</b> el DNI (o fotocopia) y la <a class="noticias_link" href="https://drive.google.com/file/d/1B_inI8zh9GIdR2D4NhKnhx3msNKi_d3p/view?usp=sharing">Autorización</a> <i>(NO se los deben quedar los acompañantes).</i> <br> <br>
+                            <p class="importante_info">Cada alumno deberá llevar <b>consigo</b> el DNI (o fotocopia) y la <a class="noticias_link" href="https://drive.google.com/file/d/1B_inI8zh9GIdR2D4NhKnhx3msNKi_d3p/view?usp=sharing" target="_blank">Autorización</a> <i>(NO se los deben quedar los acompañantes).</i> <br> <br>
                                 Los acompañantes deben presentar el comprobante de pago <b>impreso en la mesa ubicada en el ingreso </b> <i>(NO deben tenerlo los estudiantes)</i> <br><br>
-                                Para asesoría en la inscripción, comunicarse con <b>Silvia</b> al 3515490291 o <b>Magali </b> al 3516681084.
+                                Para asesoría en la inscripción, comunicarse con <b>Silvia</b> al 3515490291 o <b>Magali </b> al 3516681084. <br><br>
+                                ¿No sabés si podés participar o cuál es tu nivel?  <a class="noticias_link" href="pages/enqueparticipo.html" target="_blank">No te quedes con la duda</a>.
                             </p>
                             <a class="noticias_link certamen_info_link" href="https://drive.google.com/file/d/19Dl404NW8oF6VhyOl-jKFYRitbUsLCE-/view?usp=sharing" target="_blank"><button class="noticias_certamen_btn">VENÍ PREPARADO</button></a>  
                         </div>
