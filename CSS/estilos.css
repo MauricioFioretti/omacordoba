@@ -1886,7 +1886,7 @@ main .infografia .infografia_img {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2" "area-1 area-3 area-3 area-3 area-4 area-4 area-4 area-4  area-4  ." " . area-5 area-5 area-5 area-5 area-5 area-6 area-6 area-6 . " "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8";
+  grid-template-areas: "area-1 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2 area-2" "area-1 area-3 area-3 area-3 area-3 area-4 area-4 area-4  area-4  ." " . area-5 area-5 area-5 area-5 area-5 area-6 area-6 area-6 . " "area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7 area-7" "area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8 area-8";
   gap: 0.5rem;
 }
 
