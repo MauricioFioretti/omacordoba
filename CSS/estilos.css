@@ -1891,7 +1891,7 @@ main .infografia .infografia_img {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .logo_noticia_certamen {
@@ -2022,7 +2022,7 @@ p {
   align-self: start;
 }
 .advertencia_certamen .importante_info {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: left;
   padding: 0 1rem;
   align-self: center;
