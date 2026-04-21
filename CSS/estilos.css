@@ -2106,5 +2106,35 @@ p {
     padding: 0;
   }
 }
+.contenedor_taller_tgi {
+  padding: 0 5rem;
+}
+
+.noticias_titulo_tgi {
+  color: #fd7a7a;
+  padding: 0 5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.nombre_taller_tgi {
+  color: #90bb64;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.noticias_taller_link {
+  color: yellow;
+}
+
+.noticia_taller_disclaimer {
+  grid-area: area-7;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #f6b501;
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=estilos.css.map */
