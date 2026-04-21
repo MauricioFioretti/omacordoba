@@ -516,7 +516,7 @@ footer .footer__der .logo img {
   border-radius: 5px;
   font-weight: 700;
   padding: 0.5rem 3rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .main__apuntes .pdf__links .container-cards .card a button:hover {
   background-color: #ffd48f;
@@ -774,7 +774,7 @@ footer .footer__der .logo img {
 .grid_container_que_participo .año_de_escolaridad {
   text-align: center;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
 }
@@ -792,6 +792,12 @@ footer .footer__der .logo img {
 }
 /* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
+  .main__enqueparticipo {
+    /* Estilos de las secciones internas */
+  }
+  .main__enqueparticipo .img__enqueparticipo {
+    padding: 0.3rem;
+  }
   .main__enqueparticipo {
     /* Ajustes en las secciones internas para pantallas pequeñas */
   }
@@ -1617,6 +1623,24 @@ main .img-hero .hero {
   opacity: 1;
   margin: 3rem;
 }
+.main__index .noticias .noticias_article .noticias_titulo_tgi {
+  color: #fd7a7a;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.main__index .noticias .noticias_article .nombre_taller_tgi {
+  color: #90bb64;
+}
+.main__index .noticias .noticias_article .noticias_taller_link {
+  color: orange;
+}
+.main__index .noticias .noticias_article .noticia_taller_disclaimer {
+  grid-area: area-7;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  color: #f6b501;
+  font-weight: 700;
+}
 .main__index .noticias .problemas_semanales .noticias_img {
   width: 70%;
   margin-bottom: 2rem;
@@ -1925,14 +1949,14 @@ p {
 }
 .items_info_certamen .items_info {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .items_info_certamen .items_info .titulo_items_info {
   color: #ff914d;
 }
 
 .info_certamen {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.5rem 2rem;
   grid-area: area-4;
   text-align: left;
@@ -1954,7 +1978,7 @@ p {
   font-size: 1.5rem;
 }
 .certamen_inscripcion p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .certamen_inscripcion .noticias_link {
   display: grid;
@@ -1970,7 +1994,7 @@ p {
   border-radius: 30px;
   font-weight: 700;
   padding: 0.8rem 1.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .certamen_inscripcion .noticias_certamen_btn:hover {
   background-color: #ffd48f;
@@ -1987,10 +2011,10 @@ p {
   padding: 0.5rem 0.8rem;
 }
 .certamen_pago p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 .certamen_pago ul {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-align: left;
   padding: 0;
 }
@@ -2001,7 +2025,7 @@ p {
 .noticia_certamen_disclaimer {
   grid-area: area-7;
   padding: 1rem 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #707070;
 }
 
@@ -2042,7 +2066,7 @@ p {
   font-weight: 700;
   padding: 0.8rem 1.5rem;
   margin-bottom: 0.8rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .advertencia_certamen .noticias_certamen_btn:hover {
   background-color: #e25d94;
@@ -2105,36 +2129,6 @@ p {
   .grid_container {
     padding: 0;
   }
-}
-.contenedor_taller_tgi {
-  padding: 0 5rem;
-}
-
-.noticias_titulo_tgi {
-  color: #fd7a7a;
-  padding: 0 5rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.nombre_taller_tgi {
-  color: #90bb64;
-}
-
-p {
-  font-size: 1rem;
-}
-
-.noticias_taller_link {
-  color: yellow;
-}
-
-.noticia_taller_disclaimer {
-  grid-area: area-7;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  color: #f6b501;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=estilos.css.map */

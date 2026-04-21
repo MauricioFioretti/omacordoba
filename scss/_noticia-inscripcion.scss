@@ -55,7 +55,7 @@ p{
     border-radius: 10px;
     .items_info{
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 1rem;
         .titulo_items_info{
             color: $ColorTituloItemsInfoCertamen;
         }
@@ -64,7 +64,7 @@ p{
 }
 
 .info_certamen{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.5rem 2rem;
     grid-area: area-4;
     text-align: left;
@@ -86,7 +86,7 @@ p{
         font-size: 1.5rem;
         }
         p{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
         .noticias_link{
@@ -103,7 +103,7 @@ p{
             border-radius: 30px;
             font-weight: 700;
             padding: 0.8rem 1.5rem;
-            font-size: 0.8rem;
+            font-size: 1rem;
             &:hover {
                 background-color: $ColorBotonLibrosHover;
             }
@@ -121,10 +121,10 @@ p{
     padding: 0.5rem 0.8rem;
 
         p{
-            font-size: 0.75rem;
+            font-size: 0.85rem;
         }
         ul{
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             text-align: left;
             padding: 0;
 
@@ -138,7 +138,7 @@ p{
     grid-area: area-7;
     // background-color: hotpink;
     padding: 1rem 2rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: $ColorDisclaimerNoticias;
     }
 
@@ -185,7 +185,7 @@ p{
             font-weight: 700;
             padding: 0.8rem 1.5rem;
             margin-bottom: 0.8rem;
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             &:hover {
                 background-color: $ColorColorBotonImportanteNoticiasHover;
