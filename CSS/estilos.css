@@ -1628,6 +1628,10 @@ main .img-hero .hero {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
+.main__index .noticias .noticias_article .noticias_titulo_mateclubes {
+  color: #0096DA;
+  font-size: 1.8rem;
+}
 .main__index .noticias .noticias_article .nombre_taller_tgi {
   color: #90bb64;
 }
@@ -1640,6 +1644,10 @@ main .img-hero .hero {
   font-size: 1rem;
   color: #f6b501;
   font-weight: 700;
+}
+.main__index .noticias .noticias_article .noticias_logo_oma {
+  width: 10rem;
+  margin-bottom: 2rem;
 }
 .main__index .noticias .problemas_semanales .noticias_img {
   width: 70%;
