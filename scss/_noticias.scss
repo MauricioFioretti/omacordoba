@@ -138,6 +138,11 @@
                 font-size: 1.2rem;
             }
 
+            .noticias_titulo_mateclubes{
+                color: $ColorTituloMateclubes;
+                font-size: 1.8rem;
+            }
+
             .nombre_taller_tgi {
                 color: $NombreTallerTGI;
             }
@@ -152,6 +157,11 @@
                 font-size: 1rem;
                 color: $TallerDisclaimer;
                 font-weight: 700;
+            }
+
+            .noticias_logo_oma {
+                width: 10rem;
+                margin-bottom: 2rem;
             }
         }
 
