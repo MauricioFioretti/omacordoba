@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpiada Matematica Argentina</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Sitio web de la Olimpiada Matemática Argentina en la Secretaría Regional Centro. Encuentra información sobre competencias, material de estudio y más.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="olimpiada matemática, argentina, competencias, material de estudio, secretaría regional centro">
+
+
+    <!--Link Favicon-->
+    <link rel="shortcut icon" href="./img/logoOMAfondoBlanco.svg" type="image/x-icon">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+
+    <!--Link Iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="header__desktop">
+
+        <!-- Logo OMA -->
+        <div class="header__caja-logo">
+            <img class="header__logo" src="./img/Logo header/logoOMAtransparente.svg" alt="logo OMA">
+        </div>
+
+        <!-- Título del encabezado -->
+        <h1 class="header__titulo navbar-brand ">
+            <p class="secretaria">SECRETARÍA REGIONAL CENTRO</p>
+            <p class="olimpiadas">Olimpiada Matemática Argentina </p>
+        </h1>
+
+        <!-- Menú de bootstrap -->
+        <nav class="navbar navbar-expand-md bg-body-tprimary header__nav">
+            <div class="container-fluid">
+
+                <!-- Botón de navegación para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation" data-bs-display="md">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Items del menú -->
+                <div class="collapse navbar-collapse flex-grow-1 flex-lg-grow-0" id="navbarNavDropdown">
+                    <ul class="navbar-nav header__menu">
+
+                        <!-- Elemento de menú "Inicio" -->
+                        <li class="nav-item header__menu-item rounded-pill">
+                            <a class="nav-link header__menu-link" href="./index.html">INICIO</a>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "MATERIAL" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MATERIAL
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "MATERIAL" -->
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/libros.html">Libros</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/apuntes.html">Apuntes
+                                        para prepararse</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://nueva.oma.org.ar/problemas/">Problemas Semanales</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/lenitas.html">Leñitas</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "COMPETENCIAS" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                COMPETENCIAS
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "COMPETENCIAS" -->
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/competencias.html">Competencias</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/enqueparticipo.html">¿En
+                                        qué puedo
+                                        participar?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://www.oma.org.ar/calendar/calendar.html">Calendario de Actividades</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "SOBRE OMA" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SOBRE OMA
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "SOBRE OMA" -->
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/queesoma.html">¿Qué es
+                                        OMA?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/secretariascordoba.html">Secretarias en
+                                        Córdoba</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://www.oma.org.ar/">OMA
+                                        Argentina</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú "CONTACTO" -->
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" href="./pages/contactos.html">
+                                CONTACTO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Header Mobile-->
+    <header class="header__mobile">
+        <!-- Menú de bootstrap -->
+        <nav class="navbar navbar-expand-md bg-body-tprimary header__nav">
+            <div class="container-fluid">
+
+                <!-- Botón de navegación para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation" data-bs-display="md">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Logo OMA -->
+                <div class="header__caja-logo">
+                    <img class="header__logo" src="./img/Logo header/logoOMAtransparente.svg" alt="logo OMA">
+                </div>
+
+                <!-- Items del menú -->
+                <div class="collapse navbar-collapse flex-grow-1 flex-lg-grow-0" id="navbarNavDropdown">
+                    <ul class="navbar-nav header__menu">
+
+                        <!-- Elemento de menú "Inicio" -->
+                        <li class="nav-item header__menu-item rounded-pill">
+                            <a class="nav-link header__menu-link" href="./index.html">INICIO</a>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "MATERIAL" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MATERIAL
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "MATERIAL" -->
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/libros.html">Libros</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/apuntes.html">Apuntes
+                                        para prepararse</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://nueva.oma.org.ar/problemas/">Problemas Semanales</a>
+                                </li>
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/lenitas.html">Leñitas</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "COMPETENCIAS" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                COMPETENCIAS
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "COMPETENCIAS" -->
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/competencias.html">Competencias</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/enqueparticipo.html">¿En
+                                        qué puedo
+                                        participar?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://www.oma.org.ar/calendar/calendar.html">Calendario de Actividades</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú desplegable "SOBRE OMA" -->
+                        <li class="nav-item dropdown header__menu-item">
+                            <a class="nav-link dropdown-toggle header__menu-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SOBRE OMA
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- Subelementos del menú "SOBRE OMA" -->
+                                <li><a class="dropdown-item header__menu-subitem" href="./pages/queesoma.html">¿Qué es
+                                        OMA?</a></li>
+                                <li><a class="dropdown-item header__menu-subitem"
+                                        href="./pages/secretariascordoba.html">Secretarías en
+                                        Córdoba</a></li>
+                                <li><a class="dropdown-item header__menu-subitem" target="_blank"
+                                        href="https://www.oma.org.ar/">OMA
+                                        Argentina</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Elemento de menú "CONTACTO" -->
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" href="./pages/contactos.html">
+                                CONTACTO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main pag Index-->
+    <main class="main__index">
+
+        <!-- Sección del hero, imagen amplia -->
+        <section class="img-hero">
+            <img
+                class="hero"
+                src="img/Hero/Index/mate2-960.png"
+                srcset="
+                img/Hero/Index/mate2-960.png 960w,
+                img/Hero/Index/mate2-1920.png 1920w,
+                img/Hero/Index/mate2-2880.png 2880w,
+                img/Hero/Index/mate2-3840.png 3840w
+                "
+                sizes="100vw"
+                alt="Imagen de un joven matemático resolviendo problemas en un pizarrón"
+            >
+        </section>
+
+        <section class="info_pagina">
+            <h1>Noticias de las Olimpiadas</h1>
+            <p class="info_intro">Acá vas a encontrar las últimas noticias, anuncios y actualizaciones sobre certámenes,
+                inscripciones,
+                resultados y actividades de la Olimpiada Matemática Argentina, Secretaría Regional Centro. <br> <br>
+                <b class="especial">¡No te pierdas todo lo que la OMA tiene para ofrecer!</b>
+            </p>
+            <!-- <hr class="noticias_separador"> -->
+        </section>
+
+        <section class="noticias">
+
+
+            <article class="noticias_article">
+                <img src="img/Noticias/Nuevo Año.png" alt="Imagen de feliz año nuevo" class="noticias_img">
+
+                <h2 class="noticias_titulo inicio_año"><b>¡BIENVENIDOS AL CICLO DE OLIMPIADAS 2026!</b></h2>
+                
+                <p>Para empezar su camino olímpico de este año no se olviden de revisar el <b>calendario de actividades</b> <br>
+                    <i>Todo viaje exitoso comienza con un buen mapa. </i>
+                </p>
+
+                <a class="noticias_link" href="https://www.oma.org.ar/calendar/calendar.html" target="_blank"><button class="noticias-btn">Calendario</button></a>    
+                
+                <a class="noticias_link"></a>
+                <hr class="noticias_separador">
+            </article>
+
+
+
+
+
+
+
+
+
+            <!-- ---------------------------- -->
+            <!-- AGREGAR NUEVAS NOTICIAS AQUÍ -->
+            <!-- ---------------------------- -->
+
+
+
+            <!-- Noticia -->
+            <article class="noticias_article">
+
+                <div class="grid_container">
+                    
+                        <img src="./img/Logos Index/logoÑandu.png" alt="Imagen de logo olimpiada" class="logo_noticia_certamen">
+                        <h2 class="titulo_noticia_certamen"><b>35º OLIMPIADA MATEMÁTICA ÑANDÚ <span class="color_ronda">- RONDA INTERESCOLAR</span></b></h2>
+
+                        <div class="items_info_certamen">
+
+                            <p class="items_info"><b class="titulo_items_info">Fecha:</b> 07/05/2026</p>
+                            <p class="items_info"><b class="titulo_items_info">Hora de Ingreso:</b> 13:45</p>
+                            <p class="items_info"><b class="titulo_items_info">Lugar:</b> A confirmar</p>
+
+                        </div>
+                        
+                        <p class="info_certamen">La prueba consta de <b>3 problemas</b>  que el alumno resolverá con desarrollo en formato papel con una duración de <b>2 horas</b> <a class="noticias_link" href="https://www.oma.org.ar/contents/paginas/nandu.html">(Revisar reglamento)</a></p>
+                        
+                        <div class="certamen_inscripcion">
+
+                            <h3 class="titulo_inscripcion">Inscripción:</h3>
+                            <p class="noticias_texto_interno">La inscripción se hará respondiendo al link que está abajo, cuidando de poner todos los datos, y el apellido del alumno <b>ANTES</b> del nombre. </p>
+                            <p>La fecha límite para enviar las inscripciones es el <b>jueves 30 de abril</b> y tiene un costo de <b>$26.000</b> (veinte y seis mil pesos) por alumno, que habilita para participar 
+                            de los demás certámenes durante el año, excepto el provincial y el nacional.</p>
+                            <a class="noticias_link" href=" https://nueva.oma.org.ar/virtual/inscripcion.php?competencia=OMN&region=7&hash=924c4d78&ano=2026" target="_blank"><button class="noticias_certamen_btn">INSCRIBITE</button></a>  
+
+                        </div>
+
+                        <div class="certamen_pago">
+
+                            <p>El monto deberá ser depositado en la cuenta de la <b>F.O.M.A</b> y el día de la prueba el adulto acompañante presentará el comprobante y para que se le entregue el recibo correspondiente.</p>
+                            <ul>
+                                <li><b>BANCO:</b> GALICIA (Cuenta corriente)</li>
+                                <li><b>Nº:</b> 0002676-5665-6</li>
+                                <li><b>CBU:</b> 0070665620000002676566</li>
+                                <li><b>CUIT:</b> 30-67928383-5</li>
+                                <li><b>ALIAS:</b> FOMA.OLIMPIADA</li>
+                            </ul>
+                            <p class="noticias_texto_interno">La institución que necesite <b>Factura C</b> deberá cumplimentar el siguiente <a class="noticias_link" href="https://docs.google.com/forms/d/e/1FAIpQLSf343cswOs3SyPXbAM0FjYj_dAZuuijv2FzBjbhoY_YHKS-fw/viewform">Formulario</a></p>
+
+                        </div>
+
+                        <p class="noticia_certamen_disclaimer"><i>Esta inscripción es válida para las escuelas de Córdoba Capital; las zonas deberán hacer otro tanto en sus respectivas jurisdicciones (Río Segundo- Jesús María – Monte Cristo – Villa Dolores – Santa Rosa de Calamuchita – La –Cumbre - ).</i></p>
+
+                        <div  class="advertencia_certamen">
+                            <p><span class="noticia_importante">¡IMPORTANTE!:</span></p>
+                            <p class="importante_info">Cada alumno deberá llevar <b>consigo</b> el DNI (o fotocopia) y la <a class="noticias_link" href="https://drive.google.com/file/d/1B_inI8zh9GIdR2D4NhKnhx3msNKi_d3p/view?usp=sharing">Autorización</a> <i>(NO se los deben quedar los acompañantes).</i> <br> <br>
+                                Los acompañantes deben presentar el comprobante de pago <b>impreso en la mesa ubicada en el ingreso </b> <i>(NO deben tenerlo los estudiantes)</i> <br><br>
+                                Para asesoría en la inscripción, comunicarse con <b>Silvia</b> al 3515490291 o <b>Magali </b> al 3516681084.
+                            </p>
+                            <a class="noticias_link certamen_info_link" href="https://drive.google.com/file/d/19Dl404NW8oF6VhyOl-jKFYRitbUsLCE-/view?usp=sharing" target="_blank"><button class="noticias_certamen_btn">VENÍ PREPARADO</button></a>  
+                        </div>
+
+                </div>
+
+
+
+                <hr class="noticias_separador">
+            </article>
+            <!-- Fin de noticia -->
+
+
+
+
+
+
+
+            <!-- Noticia -->
+            <article class="noticias_article">
+
+                <img src="./img/Noticias/Copia de Publicación OMA.png" alt="Taller de Geometria 2026" class="noticias_flyer" width> 
+
+                <h2 class="noticias_titulo"><b>FESTIVAL DE PROBLEMAS GEOMETRÍA E IMAGINACIÓN PARA DOCENTES Y ALUMNOS</b></h2>
+                <p class="noticias_texto">La Secretaría Regional de OMA Centro Córdoba los invita al <b> 1er Festival de Problemas de Geometría e Imaginación </b>  
+                para alumnos de 4º, 5º y 6º grado de nivel primario y todos los años de nivel secundario, con sus respectivos docentes.
+                Queremos que juntos, en pequeños equipos, discutan soluciones y luego las pongan en común con todos los participantes. 
+                El contenido a tratar será sobe Geometría, con o sin el uso del GeoGebra. Se entregarán certificados y constancias de asistencia. 
+                Consultá el <a class="noticias_link" href="https://drive.google.com/file/d/1fioP1xB7UQapxWZ8rTv1zT-jfmNTNimi/view?usp=sharing">cronograma</a>.</p>
+
+                        <b>Fecha:</b> <p> Sabado 11/04/2026</p>
+                        <b>Duración:</b> <p>4 horas (de 9 a 13hs)</p>
+                        <b>Lugar:</b> <p><a class="noticias_link" href="https://maps.app.goo.gl/5Nrn6EcEDRGbtUpXA">Esc. Sup. de Comercio Manuel Belgrano </a></p>
+                        <b>Incripción:</b> <p>Gratuita. Desde el lunes 16/3 hasta el 6/4 a traves del formulario</p>
+
+                        <a class="noticias_link" href="https://docs.google.com/forms/d/1DnsdqOsi0a4RMRW31HtQf-WkLDnF9WL4KuB7gUJTG3I/edit" target="_blank"><button class="noticias-btn">Quiero Participar</button></a> 
+
+                <hr class="noticias_separador">
+            </article>
+            <!-- Fin de noticia -->
+
+
+
+
+
+
+
+            <!-- Noticia -->
+            <article class="noticias_article">
+
+                <img src="img/Logos Index/logoCanguro.png" alt="Imagen de logo olimpiada" class="noticias_logo">
+                <h2 class="noticias_titulo"><b>UN PROBLEMA PARA CANGURO</b></h2>
+                <p class="noticias_texto">La Olimpiada de Matemática Argentina (OMA) invita a docentes (profesores y maestros) y a estudiantes de Ciencias Exactas, de Ingeniería y de Profesorados a proponer problemas para el Concurso Internacional Canguro Matemático.
+                Presentación de problemas del 1 de abril al 15 de mayo de 2026.</p>
+                <a class="noticias_link" href="https://www.oma.org.ar/contents/paginas/un_problema_canguro.html" target="_blank"><button class="noticias-btn">Bases del concurso</button></a>   
+
+                <hr class="noticias_separador">
+            </article>
+            <!-- Fin de noticia -->
+
+
+
+
+            <!-- ------------------------------ -->
+            <!-- NO AGREGAR MÁS NOTICIAS DEBAJO --> 
+            <!-- ------------------------------ -->
+
+
+
+            <!-- ------------------------- -->
+            <!-- CONTENIDO FIJADO AL FINAL -->
+            <!-- ------------------------- -->
+
+            <article class="problemas_semanales">
+                <img src="img/Noticias/Problemas Semanales.png" alt="Imagen problemas semanales" class="noticias_img">
+                <p class="noticias_texto">Los <b>“Problemas Semanales”</b> están pensados para que los alumnos los
+                    resuelvan por su cuenta.
+                    Los docentes pueden realizar periódicamente puestas en común (discusión de problemas) para compartir
+                    estrategias y soluciones,
+                    resaltando las más originales, la más corta o la que use recursos más ingeniosos.
+                    Este es el camino que conduce a la Olimpíada de Matemática y a disfrutar de una tarea creativa
+                    ampliamente valorada.</p>
+                <a class="noticias_link" href="https://nueva.oma.org.ar/problemas/"><button class="noticias-btn">Acepto
+                        el Desafío</button></a>
+                <hr class="noticias_separador">
+            </article>
+
+            <!-- ------------------------- -->
+            <!-- TERMINA CONTENIDO FIJADO  -->
+            <!-- ------------------------- -->
+
+
+
+
+
+
+        </section>
+
+        <!-- Sección de íconos de otras olimpiadas -->
+        <section class="main__iconos">
+            <h2 class="main__iconos-titulo">
+                Otras Olimpiadas
+            </h2>
+
+            <a target="_blank" href="https://nueva.oma.org.ar/mateclubes/">
+                <img class="main__iconos-logomateclubes" src="./img/Logos Index/logoMateclubes.png"
+                    alt="logo Mateclubes">
+            </a>
+            <a target="_blank" href="https://www.oma.org.ar/contents/paginas/nandu.html">
+                <img class="main__iconos-logonandu" src="./img/Logos Index/logoÑandu.png" alt="logo Ñandu">
+            </a>
+            <a target="_blank" href="https://www.oma.org.ar/contents/paginas/lym.html">
+                <img class="main__iconos-logolym" src="./img/Logos Index/logoLyM.png"
+                    alt="logo Literatura y Matemática">
+            </a>
+            <a target="_blank" href="https://oma.org.ar/contents/paginas/tgi.html">
+                <img class="main__iconos-logotorngeoeimag" src="./img/Logos Index/logoTornGeoEimag.png"
+                    alt="logo Torneos de Geometría e imaginación">
+            </a>
+            <a target="_blank" href="https://oma.org.ar/contents/paginas/imo.html">
+                <img class="main__iconos-logointernacionales" src="./img/Logos Index/logoInternacionales.png"
+                    alt="logo olimpiadas Internacionales">
+            </a>
+            <a target="_blank" href="https://oma.org.ar/contents/paginas/olimpiada_mayo.html">
+                <img class="main__iconos-logoolimmayo" src="./img/Logos Index/logoOlimMayo.png"
+                    alt="logo Olimpiadas de Mayo">
+            </a>
+            <a target="_blank" href="https://oma.org.ar/canguro/">
+                <img class="main__iconos-logocanguro" src="./img/Logos Index/logoCanguro.png"
+                    alt="logo olimpiadas Canguro">
+            </a>
+            <a target="_blank" href="https://oma.org.ar/contents/paginas/olimpri.html">
+                <img class="main__iconos-logoolimpri" src="./img/Logos Index/logoOLIMPRI.png" alt="logo OLIMPRI">
+            </a>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+
+        <!--Parte izquierda del footer. Logo FOMA a la izquierda-->
+        <section class="footer__izq">
+            <img class="footer__logo-izq" src="./img/Logos Footer/FondoFOMAtransparenteLetrasBlancas.svg"
+                alt="logo FOMA">
+        </section>
+
+        <!--Linea vertical-->
+        <div class="footer__line"></div>
+
+        <!--Parte derecha del footer-->
+        <section class="footer__der">
+
+            <!--Datos de contacto Perla-->
+            <div class="datosContacto">
+                <p><b>María del Carmen Spina Gómez</b></p>
+                <p><b>Secretaria regional Adjunta a la dirección de la Olimpíada</b></p>
+                <p><b>Teléfono: (0351) 4215695</b></p>
+            </div>
+
+            <!--Correo de OMA-->
+            <p class="correo"><b>Correo electrónico: omacordoba2019@gmail.com</b></p>
+
+            <!--Instagram y Facebook de OMA Córdoba-->
+            <div class="iconos">
+                <!--Facebook de OMA Córdoba-->
+                <a class="iconos-face" target="_blank" href="https://www.facebook.com/omacordoba?mibextid=ZbWKwL"><img
+                        src="./img/Logos Footer/logoFacebook.svg" alt="logo Facebook"></a>
+
+                <!--Instagram de OMA Córdoba-->
+                <a class="iconos-insta" target="_blank"
+                    href="https://instagram.com/omacordoba?igshid=MzRlODBiNWFlZA=="><img
+                        src="./img/Logos Footer/logoInstagram.svg" alt="logo Instagram"></a>
+            </div>
+
+            <!--Logo OMA-->
+            <div class="logo">
+                <img src="./img/Logos Footer/FondoOMAtransparenteLetrasBlancas.svg" alt="logo OMA">
+            </div>
+        </section>
+    </footer>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+    <!--Boton subir arriba-->
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!--JavaScript propio-->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
