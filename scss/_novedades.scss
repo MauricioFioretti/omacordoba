@@ -1,0 +1,176 @@
+
+.novedades{
+    // background-color:$ColorFondoNovedades;
+    margin: 0 4rem 3rem 4rem;
+    padding: 1rem 0 2rem 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 8px -8px rgba(0,0,0,0.4);
+
+    h2{
+        color: $ColorNovedades;
+        margin-bottom: 2rem;
+        font-weight: 550;
+        font-size: 2.5rem;
+
+    }
+    #slider{
+        display: flex;
+        flex-direction: row;
+
+        .flechas{
+            border: none;
+            background-color: white;
+            color: $ColorFlechas;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 2rem;
+        }
+
+            .novedades_container{
+                display: flex;
+
+                // background-color: red;
+                justify-content: flex-start;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                scroll-snap-type: x mandatory;
+                .contenedor {
+                flex-wrap: nowrap;
+        }
+        
+                .olimpiada_container{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 auto;        
+                    scroll-snap-align: start;
+                    padding: 1rem;
+                    margin: 0 20px;
+                    width: 250px;
+                    justify-content: space-evenly;
+                    border-radius: 15px;
+        
+        
+                    h4{
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+        
+                    p{
+                        font-size: 0.8rem;
+                    }
+        
+                    a{
+                        .novedades_boton{
+                            border: none;
+                            border-radius: 15px;
+                            padding: 0 1.5rem;
+                        }
+                    }
+                }
+        
+                .container_oma{
+                    background-color: $ColorFondoNovedadesOMA;
+        
+                    h4{
+                        color:$ColorTituloNovedadesOMA;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesOMA;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesOMA;
+                        }
+                    }
+                }
+        
+                .container_ñandu{
+                    background-color: $ColorFondoNovedadesNandu;
+        
+                    h4{
+                        color:$ColorTituloNovedadesNandu;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesNandu;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesNandu;
+                        }
+                    }
+                }
+        
+                .container_mateclubes{
+                    background-color: $ColorFondoNovedadesMateclubes;
+        
+                    h4{
+                        color:$ColorTituloNovedadesMateclubes;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesMateclubes;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesMateclubes;
+                        }
+                    }
+                }
+        
+                .container_tgi{
+                    background-color: $ColorFondoNovedadesTGI;
+        
+                    h4{
+                        color:$ColorTituloNovedadesTGI;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesTGI;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesTGI;
+                        }
+                    }
+                }
+                
+        
+        
+            }
+        
+            .olimpiada_container::-webkit-scrollbar {
+            display: none;                /* Chrome/Safari */
+            }
+        }
+    }
+
+
+
+@media screen and (max-width: 1400px) {
+    .novedades{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+.novedades{
+
+    h2{
+        font-size: 1.8rem;
+    }
+    #slider{
+    
+        .flechas{
+            font-size: 1rem;
+            margin: 0.5rem;
+
+        }
+        .novedades_container{
+
+            
+            .olimpiada_container{
+                width: 10rem;
+            }
+
+
+        }
+    }
+}
+
+}

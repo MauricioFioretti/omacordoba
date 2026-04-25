@@ -1,3 +1,45 @@
+// --------------------------
+// --- PALETAS DE COLORES ---
+// --------------------------
+
+// --- OMA:
+$Color1OMA:#0096DA;
+$Color2OMA:#006794;
+$Color3OMA:#eef4f3;
+$Color4OMA:#FFB800;
+
+// --- Ñandú:
+$Color1Nandu:#1dcd98;
+$Color2Nandu:#9fe49c;
+$Color3Nandu:#efffef;
+$Color4Nandu:#ffdc69;
+
+// --- Mateclubes:
+$Color1Mateclubes:#ff6f6f;
+$Color2Mateclubes:#56d4d4;
+$Color3Mateclubes:#fff2f2;
+$Color4Mateclubes:#fff273;
+
+// --- TGI:
+$Color4TGI:#fd7a7a;
+$Color1TGI:#7cb642;
+$Color3TGI:#f2fbe8;
+$Color2TGI:#f9c841;
+
+// --- Canguro:
+
+
+// --- LyM:
+
+
+
+// ------------------------------
+// --- FIN PALETAS DE COLORES ---
+// ------------------------------
+
+
+
+
 /* Definición de variables de color */
 $ColorTitulosInfoPag: #0096DA;
 
@@ -7,6 +49,32 @@ $ColorBotonLibros:#FFB800;
 $ColorBotonLibrosHover:#ffd48f;
 
 $LetraAzul: #0096DA;
+
+// Novedades:
+
+$ColorNovedades:#006794;
+$ColorFlechas:#006794;
+$ColorFondoNovedades:rgb(242, 242, 242);
+
+$ColorFondoNovedadesOMA:$Color3OMA;
+$ColorTituloNovedadesOMA:$Color2OMA;
+$ColorBotonNovedadesOMA:$Color1OMA;
+$ColorBotonHoverNovedadesOMA:$Color4OMA;
+
+$ColorFondoNovedadesNandu:$Color3Nandu;
+$ColorTituloNovedadesNandu:$Color1Nandu;
+$ColorBotonNovedadesNandu:$Color2Nandu;
+$ColorBotonHoverNovedadesNandu:$Color4Nandu;
+
+$ColorFondoNovedadesMateclubes:$Color3Mateclubes;
+$ColorTituloNovedadesMateclubes:$Color1Mateclubes;
+$ColorBotonNovedadesMateclubes:$Color2Mateclubes;
+$ColorBotonHoverNovedadesMateclubes:$Color4Mateclubes;
+
+$ColorFondoNovedadesTGI:$Color3TGI;
+$ColorTituloNovedadesTGI:$Color1TGI;
+$ColorBotonNovedadesTGI:$Color2TGI;
+$ColorBotonHoverNovedadesTGI:$Color4TGI;
 
 // Noticias:
 $ColorTituloNoticia:#006794;

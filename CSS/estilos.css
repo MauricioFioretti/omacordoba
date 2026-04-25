@@ -1297,6 +1297,7 @@ footer .footer__der .logo img {
 .main__index .info_pagina {
   padding: 3rem 10rem;
   text-align: center;
+  box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 }
 .main__libros .info_pagina h1,
 .main__apuntes .info_pagina h1,
@@ -2136,6 +2137,137 @@ p {
   }
   .grid_container {
     padding: 0;
+  }
+}
+.novedades {
+  margin: 0 4rem 3rem 4rem;
+  padding: 1rem 0 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
+}
+.novedades h2 {
+  color: #006794;
+  margin-bottom: 2rem;
+  font-weight: 550;
+  font-size: 2.5rem;
+}
+.novedades #slider {
+  display: flex;
+  flex-direction: row;
+}
+.novedades #slider .flechas {
+  border: none;
+  background-color: white;
+  color: #006794;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+.novedades #slider .novedades_container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.novedades #slider .novedades_container .contenedor {
+  flex-wrap: nowrap;
+}
+.novedades #slider .novedades_container .olimpiada_container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 1rem;
+  margin: 0 20px;
+  width: 250px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+.novedades #slider .novedades_container .olimpiada_container h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.novedades #slider .novedades_container .olimpiada_container p {
+  font-size: 0.8rem;
+}
+.novedades #slider .novedades_container .olimpiada_container a .novedades_boton {
+  border: none;
+  border-radius: 15px;
+  padding: 0 1.5rem;
+}
+.novedades #slider .novedades_container .container_oma {
+  background-color: #eef4f3;
+}
+.novedades #slider .novedades_container .container_oma h4 {
+  color: #006794;
+}
+.novedades #slider .novedades_container .container_oma button {
+  color: white;
+  background-color: #0096DA;
+}
+.novedades #slider .novedades_container .container_oma button:hover {
+  background-color: #FFB800;
+}
+.novedades #slider .novedades_container .container_ñandu {
+  background-color: #efffef;
+}
+.novedades #slider .novedades_container .container_ñandu h4 {
+  color: #1dcd98;
+}
+.novedades #slider .novedades_container .container_ñandu button {
+  color: white;
+  background-color: #9fe49c;
+}
+.novedades #slider .novedades_container .container_ñandu button:hover {
+  background-color: #ffdc69;
+}
+.novedades #slider .novedades_container .container_mateclubes {
+  background-color: #fff2f2;
+}
+.novedades #slider .novedades_container .container_mateclubes h4 {
+  color: #ff6f6f;
+}
+.novedades #slider .novedades_container .container_mateclubes button {
+  color: white;
+  background-color: #56d4d4;
+}
+.novedades #slider .novedades_container .container_mateclubes button:hover {
+  background-color: #fff273;
+}
+.novedades #slider .novedades_container .container_tgi {
+  background-color: #f2fbe8;
+}
+.novedades #slider .novedades_container .container_tgi h4 {
+  color: #7cb642;
+}
+.novedades #slider .novedades_container .container_tgi button {
+  color: white;
+  background-color: #f9c841;
+}
+.novedades #slider .novedades_container .container_tgi button:hover {
+  background-color: #fd7a7a;
+}
+.novedades #slider .olimpiada_container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+@media screen and (max-width: 1400px) {
+  .novedades {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .novedades h2 {
+    font-size: 1.8rem;
+  }
+  .novedades #slider .flechas {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .novedades #slider .novedades_container .olimpiada_container {
+    width: 10rem;
   }
 }
 
