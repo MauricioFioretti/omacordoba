@@ -21,16 +21,52 @@ $Color3Mateclubes:#fff2f2;
 $Color4Mateclubes:#fff273;
 
 // --- TGI:
-$Color4TGI:#fd7a7a;
 $Color1TGI:#7cb642;
-$Color3TGI:#f2fbe8;
 $Color2TGI:#f9c841;
+$Color3TGI:#f2fbe8;
+$Color4TGI:#fd7a7a;
 
 // --- Canguro:
 
+$Color1Canguro:#ff8364;
+$Color2Canguro:#fdb87d;
+$Color3Canguro:#fff7db;
+$Color4Canguro:#ffdc69;
 
 // --- LyM:
 
+$Color1LyM:#7f8ba7;
+$Color2LyM:#b7ab96;
+$Color3LyM:#d8e6e9;
+$Color4LyM:#e3bd78;
+
+// --- Olimpiada de Mayo:
+
+$Color1Mayo:#286074;
+$Color2Mayo:#569f81;
+$Color3Mayo:#dcf2dd;
+$Color4Mayo:#b598c2;
+
+// --- Olimpiada Iraní:
+
+$Color1Irani:#9d1d5a;
+$Color2Irani:#ff883e;
+$Color3Irani:#fffbd9;
+$Color4Irani:#591663;
+
+// --- Olimpri:
+
+$Color1Olimpri:#88c762;
+$Color2Olimpri:#4892cd;
+$Color3Olimpri:#e9ffdc;
+$Color4Olimpri:#e9576f;
+
+// --- IMO:
+
+$Color1IMO:#77bee2;
+$Color2IMO:#ff9391;
+$Color3IMO:#fffbd5;
+$Color4IMO:#c6ffa5;
 
 
 // ------------------------------
@@ -75,6 +111,36 @@ $ColorFondoNovedadesTGI:$Color3TGI;
 $ColorTituloNovedadesTGI:$Color1TGI;
 $ColorBotonNovedadesTGI:$Color2TGI;
 $ColorBotonHoverNovedadesTGI:$Color4TGI;
+
+$ColorFondoNovedadesCanguro:$Color3Canguro;
+$ColorTituloNovedadesCanguro:$Color1Canguro;
+$ColorBotonNovedadesCanguro:$Color2Canguro;
+$ColorBotonHoverNovedadesCanguro:$Color4Canguro;
+
+$ColorFondoNovedadesLyM:$Color3LyM;
+$ColorTituloNovedadesLyM:$Color1LyM;
+$ColorBotonNovedadesLyM:$Color2LyM;
+$ColorBotonHoverNovedadesLyM:$Color4LyM;
+
+$ColorFondoNovedadesMayo:$Color3Mayo;
+$ColorTituloNovedadesMayo:$Color1Mayo;
+$ColorBotonNovedadesMayo:$Color2Mayo;
+$ColorBotonHoverNovedadesMayo:$Color4Mayo;
+
+$ColorFondoNovedadesIrani:$Color3Irani;
+$ColorTituloNovedadesIrani:$Color1Irani;
+$ColorBotonNovedadesIrani:$Color2Irani;
+$ColorBotonHoverNovedadesIrani:$Color4Irani;
+
+$ColorFondoNovedadesOlimpri:$Color3Olimpri;
+$ColorTituloNovedadesOlimpri:$Color1Olimpri;
+$ColorBotonNovedadesOlimpri:$Color2Olimpri;
+$ColorBotonHoverNovedadesOlimpri:$Color4Olimpri;
+
+$ColorFondoNovedadesIMO:$Color3IMO;
+$ColorTituloNovedadesIMO:$Color1IMO;
+$ColorBotonNovedadesIMO:$Color2IMO;
+$ColorBotonHoverNovedadesIMO:$Color4IMO;
 
 // Noticias:
 $ColorTituloNoticia:#006794;

@@ -8,7 +8,7 @@
 
     h2{
         color: $ColorNovedades;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
         font-weight: 550;
         font-size: 2.5rem;
 
@@ -16,6 +16,7 @@
     #slider{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         .flechas{
             border: none;
@@ -128,6 +129,96 @@
                         }
                     }
                 }
+        
+                .container_canguro{
+                    background-color: $ColorFondoNovedadesCanguro;
+        
+                    h4{
+                        color:$ColorTituloNovedadesCanguro;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesCanguro;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesCanguro;
+                        }
+                    }
+                }
+        
+                .container_lym{
+                    background-color: $ColorFondoNovedadesLyM;
+        
+                    h4{
+                        color:$ColorTituloNovedadesLyM;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesLyM;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesLyM;
+                        }
+                    }
+                }
+        
+                .container_mayo{
+                    background-color: $ColorFondoNovedadesMayo;
+        
+                    h4{
+                        color:$ColorTituloNovedadesMayo;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesMayo;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesMayo;
+                        }
+                    }
+                }
+        
+                .container_olimpri{
+                    background-color: $ColorFondoNovedadesOlimpri;
+        
+                    h4{
+                        color:$ColorTituloNovedadesOlimpri;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesOlimpri;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesOlimpri;
+                        }
+                    }
+                }
+        
+                .container_irani{
+                    background-color: $ColorFondoNovedadesIrani;
+        
+                    h4{
+                        color:$ColorTituloNovedadesIrani;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesIrani;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesIrani;
+                        }
+                    }
+                }
+        
+                .container_imo{
+                    background-color: $ColorFondoNovedadesIMO;
+        
+                    h4{
+                        color:$ColorTituloNovedadesIMO;
+                    }
+                    button{
+                        color: white;
+                        background-color: $ColorBotonNovedadesIMO;
+                        &:hover{
+                            background-color: $ColorBotonHoverNovedadesIMO;
+                        }
+                    }
+                }
                 
         
         
@@ -157,7 +248,7 @@
     #slider{
     
         .flechas{
-            font-size: 1rem;
+            font-size: 1.8rem;
             margin: 0.5rem;
 
         }

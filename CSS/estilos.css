@@ -2147,13 +2147,14 @@ p {
 }
 .novedades h2 {
   color: #006794;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   font-weight: 550;
   font-size: 2.5rem;
 }
 .novedades #slider {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .novedades #slider .flechas {
   border: none;
@@ -2249,6 +2250,84 @@ p {
 .novedades #slider .novedades_container .container_tgi button:hover {
   background-color: #fd7a7a;
 }
+.novedades #slider .novedades_container .container_canguro {
+  background-color: #fff7db;
+}
+.novedades #slider .novedades_container .container_canguro h4 {
+  color: #ff8364;
+}
+.novedades #slider .novedades_container .container_canguro button {
+  color: white;
+  background-color: #fdb87d;
+}
+.novedades #slider .novedades_container .container_canguro button:hover {
+  background-color: #ffdc69;
+}
+.novedades #slider .novedades_container .container_lym {
+  background-color: #d8e6e9;
+}
+.novedades #slider .novedades_container .container_lym h4 {
+  color: #7f8ba7;
+}
+.novedades #slider .novedades_container .container_lym button {
+  color: white;
+  background-color: #b7ab96;
+}
+.novedades #slider .novedades_container .container_lym button:hover {
+  background-color: #e3bd78;
+}
+.novedades #slider .novedades_container .container_mayo {
+  background-color: #dcf2dd;
+}
+.novedades #slider .novedades_container .container_mayo h4 {
+  color: #286074;
+}
+.novedades #slider .novedades_container .container_mayo button {
+  color: white;
+  background-color: #569f81;
+}
+.novedades #slider .novedades_container .container_mayo button:hover {
+  background-color: #b598c2;
+}
+.novedades #slider .novedades_container .container_olimpri {
+  background-color: #e9ffdc;
+}
+.novedades #slider .novedades_container .container_olimpri h4 {
+  color: #88c762;
+}
+.novedades #slider .novedades_container .container_olimpri button {
+  color: white;
+  background-color: #4892cd;
+}
+.novedades #slider .novedades_container .container_olimpri button:hover {
+  background-color: #e9576f;
+}
+.novedades #slider .novedades_container .container_irani {
+  background-color: #fffbd9;
+}
+.novedades #slider .novedades_container .container_irani h4 {
+  color: #9d1d5a;
+}
+.novedades #slider .novedades_container .container_irani button {
+  color: white;
+  background-color: #ff883e;
+}
+.novedades #slider .novedades_container .container_irani button:hover {
+  background-color: #591663;
+}
+.novedades #slider .novedades_container .container_imo {
+  background-color: #fffbd5;
+}
+.novedades #slider .novedades_container .container_imo h4 {
+  color: #77bee2;
+}
+.novedades #slider .novedades_container .container_imo button {
+  color: white;
+  background-color: #ff9391;
+}
+.novedades #slider .novedades_container .container_imo button:hover {
+  background-color: #c6ffa5;
+}
 .novedades #slider .olimpiada_container::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
@@ -2263,7 +2342,7 @@ p {
     font-size: 1.8rem;
   }
   .novedades #slider .flechas {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin: 0.5rem;
   }
   .novedades #slider .novedades_container .olimpiada_container {
