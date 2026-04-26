@@ -1,22 +1,34 @@
 .novedades {
     // background-color:$ColorFondoNovedades;
-    margin: 0 4rem 3rem 4rem;
+    // margin: 0 4rem 3rem 4rem;
+    margin: 0;
     padding: 1rem 0 2rem 0;
     border-radius: 15px;
     box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 
     .titulo_novedades {
-        color: $ColorNovedades;
-        margin: 1rem 0;
-        font-weight: 550;
         font-size: 2.5rem;
+        font-weight: 650;
+        color: $ColorNovedades;
 
+        margin: 1rem 0;  
+        margin-bottom: 1rem;  
+        padding: 8px 18px;
+
+        display: inline-block;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.65);
+        box-shadow:
+            inset 4px 4px 10px rgba(0, 0, 0, 0.08),
+            inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+        
     }
 
     #slider {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: center;
 
         .flechas {
             border: none;
@@ -28,9 +40,9 @@
         }
 
         .novedades_container {
-            display: flex;
+            margin: 0 1rem;
 
-            // background-color: red;
+            display: flex;
             justify-content: flex-start;
             overflow-x: auto;
             scroll-behavior: smooth;
@@ -265,17 +277,7 @@
     .novedades {
 
         .titulo_novedades {
-            display: inline-block;
             font-size: 1.8rem;
-            font-weight: 650;
-            padding: 8px 18px;
-            border-radius: 22px;
-            color: $ColorNovedades;
-            background: rgba(255, 255, 255, 0.65);
-            box-shadow:
-                inset 4px 4px 10px rgba(0, 0, 0, 0.08),
-                inset -4px -4px 10px rgba(255, 255, 255, 0.9);
-            margin-bottom: 1rem;
         }
 
         #slider {
@@ -288,6 +290,7 @@
             }
 
             .novedades_container {
+                margin: 0;
 
                 .olimpiada_container {
                     margin: 0;
