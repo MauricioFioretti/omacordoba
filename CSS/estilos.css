@@ -2145,9 +2145,9 @@ p {
   border-radius: 15px;
   box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 }
-.novedades h2 {
+.novedades .titulo_novedades {
   color: #006794;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-weight: 550;
   font-size: 2.5rem;
 }
@@ -2329,23 +2329,37 @@ p {
   background-color: #c6ffa5;
 }
 .novedades #slider .olimpiada_container::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 @media screen and (max-width: 1400px) {
   .novedades {
-    margin: 1rem;
+    margin: 0;
   }
 }
 @media screen and (max-width: 500px) {
-  .novedades h2 {
+  .novedades .titulo_novedades {
+    display: inline-block;
     font-size: 1.8rem;
+    font-weight: 650;
+    padding: 8px 18px;
+    border-radius: 22px;
+    color: #006794;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.08), inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+  }
+  .novedades #slider {
+    margin: 0 1rem;
   }
   .novedades #slider .flechas {
     font-size: 1.8rem;
     margin: 0.5rem;
   }
   .novedades #slider .novedades_container .olimpiada_container {
+    margin: 0;
+    margin-left: 1rem;
     width: 10rem;
   }
 }
