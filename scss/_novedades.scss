@@ -3,25 +3,17 @@
     // margin: 0 4rem 3rem 4rem;
     margin: 0;
     padding: 1rem 0 2rem 0;
-    border-radius: 15px;
+    // border-radius: 15px;
     box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 
     .titulo_novedades {
+        color: $ColorNovedades;
         font-size: 2.5rem;
         font-weight: 650;
-        color: $ColorNovedades;
 
-        margin: 1rem 0;  
-        margin-bottom: 1rem;  
+        margin: 1rem 0;
+        margin-bottom: 1rem;
         padding: 8px 18px;
-
-        display: inline-block;
-        border-radius: 22px;
-        background: rgba(255, 255, 255, 0.65);
-        box-shadow:
-            inset 4px 4px 10px rgba(0, 0, 0, 0.08),
-            inset -4px -4px 10px rgba(255, 255, 255, 0.9);
-        
     }
 
     #slider {
@@ -278,10 +270,18 @@
 
         .titulo_novedades {
             font-size: 1.8rem;
+
+            display: inline-block;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow:
+                inset 4px 4px 10px rgba(0, 0, 0, 0.08),
+                inset -4px -4px 10px rgba(255, 255, 255, 0.9);
         }
 
         #slider {
-            margin: 0 1rem;
+            // margin: 0 1rem;
+            margin-left: 1rem;
 
             .flechas {
                 font-size: 1.8rem;
@@ -294,8 +294,8 @@
 
                 .olimpiada_container {
                     margin: 0;
-                    margin-left: 1rem;
-                    width: 10rem;
+                    margin-right: 1rem;
+                    width: 8rem;
                 }
 
 
