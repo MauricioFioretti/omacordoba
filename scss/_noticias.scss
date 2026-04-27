@@ -28,9 +28,178 @@
 
     .noticias {
 
-        margin-bottom: 10rem;
-        padding: 0;
-        margin: 0 15rem;
+        // margin-bottom: 10rem;
+        // padding: 0;
+        // margin: 0 15rem;
+
+        .separadorSobreado {
+            margin-top: 3rem;
+            box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
+
+            .noticias_article {
+
+                ul {
+                    li {
+                        list-style-type: none;
+                    }
+                }
+
+                .noticias_img {
+                    width: 20rem;
+                    margin-bottom: 2rem;
+                }
+
+                .noticias_logo {
+                    width: 15rem;
+                    margin-bottom: 1rem;
+                }
+
+                .noticias_flyer {
+                    width: 50rem;
+                    margin-bottom: 2rem;
+                }
+
+                .noticias_titulo {
+                    color: $ColorTituloNoticia;
+                    padding: 0 5rem;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.8rem;
+                }
+
+                .honor_titulo {
+                    color: $ColorTituloHonor;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.8rem;
+                }
+
+                .inicio_año {
+                    color: $ColorTituloInicioAño;
+                }
+
+                .noticias_texto {
+                    padding: 0 6rem;
+                    margin-bottom: 4rem;
+                    font-size: 1rem;
+                }
+
+                .noticias_link {
+                    list-style-type: none;
+
+                    .noticias-btn {
+                        color: white;
+                        background-color: $ColorBotonLibros;
+                        border: none;
+                        border-radius: 30px;
+                        font-weight: 700;
+                        padding: 1rem 3rem;
+                        font-size: 1.1rem;
+                        margin: 1rem 0;
+
+                        &:hover {
+                            background-color: $ColorBotonLibrosHover;
+                        }
+                    }
+
+                    .honor-btn {
+                        color: white;
+                        background-color: $ColorBotonHonor;
+                        border: none;
+                        border-radius: 30px;
+                        font-weight: 700;
+                        padding: 1rem 3rem;
+                        font-size: 1.1rem;
+                        margin: 1rem 0;
+
+                        &:hover {
+                            background-color: $ColorBotonHonorHover;
+                        }
+                    }
+                }
+
+                .noticias_separador {
+                    border: 1.5px solid $ColorSeparadorIndex;
+                    border-radius: 5px;
+                    opacity: 1;
+                    margin: 3rem;
+                }
+
+                .noticias_titulo_tgi {
+                    color: $ColorTituloTallerTGI;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.2rem;
+                }
+
+                .noticias_titulo_mateclubes {
+                    color: $ColorTituloMateclubes;
+                    font-size: 1.8rem;
+                }
+
+                .nombre_taller_tgi {
+                    color: $NombreTallerTGI;
+                }
+
+                .noticias_taller_link {
+                    color: orange;
+                }
+
+                .noticia_taller_disclaimer {
+                    grid-area: area-7;
+                    padding: 1rem 0.5rem;
+                    font-size: 1rem;
+                    color: $TallerDisclaimer;
+                    font-weight: 700;
+                }
+
+                .noticias_logo_oma {
+                    width: 10rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+
+            .problemas_semanales {
+                padding-bottom: 3rem;
+
+                .noticias_img {
+                    width: 70%;
+                    margin-bottom: 2rem;
+                }
+
+                .noticias_texto {
+                    padding: 0 7rem;
+
+                    b {
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+
+                .noticias_link {
+
+                    .noticias-btn {
+                        color: white;
+                        background-color: $ColorBotonProblemas;
+                        border: none;
+                        border-radius: 30px;
+                        font-weight: 700;
+                        padding: 1rem 3rem;
+                        font-size: 1.1rem;
+                        margin: 1rem 0;
+
+                        &:hover {
+                            background-color: $ColorBotonProblemasHover;
+                        }
+                    }
+                }
+
+                .noticias_separador {
+                    border: 1.5px solid $ColorSeparadorIndex;
+                    border-radius: 5px;
+                    opacity: 1;
+                    margin: 3rem;
+                }
+            }
+        }
 
         a {
             color: $ColorLinksNoticias;
@@ -39,178 +208,7 @@
                 color: $ColorLinksNoticiasHover;
             }
         }
-
-        .noticias_article {
-
-            ul {
-
-                li {
-                    list-style-type: none;
-
-                }
-            }
-
-            .noticias_img {
-                width: 20rem;
-                margin-bottom: 2rem;
-            }
-
-            .noticias_logo {
-                width: 15rem;
-                margin-bottom: 1rem;
-            }
-
-            .noticias_flyer {
-                width: 50rem;
-                margin-bottom: 2rem;
-            }
-
-            .noticias_titulo {
-                color: $ColorTituloNoticia;
-                padding: 0 5rem;
-                margin-bottom: 1.5rem;
-                font-size: 1.8rem;
-            }
-
-            .honor_titulo {
-                color: $ColorTituloHonor;
-                margin-bottom: 1.5rem;
-                font-size: 1.8rem;
-            }
-
-            .inicio_año {
-                color: $ColorTituloInicioAño;
-            }
-
-            .noticias_texto {
-                padding: 0 6rem;
-                margin-bottom: 4rem;
-                font-size: 1rem;
-            }
-
-
-
-
-            .noticias_link {
-                list-style-type: none;
-
-                .noticias-btn {
-                    color: white;
-                    background-color: $ColorBotonLibros;
-                    border: none;
-                    border-radius: 30px;
-                    font-weight: 700;
-                    padding: 1rem 3rem;
-                    font-size: 1.1rem;
-                    margin: 1rem 0;
-
-                    &:hover {
-                        background-color: $ColorBotonLibrosHover;
-                    }
-                }
-
-                .honor-btn {
-                    color: white;
-                    background-color: $ColorBotonHonor;
-                    border: none;
-                    border-radius: 30px;
-                    font-weight: 700;
-                    padding: 1rem 3rem;
-                    font-size: 1.1rem;
-                    margin: 1rem 0;
-
-                    &:hover {
-                        background-color: $ColorBotonHonorHover;
-                    }
-                }
-            }
-
-            .noticias_separador {
-                border: 1.5px solid $ColorSeparadorIndex;
-                border-radius: 5px;
-                opacity: 1;
-                margin: 3rem;
-            }
-
-            .noticias_titulo_tgi {
-                color: $ColorTituloTallerTGI;
-                margin-bottom: 1.5rem;
-                font-size: 1.2rem;
-            }
-
-            .noticias_titulo_mateclubes{
-                color: $ColorTituloMateclubes;
-                font-size: 1.8rem;
-            }
-
-            .nombre_taller_tgi {
-                color: $NombreTallerTGI;
-            }
-
-            .noticias_taller_link {
-                color: orange;
-            }
-
-            .noticia_taller_disclaimer {
-                grid-area: area-7;
-                padding: 1rem 0.5rem;
-                font-size: 1rem;
-                color: $TallerDisclaimer;
-                font-weight: 700;
-            }
-
-            .noticias_logo_oma {
-                width: 10rem;
-                margin-bottom: 2rem;
-            }
-        }
-
-
-        .problemas_semanales {
-
-            .noticias_img {
-                width: 70%;
-                margin-bottom: 2rem;
-            }
-
-            .noticias_texto {
-                padding: 0 7rem;
-
-                b {
-                    text-decoration: none;
-                    font-weight: 700;
-                }
-            }
-
-            .noticias_link {
-
-                .noticias-btn {
-                    color: white;
-                    background-color: $ColorBotonProblemas;
-                    border: none;
-                    border-radius: 30px;
-                    font-weight: 700;
-                    padding: 1rem 3rem;
-                    font-size: 1.1rem;
-                    margin: 1rem 0;
-
-                    &:hover {
-                        background-color: $ColorBotonProblemasHover;
-                    }
-                }
-            }
-
-            .noticias_separador {
-                border: 1.5px solid $ColorSeparadorIndex;
-                border-radius: 5px;
-                opacity: 1;
-                margin: 3rem;
-            }
-        }
-
     }
-
-
 }
 
 /* Estilos responsivos para pantallas medianas */
@@ -239,57 +237,58 @@
         }
 
         .noticias {
-
             margin: 0;
             padding: 0;
 
-            .noticias_article {
+            .separadorSobreado {
+                .noticias_article {
 
-                .noticias_img {
-                    /* responsive */
-                }
+                    .noticias_img {
+                        /* responsive */
+                    }
 
-                .noticias_titulo {
-                    /* responsive */
-                }
+                    .noticias_titulo {
+                        /* responsive */
+                    }
 
-                .noticias_texto {
-                    /* responsive */
-                }
+                    .noticias_texto {
+                        /* responsive */
+                    }
 
-                .noticias_link {
-                    /* responsive */
-                }
+                    .noticias_link {
+                        /* responsive */
+                    }
 
-                .noticias_separador {
-                    /* responsive */
-                }
-            }
-
-
-            .problemas_semanales {
-
-                .noticias_img {
-                    /* responsive */
-                }
-
-                .noticias_texto {
-                    padding: 0 12rem;
-
-                    b {
+                    .noticias_separador {
                         /* responsive */
                     }
                 }
 
-                .noticias_link {
 
-                    .noticias-btn {
+                .problemas_semanales {
+
+                    .noticias_img {
                         /* responsive */
                     }
-                }
 
-                .noticias_separador {
-                    /* responsive */
+                    .noticias_texto {
+                        padding: 0 12rem;
+
+                        b {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_link {
+
+                        .noticias-btn {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_separador {
+                        /* responsive */
+                    }
                 }
             }
         }
@@ -323,55 +322,56 @@
 
         .noticias {
 
-            padding: 3rem 3rem;
+            .separadorSobreado {
+                .noticias_article {
+                    padding: 2rem 2rem;
 
-            .noticias_article {
+                    .noticias_img {
+                        /* responsive */
+                    }
 
-                .noticias_img {
-                    /* responsive */
-                }
+                    .noticias_titulo {
+                        padding: 0;
+                    }
 
-                .noticias_titulo {
-                    padding: 0;
-                }
+                    .noticias_texto {
+                        padding: 0;
+                    }
 
-                .noticias_texto {
-                    padding: 0;
-                }
+                    .noticias_link {
+                        /* responsive */
+                    }
 
-                .noticias_link {
-                    /* responsive */
-                }
-
-                .noticias_separador {
-                    /* responsive */
-                }
-            }
-
-
-            .problemas_semanales {
-
-                .noticias_img {
-                    width: 100%;
-                }
-
-                .noticias_texto {
-                    padding: 0rem;
-
-                    b {
+                    .noticias_separador {
                         /* responsive */
                     }
                 }
 
-                .noticias_link {
 
-                    .noticias-btn {
+                .problemas_semanales {
+
+                    .noticias_img {
+                        width: 100%;
+                    }
+
+                    .noticias_texto {
+                        padding: 0rem;
+
+                        b {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_link {
+
+                        .noticias-btn {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_separador {
                         /* responsive */
                     }
-                }
-
-                .noticias_separador {
-                    /* responsive */
                 }
             }
         }
@@ -405,55 +405,56 @@
 
         .noticias {
 
-            padding: 3rem 2rem;
+            .separadorSobreado {
+                .noticias_article {
+                    padding: 3rem 2rem;
 
-            .noticias_article {
-
-                .noticias_img {
-                    /* responsive */
-                }
-
-                .noticias_titulo {
-                    /* responsive */
-                }
-
-                .noticias_texto {
-                    padding: 0;
-                }
-
-                .noticias_link {
-                    /* responsive */
-                }
-
-                .noticias_separador {
-                    margin: 3rem 0;
-                }
-            }
-
-
-            .problemas_semanales {
-
-                .noticias_img {
-                    width: 100%;
-                }
-
-                .noticias_texto {
-                    padding: 0rem;
-
-                    b {
+                    .noticias_img {
                         /* responsive */
+                    }
+
+                    .noticias_titulo {
+                        /* responsive */
+                    }
+
+                    .noticias_texto {
+                        padding: 0;
+                    }
+
+                    .noticias_link {
+                        /* responsive */
+                    }
+
+                    .noticias_separador {
+                        margin: 3rem 0;
                     }
                 }
 
-                .noticias_link {
 
-                    .noticias-btn {
-                        /* responsive */
+                .problemas_semanales {
+
+                    .noticias_img {
+                        width: 100%;
                     }
-                }
 
-                .noticias_separador {
-                    margin: 3rem 0;
+                    .noticias_texto {
+                        padding: 0rem;
+
+                        b {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_link {
+
+                        .noticias-btn {
+                            /* responsive */
+                        }
+                    }
+
+                    .noticias_separador {
+                        margin: 3rem 0;
+                    }
                 }
             }
         }
