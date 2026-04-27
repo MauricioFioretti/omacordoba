@@ -288,6 +288,9 @@
 
         p {
             margin: 0;
+            .desktop{
+                display: none;
+            }
         }
 
         .titulo_novedades {
