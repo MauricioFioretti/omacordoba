@@ -176,7 +176,6 @@ body {
   /* Estilos del encabezado para Mobile */
   .header__mobile {
     display: grid;
-    padding-top: 1rem;
     grid-template-columns: 1fr auto;
     grid-template-areas: "header__nav header__logo";
     /* Ocultar título en pantallas pequeñas */
@@ -2341,6 +2340,10 @@ p {
   }
 }
 @media screen and (max-width: 500px) {
+  .novedades h1 {
+    color: #0096DA;
+    margin-bottom: 0.5rem;
+  }
   .novedades .titulo_novedades {
     font-size: 1.8rem;
     display: inline-block;

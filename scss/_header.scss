@@ -144,7 +144,7 @@
     /* Estilos del encabezado para Mobile */
     .header__mobile {
         display: grid;
-        padding-top: 1rem;
+        // padding-top: 1rem;
         grid-template-columns: 1fr auto;
         grid-template-areas:
             "header__nav header__logo";
