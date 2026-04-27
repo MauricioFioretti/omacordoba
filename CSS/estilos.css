@@ -2342,14 +2342,22 @@ p {
 @media screen and (max-width: 500px) {
   .novedades h1 {
     color: #0096DA;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem !important;
+  }
+  .novedades h2 {
+    font-size: 1.5rem !important;
   }
   .novedades .titulo_novedades {
-    font-size: 1.8rem;
+    margin: 0.5rem 0;
     display: inline-block;
+    padding: 0.4rem 1rem;
     border-radius: 22px;
-    background: rgba(255, 255, 255, 0.65);
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.08), inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: none;
+    color: #0096DA;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1); /* elevación más leve */
   }
   .novedades #slider {
     margin-left: 1rem;
