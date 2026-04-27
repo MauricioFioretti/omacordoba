@@ -2143,13 +2143,23 @@ p {
   padding: 1rem 0 2rem 0;
   box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 }
-.novedades .titulo_novedades {
+.novedades h1 {
+  color: #0096DA;
+}
+.novedades h2 {
   color: #006794;
-  font-size: 2.5rem;
-  font-weight: 650;
+}
+.novedades .titulo_novedades {
   margin: 1rem 0;
   margin-bottom: 1rem;
   padding: 8px 18px;
+  font-size: 2.5rem;
+  font-weight: 650;
+  border-radius: 1.4rem;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .novedades #slider {
   display: flex;
@@ -2340,24 +2350,17 @@ p {
   }
 }
 @media screen and (max-width: 500px) {
-  .novedades h1 {
-    color: #0096DA;
-    font-size: 1.5rem !important;
+  .novedades {
+    padding-top: 0;
   }
-  .novedades h2 {
-    font-size: 1.5rem !important;
+  .novedades p {
+    margin: 0;
   }
   .novedades .titulo_novedades {
     margin: 0.5rem 0;
-    display: inline-block;
     padding: 0.4rem 1rem;
-    border-radius: 22px;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: none;
-    color: #0096DA;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 0.3px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1); /* elevación más leve */
   }
   .novedades #slider {
     margin-left: 1rem;
