@@ -101,6 +101,19 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .main__index {
+
+        /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
+        .main__iconos {
+
+            margin: 0 3rem;
+            margin-top: 3rem;
+
+        }
+    }
+}
+
 /* Estilos responsivos para pantallas más pequeñas */
 @media screen and (max-width: 550px) {
     .main__index {
@@ -108,7 +121,7 @@
         /* Ajustes en la disposición de los iconos para pantallas más pequeñas */
         .main__iconos {
 
-            margin: 0 4rem;
+            margin: 0 2rem;
             margin-top: 3rem;
 
             grid-template-columns: 1fr 1fr;
