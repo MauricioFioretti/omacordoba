@@ -33,6 +33,7 @@
             box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.4);
 
             .noticias_article {
+                padding-bottom: 3rem;
 
                 ul {
                     li {
@@ -79,6 +80,7 @@
 
                 .noticias_texto {
                     padding: 0 6rem;
+                    margin: 0;
                     font-size: 1.3rem;
                 }
 
@@ -236,7 +238,6 @@
 
             .separadorSobreado {
                 .noticias_article {
-                    padding-bottom: 3rem;
 
                     .noticias_img {
                         /* responsive */
