@@ -216,6 +216,3 @@ CONECTAR CON SASS:
         }
     6. Compilar con el comando "npm run watch"
 
-
-
-hola
