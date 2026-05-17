@@ -194,6 +194,60 @@ p{
     
 }
 
+#torneo_tgi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .noticias_texto{
+        max-width: 120ch;
+    }
+
+    .inscripcion_tgi{
+    background-color: $Color3TGI;
+    padding: 2rem;
+    margin: 2rem 4rem;
+    border-radius: 15px;
+    max-width: 150ch;
+
+
+    .inscripcion_tgi_titulo{
+        font-size: 1.3rem;
+        color: $Color1TGI;
+        
+    }
+}
+
+.resolución_ministerio{
+    background-color: #0095da1a;
+    padding: 2rem;
+    margin: 2rem 4rem;
+    border-radius: 15px;
+    max-width: 100ch;
+
+    .titulo_resolucion{
+
+        color: #0095da;
+
+    }
+}
+
+.tgi_importante{
+    background-color: $ColorFondoImportanteNoticias;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    max-width: 100ch;
+
+    .importante_tgi_titulo{
+        font-size: 1.3rem;
+        color: $ColorImportanteNoticias;
+    }
+}
+
+}
+
+
 
 
 @media (max-width: 1600px){

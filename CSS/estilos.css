@@ -2091,6 +2091,47 @@ p {
   background-color: #e25d94;
 }
 
+#torneo_tgi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#torneo_tgi .noticias_texto {
+  max-width: 120ch;
+}
+#torneo_tgi .inscripcion_tgi {
+  background-color: #f2fbe8;
+  padding: 2rem;
+  margin: 2rem 4rem;
+  border-radius: 15px;
+  max-width: 150ch;
+}
+#torneo_tgi .inscripcion_tgi .inscripcion_tgi_titulo {
+  font-size: 1.3rem;
+  color: #7cb642;
+}
+#torneo_tgi .resolución_ministerio {
+  background-color: rgba(0, 149, 218, 0.1019607843);
+  padding: 2rem;
+  margin: 2rem 4rem;
+  border-radius: 15px;
+  max-width: 100ch;
+}
+#torneo_tgi .resolución_ministerio .titulo_resolucion {
+  color: #0095da;
+}
+#torneo_tgi .tgi_importante {
+  background-color: #fdf4f7;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  max-width: 100ch;
+}
+#torneo_tgi .tgi_importante .importante_tgi_titulo {
+  font-size: 1.3rem;
+  color: #D43377;
+}
+
 @media (max-width: 1600px) {
   .grid_container {
     align-self: center;
