@@ -2102,7 +2102,7 @@ p {
 #torneo_tgi .inscripcion_tgi {
   background-color: #f2fbe8;
   padding: 2rem;
-  margin: 2rem 4rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
   max-width: 150ch;
 }
@@ -2113,7 +2113,7 @@ p {
 #torneo_tgi .resolución_ministerio {
   background-color: rgba(0, 149, 218, 0.1019607843);
   padding: 2rem;
-  margin: 2rem 4rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
   max-width: 100ch;
 }
